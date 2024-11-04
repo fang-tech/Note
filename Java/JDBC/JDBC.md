@@ -328,3 +328,22 @@ public class JDBCUtil {
   -  `getConnection`需要先get, 如果从线程中get的是null, 则重新set并返回
   - `release`不再需要传参, 先`close`Cnnection, 再`remove()`fromThread
 
+### 10. DAO工具的封装
+
+#### 10.1 封装的层次
+
+- 与pojo的区别 : 不同于pojo存放类的实体, DAO存放的是操作, 基础的操作集 : Data Access Operation, 数据访问操作
+
+- 封装的层次化结构
+
+  ```
+  |--pojo => 存放类的实体
+  |--dao 	=> 存放操作集的接口, 里面存放的全是接口文件
+  |---|--DaoImpl => 存放接口的实际实现
+  ```
+
+#### 10.4 对于executeUpdate()通用方法的封装
+
+- 实现的思路
+  1. 操作 : 
+
