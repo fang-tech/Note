@@ -2066,4 +2066,172 @@ public class DemoBufferedWriter {
    2. 循环获取多个序列化对象的时候循环次数和序列化的对象的个数不同的问题
       - 解决方法 : 将数据打包 -> 将数据放在集合中, 再将整个集合序列化 -> 将集合反序列化, 从集合中获取对象
 
-   
+
+# 42. Junit
+
+## 42.1 各个注解的运行时机与限制
+
+- `@Test` : 
+  - 限制
+    - 只能修饰无参无返回方法
+    - 不能修饰静态方法
+- `@Before`
+  - 时机 
+    - 每个`@Test`方法运行前都会运行一次的代码块
+  - 限制
+    - 和`@Test`一致
+- `@After`
+  - 时机
+    - 每个`@Test`方法运行后都会运行一次的代码块
+- `@BeforeClass`
+  - 时机
+    - 所有`@Test`运行之前, 会运行一次的代码块
+  - 限制
+    - 只能修饰静态方法
+
+## 42.2 对于限制的解释
+
+- 为什么要有这些修饰的限制, 可以从生命周期和修饰的级别的角度说明
+
+- 修饰的级别
+
+  - ```
+    |-@BeforeClass => 类级别的初始化方法
+    |------|-@Before => 方法级别的初始化方法
+    |------|------|-@Test => 测试方法
+    |------|-@After => 方法级别的清理
+    |------|-@Before
+    |------|------|-@Test
+    |------|-@After
+    |-@AfterClass => 类级别的清理
+    ```
+
+- 生命周期
+
+  - 为了保证测试的隔离性, 每个测试用例会生成新的测试实例, 在里面执行测试代码
+  - `@BeforeClass`在所有测试实例创建之前执行一次
+  - `@Before, @Test, @After` 都在测试实例中被创建和执行
+  - `@AfterClass`在所有测试实例执行完毕后执行一次
+
+- 测试类中的属性
+
+  - 假设测试类中有个属性int counter 初始化为 1;
+  - 则对于每个新的测试实例, 新建的实例中的counter初始都是1
+  - 所以`@Before, @Test, @After`需要是非静态的方法, 从而使得它修饰的函数能访问测试实例中属性
+  - 但是对于`@BeforeClass`这个类级别的修饰, 如果我想有一个对于所有的测试实例都共享的数据, 这个时候很明显它只能是静态数据, 因为所有的测试实体都是被新创建的, 非静态的数据是无法相互之间传递的
+
+# 43. 类加载器
+
+## 43.1 概念介绍
+
+类加载器是用来干什么的
+
+- 情景 : 我们如果需要使用类, 需要将类从class文件中加载到内存中, 现在该由谁来加载类? 加载类的时机什么? 为什么需要这个工具?
+
+- 由谁来加载类
+  - 类加载器, 并不是直接由JVM从class文件中加载类, 而是由类加载器ClassLoader将类从磁盘中加载到内存中
+- 为什么需要这个工具
+  - 显然, 在最开始的时候将所有的类一股脑的加载下来并不是一个效率的做法, 就像C语言中直接引入所有的头文件一样愚蠢, 对于资源有极大的浪费
+- 加载类的时机是什么
+  - 在类被使用时候ClassLoader从class文件中加载到内存中
+
+## 43.2 类加载器的层级和运行流程
+
+- 情景 : Java将类和类加载器分为三个层级, 但是现在我们有了一个类, 我们如何知道我们该由哪个类加载器加载
+  - BootStrap ClassLoader :  启动类加载器加载的系统性质的类
+  - Extension ClassLoader : 拓展类加载器加载和处理安全加密类相关的拓展类
+  - Application ClassLoader : 用户自己创建的类
+- 运行流程
+  1. 类 => AppLoader => ExtLoader => BootLoader
+  2. 由最后一级BootLoader先寻找, 如果没有找到这个类, 这个类不是BootLoader管的, 返回信息
+  3. 现在由ExtLoader寻找, 如果没有找到, 返回没有找到的信息
+  4. 现在由AppLoader寻找
+  5. BootLoader => ExtLoader => AppLoader => Class
+- 这样的运行顺序保证了一定是底层系统性质的类覆盖上层的类, 保证了核心库的安全性
+- 如果有一个类被查找到了, 会被它的那个层级的Loader缓存下来, 下次再需要访问的时候, 直接从换从中获取, 而不是重新从磁盘中读取
+- 三个类加载器之间有逻辑上的层级关系和父子关系, 但是没有实际上的继承关系, 他们都继承自同意父类`ClassLoader`
+
+## 43.3 获取ClassLoader
+
+如何获取Classloader呢
+
+- 通过`类.class.getClassLoader()`
+- 通过`类.class.getClassLoader().getParent()`获取当前的类加载器的父类加载器
+
+- 无法获取BootStrapLoader层级的类加载器, 返回的是null
+
+```java
+/**
+ * 说明类的加载机制
+ */
+public class DemoClassLoader {
+    @Test
+    public void testBootstrapLoader(){
+        //测试启动类加载器
+        ClassLoader classLoader = String.class.getClassLoader();
+        System.out.println("classLoader = " + classLoader);
+        // 启动类的加载器是用c语言写的, 无法直接获取
+
+        ClassLoader classLoader1 = DemoClassLoader.class.getClassLoader().getParent().getParent();
+        System.out.println("classLoader1 = " + classLoader1);
+    }
+
+    @Test
+    public void testExtensionLoader(){
+        //测试拓展类加载器
+        ClassLoader classLoader = DemoClassLoader.class.getClassLoader().getParent();
+        System.out.println("classLoader = " + classLoader);
+    }
+
+    @Test
+    public void testApplicationLoader(){
+        //测试应用类加载器
+        ClassLoader classLoader = DemoClassLoader.class.getClassLoader();
+        System.out.println("classLoader = " + classLoader);
+    }
+}
+```
+
+# 44. 反射
+
+## 44.1. 反射的意义
+
+- 情景 : 现在我们需要开发大型的或者说集成度很高的框架供多元的使用者使用, 这个时候我们无法得知使用者的传进来的类, 和其中有哪些方法, 但是我们又确实需要知道这些信息, 比如这个类的类型, 这个类中的某些方法, 这个时候我们就能通过反射获取这些 "标签"
+- 反射能做到的事, 获取类的类型, 类的成员变量, 类的成员方法, 类的构造方法
+
+- 反射让代码更灵活并且拓展了代码泛用性, 但是因为是动态读取的, 在性能上并不是很好
+
+## 44.2 反射获取内容的流程
+
+### 44.2.1 获取对象的Class类
+
+首先获取目标类的Class<?>对象, 这个类中包含这个类的元数据(定义) : 类名, 父类, 实现的接口, 类修饰符, 方法, 字段等
+
+该对象有三种获取方式
+
+- 直接通过类名获取, MyClass.class获取
+- myObject.getClass() : 通过对象实例获取
+- Class.forName("com.example.MyClass"): 通过类的全限定名获取
+
+```java
+@Test
+public void testGetClass() throws ClassNotFoundException {
+    // 1. 通过getClass方法获取Class对象
+    Person person = new Person();
+    Class<? extends Person> aClass1 = person.getClass();
+    System.out.println("aClass1 = " + aClass1);
+
+    // 2. 通过每个类的.class静态成员, 这个是jvm为所有类型提供的一个成员
+    Class<Person> aClass2 = Person.class;
+    System.out.println("aClass2 = " + aClass2);
+
+    // 3. static Class<?> forName获取
+    Class<?> aClass3 = Class.forName("com.javaSE.Person");
+    System.out.println("aClass3 = " + aClass3);
+}
+```
+
+### 44.2.2 最通用的获取Class类的方式
+
+获取
+
