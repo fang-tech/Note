@@ -1,13 +1,18 @@
 package com.jdbc.advanced;
 
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+import com.alibaba.druid.pool.DruidPooledConnection;
 import com.jdbc.advanced.pojo.Employee;
 import org.junit.Test;
 
-import javax.xml.transform.stax.StAXResult;
-import java.lang.management.MemoryNotificationInfo;
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class JDBCAdvanced {
     @Test
@@ -104,4 +109,5 @@ public class JDBCAdvanced {
         preparedStatement.close();
         connection.close();
     }
+
 }

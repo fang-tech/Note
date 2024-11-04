@@ -171,3 +171,160 @@ if (result > 0) {
 
 > 需要执行批量操作的SQL语句最后不能有 ";"
 
+### 8. 连接池
+
+#### 8.1 问题简述
+
+问题的出现 
+
+- 每次建立连接都需要创建新的对象, 频繁的创建和销毁连接对象, 造成资源的浪费
+- 连接的数量是不可控的, 对服务器的压力很大
+
+解决方式
+
+- 创建数据库连接的缓冲区, 如果连接池中有资源, 就直接从连接池中获取连接对象, 如果连接池中没有资源且连接数量未打到上限, 创建新的连接对象, 如果连接池已满, 则等待建立连接, 同时还有超时等设置 
+- 就像客服一样, 并不是为每一个用户都设立一个客服
+
+#### 8.3 Druid连接池使用
+
+##### Druid连接池硬编码使用
+
+- 使用流程
+  1. 创建`DruidDataSource`对象
+  2. 配置`DruidDataSource`对象
+     1. 配置必须项 : driver, url, username, password
+     2. 配置非必须项 : 最大连接数量 maxActive, 初始化的连接数量 initialSize
+  3. 通过DruidDataSource创建连接对象
+  4. 通过connection对象CRUD
+  5. 最后关闭connection => 这个时候是将资源回收给
+
+```java
+// 1. 创建德鲁伊资源对象对象
+DruidDataSource dataSource = new DruidDataSource();
+
+// 2. 配置参数
+// 必须项
+dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+dataSource.setUrl("jdbc:mysql:///atguigu");
+dataSource.setUsername("root");
+dataSource.setPassword("root");
+// 非必须项
+dataSource.setInitialSize(10);
+dataSource.setMaxActive(20);
+
+// 3. 创建连接对象
+DruidPooledConnection connection = dataSource.getConnection();
+
+
+// 4. 正常进行CRUD
+//        connection.prepareStatement()
+
+// 5. 回收资源
+connection.close();
+```
+
+##### Druid连接池软编码使用 (推荐)
+
+-  实现步骤
+
+  1. 项目文件夹下创建resources文件夹, 用于存放配置文件, 然后Mark as "Resources root"
+  2. 创建db.properties文件, 在new里选resource bundle, 在里面以key=value的形式写入配置信息
+  3. 新建Properties集合对象
+  4. 通过InputStream对象获取输入流 **ClassName**.class.getClassLoader().getResourceAsStream("file name")
+
+  5. properties.load(inputStream)
+  6. 通过Druid的工厂方法创建connection
+  7. 接下来就正常使用
+
+> 第四步中的ClassName表示的是写入代码的那个类 => 含义是加载这个类的时候就会去读取信息
+
+```java
+// 创建properties集合对象
+Properties properties = new Properties();
+
+// 将文件内容加载到集合中
+InputStream inputStream = DruidTest.class.getClassLoader().getResourceAsStream("db.properties");
+properties.load(inputStream);
+
+// 将配置信息加载到DruidDataSource
+DataSource dataSource = DruidDataSourceFactory.createDataSource(properties);
+
+// 创建Connection后正常使用
+Connection connection = dataSource.getConnection();
+
+connection.close();
+```
+
+#### 8.4 Hikari连接池的使用
+
+##### 硬编码的使用方式
+
+- 使用流程
+  1. 创建的对象从`DruidDataSource`改为`HikariDataSource`
+  2. setUrl改为SetJdbcUrl
+  3. 其他和Druid相同
+
+##### 软编码的使用方式
+
+- 使用流程
+  1. 读取配置信息相同
+  2. 设置最大和最小的函数名变为`setMaximumPoolSize`, `setMinimumIdle`
+  3. 需要用`properities`创建`HikariConfig`对象
+  4. 再用`HikariConfig`创建`DataSource`对象
+
+## 高级篇
+
+### 9. 对连接池的操作的封装
+
+#### 9.1 工具类的简单封装
+
+封装的内容
+
+- 连接池的对象的创建
+- 获取连接池的中的连接
+- 连接的释放
+
+```java
+public class JDBCUtil {
+    private static DataSource dataSource;
+
+    static {
+        try {
+            Properties properties = new Properties();
+            InputStream inputStream = JDBCUtil.class.getClassLoader().getResourceAsStream("db.properties");
+            properties.load(inputStream);
+            dataSource = DruidDataSourceFactory.createDataSource(properties);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static Connection getConnection() {
+        try {
+            return dataSource.getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void release(Connection connection) {
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}
+```
+
+#### 9.2 ThreadLocal
+
+- 新的问题
+  - 如果一个用户完成一系列操作, 每一步都需要操作数据库, 那么按照原来的代码, 他会从连接池中频繁的获取连接, 占用过多的资源
+- 解决方案
+  - 让用户从头至尾获取的都是同一个connection
+- 实现
+  - 通过ThreadLocal将Connection对象和线程绑定, 这个线程对象又是JDBCUtil类的中的成员, 从而将Connction和这个类绑定
+  -  `getConnection`需要先get, 如果从线程中get的是null, 则重新set并返回
+  - `release`不再需要传参, 先`close`Cnnection, 再`remove()`fromThread
+
