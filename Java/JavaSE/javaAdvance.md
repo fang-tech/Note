@@ -2201,7 +2201,7 @@ public class DemoClassLoader {
 
 - 反射让代码更灵活并且拓展了代码泛用性, 但是因为是动态读取的, 在性能上并不是很好
 
-## 44.2 反射获取内容的流程
+## 44.2 反射获取内容
 
 ### 44.2.1 获取对象的Class类
 
@@ -2233,5 +2233,202 @@ public void testGetClass() throws ClassNotFoundException {
 
 ### 44.2.2 最通用的获取Class类的方式
 
-获取
+通过类名.class获取
+
+### 44.3.1 获取构造方法
+
+#### 1. 获取所有公有的构造方法
+
+- 流程
+
+  1. 构建`Constructor[]`数组, 用于接收从`class.getConstructors()`的构造方法对象
+  2. 通过`for`循环遍历获取
+
+- code
+  ```java
+  @Test
+  public void testGetConstructors(){
+      Class<?> aClass = Person.class;
+  
+      Constructor<?>[] constructors = aClass.getConstructors();
+      for (Constructor<?> constructor : constructors) {
+          System.out.println(constructor);
+      }
+  }
+  ```
+
+#### 2. 获取特定的构造方法
+
+- 流程
+  1. 通过`Constructor`类型接收`class.getConstructor(Type p1....)`的返回
+  2. 通过传递的参数类型来指定获取的构造函数比如填入()就是空参构造, 如果填入`(String.class)`就是用于获取参数列表是只传递了一个String的构造函数
+  3. 通过构造方法, 能构建出新的实例, 通过调用`newInstance(参数...)`方法
+
+- code
+  ```java
+  @Test
+  public void testGetConstructor() throws Exception {
+      Class<?> aClass = Person.class;
+  
+      Constructor<?> constructor = aClass.getConstructor(String.class, Integer.class);
+      System.out.println(constructor);
+  
+      Person p = (Person) constructor.newInstance("fang",20);
+      System.out.println("p = " + p);
+  }
+  ```
+
+#### 3. 获取私有的方法
+
+- 流程
+
+  1. 将上面两者的`getConstructor`修改为`getDeclaredConstructor(s)`即可
+  2. 如果还要能使用, 还需要`.setAccessible(true)`来解除私有的权限
+
+- code
+  ```java
+  @Test
+  public void testGetPrivateConstructor() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+      // 获取私有构造
+      Class<?> aClass = Person.class;
+  
+      Constructor<?>[] dc = aClass.getDeclaredConstructors();
+      for (Constructor<?> constructor : dc) {
+          System.out.println(constructor);
+      }
+  
+      // 解除私有构造的权限, 使之能使用私有构造
+      Constructor<?> constructor = aClass.getDeclaredConstructor(String.class);
+      constructor.setAccessible(true);
+      Person p = (Person) constructor.newInstance("fung");
+      System.out.println(p);
+  }
+  ```
+
+### 44.4 通用的结构
+
+- 接下来介绍获取(使用)成员方法, 获取和构建成员变量, 都是一样的结构, 关注的方面都是接下来的几个方面, 只会给出代码
+  - 获取所有public
+  - 获取特定的public
+  - 获取所有的方法(包含private)
+  - 获取特定的private
+  - 以及用于接收的类型
+  - 如何使用获取的内容
+
+### 44.5 获取成员方法
+
+- 使用`Method`接收
+
+- 获取所有的public => `aClass.getMethods()`
+
+- 获取特定的方法 => `aClass.getMethod("方法名", 这个方法需要传递的参数列表...)`
+
+- 获取所有的方法 => `aClass.getDeclaredMethods()`
+
+- 获取特定的方法(可以是private) => `aClass.getDeclaredMethod("方法名", 这个方法需要传递的参数列表...)`
+
+- 如何使用
+
+  - 使用Object接收返回的结果, 因为不知道类型
+  - 调用`Method.invoke(对象, 参数列表)`来执行方法
+  - 如果是私有方法同样需要调用`setAccessiable(true)`来解除私有的权限
+
+-  code 
+  ```java
+  /**
+       * 通过Class使用public成员方法
+       */
+  @Test
+  public void testGetMethods() throws Exception{
+      Class<Person> aClass = Person.class;
+  
+      // 获取所有的public方法
+      Method[] methods = aClass.getMethods();
+      for (Method method : methods) {
+          System.out.println(method);
+      }
+  
+      // 获取指定的public方法
+      Method setName = aClass.getMethod("setName", String.class);
+      System.out.println(setName);
+      Method method = aClass.getMethod("getName");
+      System.out.println("method = " + method);
+      Person p = aClass.newInstance();
+      Object o1 = setName.invoke(p, "fung");
+      Object o = method.invoke(p);
+      System.out.println("o1 = " + o1);
+      System.out.println("o = " + o);
+  }
+  
+  /**
+       * 通过Class使用private方法
+       */
+  @Test
+  public void testGetPrivateMethods() throws Exception{
+      // 获取所有方法
+      Class<Person> aClass = Person.class;
+  
+      Method[] declaredMethods = aClass.getDeclaredMethods();
+      for (Method declaredMethod : declaredMethods) {
+          System.out.println(declaredMethod);
+      }
+  
+      // 获取指定的private方法并使用
+      Person p = aClass.newInstance();
+      Method privateMethod = aClass.getDeclaredMethod("eat");
+      privateMethod.setAccessible(true);
+      privateMethod.invoke(p);
+  }
+  ```
+
+### 44.6 成员变量
+
+- 获取所有public => `aClass.getFiedls()`
+- 获取特定的public => `aClass.getField("字段名")`
+- 获取所有的方法(包含private) => `aClass.getDeclaredFields()`
+- 获取特定的private => `aClass.getDeclaredField("字段名")`
+- 以及用于接收的类型 => `Field`
+- 如何使用获取的内容
+  - 通过`Field.set(对象实例, 值)`的形式赋值
+  - 通过`Filed.get(对象)`的形式获取值
+
+- code
+  ```java
+  /**
+       * 通过Class获取成员变量
+       */
+  @Test
+  public void testGetField() throws Exception{
+      Class<Person> aClass = Person.class;
+      Person p = aClass.newInstance();
+  
+      Field[] pubFields = aClass.getFields();
+      Field[] allFields = aClass.getDeclaredFields();
+      for (Field pubField : pubFields) {
+          System.out.println("pubField = " + pubField);
+      }
+      for (Field allField : allFields) {
+          System.out.println("allField = " + allField);
+      }
+  
+      System.out.println("<==================>");
+  
+      Field name = aClass.getDeclaredField("name");
+      name.setAccessible(true);
+      System.out.println("name = " + name);
+      name.set(p,"fang");
+      Object o = name.get(p);
+      System.out.println(o);
+      Field publicField = aClass.getField("publicField");
+      publicField.set(p,"test");
+      Object o1 = publicField.get(p);
+      System.out.println(o1);
+  }
+  ```
+
+  
+
+
+
+
 

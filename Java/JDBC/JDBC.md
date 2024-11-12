@@ -78,7 +78,7 @@ Statement可以通过Connection对象创建
 
 #### 4.4 PreparedStatement
 
-Staatement的子类, 独有的特性
+Statement的子类, 独有的特性
 
 - 预编译SQL语句 => 重复执行的时候, 不用每次都重新编译运行, 提高运行效率
 - 能够防止SQL注入
@@ -255,7 +255,7 @@ Connection connection = dataSource.getConnection();
 connection.close();
 ```
 
-#### 8.4 Hikari连接池的使用
+#### 8.4 Hikari(/hiːˈkɑːri/)连接池的使用
 
 ##### 硬编码的使用方式
 
@@ -270,7 +270,7 @@ connection.close();
   1. 读取配置信息相同
   2. 设置最大和最小的函数名变为`setMaximumPoolSize`, `setMinimumIdle`
   3. 需要用`properities`创建`HikariConfig`对象
-  4. 再用`HikariConfig`创建`DataSource`对象
+  4. 再用`HikariConfig`创建`DataSource`对象 => `new HikariDataSource(hikariConfig)`
 
 ## 高级篇
 

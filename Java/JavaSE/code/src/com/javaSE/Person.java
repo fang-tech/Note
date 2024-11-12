@@ -3,6 +3,7 @@ package com.javaSE;
 public class Person {
     private String name;
     private Integer age;
+    public String publicField;
 
     public Person() {
     }
@@ -31,6 +32,9 @@ public class Person {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+    private void eat(){
+        System.out.println("This is a private method");
     }
 
     @Override
