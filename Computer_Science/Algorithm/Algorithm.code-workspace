@@ -63,8 +63,8 @@
 			"xmemory": "cpp",
 			"xtr1common": "cpp",
 			"stack": "cpp",
-			"string": "cpp"
-			
+			"string": "cpp",
+			"xtree": "cpp"
 		}
 	}
 }

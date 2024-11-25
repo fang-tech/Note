@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-const int N = 1e5 + 5;
+const int N = 1e4 + 5;
 int n, m, t;
 bool flag = 0;
 char map[N][N] = {0};
 int visited[N][N] = {0};
 int a, b, c, d; // 记录起点和终点
-int dir[][] = {{0,1},{0,-1},{1,0},{-1,0}};
+int dir[4][2] = {{0,1},{0,-1},{1,0},{-1,0}};
 
 #define CHECK(x,y) (x >=0 && x <= n-1 && y >= 0 && y <= m-1)
 
@@ -18,7 +18,7 @@ void dfs(int x, int y, int time) {
     if (distance == 0) {flag = 1; return;}
     if (distance > t - time) return;
     for (int i = 0; i < 4; i++){
-        int nx = x + dir[i][0]; int ny = y + dir[0][i];
+        int nx = x + dir[i][0]; int ny = y + dir[i][1];
         if (CHECK(nx, ny)) {
             visited[nx][ny] = 1;
             dfs(nx, ny, time+1);
@@ -34,7 +34,7 @@ int main() {
         for (int i = 0; i < n; i++) {
             for (int j= 0; j < m; j++){
                 cin>>map[i][j];
-                if (map[i][j] == 'S') a = i, b =j;
+                if (map[i][j] == 'S') a = i, b = j;
                 if (map[i][j] == 'D') c = i, d = j;
             }
         }
