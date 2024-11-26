@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="sex" value="man"/>男
+    <input type="radio" name="sex" value="woman"/>女
+    <br>
+    你最喜欢的球队是
+    <input type="checkbox" name="team" value="China"/>中国
+    <input type="checkbox" name="team" value="France" checked/>法国
+    <input type="checkbox" name="team" value="Italian"/>意大利
+
+    <br>
+    你最喜欢的运动是
+    <select name="interesting">
+        <option value="swimming">游泳</option>
+        <option value="running" selected>跑步</option>
+        <option value="shooting">射击</option>
+    </select>
+    <br>
+
+    <p>按钮</p>
+    <input type="button" value="普通按钮">
+    <input type="submit" value="提交按钮">
+    <input type="reset" value="重置按钮">
+
+    <p>通过button实现的按钮</p>
+    <button type="button">普通按钮</button>
+    <button type="submit">提交按钮</button>
+    <button type="reset">重置按钮</button>
+
+    <p>隐藏域</p>
+    <input type="hidden" value="123456789" name="userId"/>
+
+    <p>多行文本框</p>
+    自我介绍:<textarea name="desc">默认信息</textarea>
+    <p>文件</p>
+    <input type="file" name="file"/>
+</body>
+</html>
