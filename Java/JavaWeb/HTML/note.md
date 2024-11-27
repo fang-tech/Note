@@ -264,9 +264,17 @@ hr => horizontal rule 水平线, br => line break => 换行
 
 > div => 用于做块的划分
 >
-> span
+> span => 用作对层的划分
 
+```html
+<div style="width: 500px; height:400px; background-color: brown;">
+    <div style="width: 300px; height: 200px; background-color: beige;"></div>
+</div>
+<div style="width: 100px; height: 100px; background-color: rebeccapurple;"></div>
+<span style="width: auto; height: 12px; background-color: aqua;">span显示的内容</span>
+```
 
+常常通过CSS设置大小背景颜色等参数
 
 
 

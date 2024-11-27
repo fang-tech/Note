@@ -7,9 +7,7 @@ inline int read(){
     if(f) return x;
     return 0-x;
 }
-int n,m,a[66];
-int _next[66];
-int cnt,sum,len;
+int n,m,a[66],next[66],cnt,sum,len;
 bool used[66],ok; //used数组即优化5的vis数组，记录每根木棍是否用过；ok记录是否已找到答案。 
 bool cmp(int a,int b){return a>b;}
 void dfs(int k,int last,int rest){ //k为正在拼的木棍的编号，last为正在拼的木棍的前一节编号，rest为该木棍还未拼的长度
@@ -39,7 +37,7 @@ void dfs(int k,int last,int rest){ //k为正在拼的木棍的编号，last为�
             if(ok) return; //优化6，找到答案就退出 
             
             if(rest==a[i] || rest==len) return; //优化7 
-            i=_next[i]; //优化3 
+            i=next[i]; //优化3 
             if(i==cnt) return;
         }
     }
@@ -56,10 +54,10 @@ int main(){
     }
     sort(a+1,a+cnt+1,cmp); //优化1，木棍按长度从大到小排序 
     //优化3，预处理next数组 
-    _next[cnt]=cnt;
+    next[cnt]=cnt;
     for(int i=cnt-1;i>0;i--){
-        if(a[i]==a[i+1]) _next[i]=_next[i+1];
-        else _next[i]=i;
+        if(a[i]==a[i+1]) next[i]=next[i+1];
+        else next[i]=i;
     }
     for(len=a[1];len<=sum/2;len++){ //枚举原始长度 
         if(sum%len!=0) continue; //如果不能拼出整数根 就跳过 

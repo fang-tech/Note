@@ -19,8 +19,17 @@ void dfs(int start, int cur_sum, int num) {
     if (flag) return;
     if (num == cnt+1) {flag = 1; return;}  // 最后合成了需要数量的木棍
     // 越界问题
-    cur_sum += a[start];
-    if (cur_sum > )
+    if (!used[start]) cur_sum += a[start];
+    if (cur_sum == d) {dfs(0, 0, num+1)}
+    if (cur_sum < d) {
+        for(int i = n; i > 0; i--) {
+            if (!used[i]) {
+                used[i] = 1;
+                dfs(i, cur_sum, num);
+                used[i] = 0;
+            }
+        }
+    }
 
 }
 void Divisor(int n) {

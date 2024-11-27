@@ -1312,10 +1312,10 @@ alt
 + 代码
 
 ``` html
-<head>
+<head>	
     <meta charset="UTF-8">
     <style>
-        .innerDiv{
+        .innerDiv{	
                 width: 100px;
                 height: 100px;
         }
@@ -1395,7 +1395,7 @@ alt
 
 + CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距（margin），边框（border），填充（padding），和实际内容（content）
 
-<img src="images/1681262535006.png" alt="1681262535006" style="zoom:67%;" />
+<img src="D:\Note\Java\JavaWeb\CSS\1681262535006.png" alt="1681262535006" style="zoom:67%;" />
 
 + 说明：
     + Margin(外边距) - 清除边框外的区域，外边距是透明的。

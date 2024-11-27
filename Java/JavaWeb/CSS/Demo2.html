@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .shapeClass {
+            display: block;
+            width: auto;
+            height: auto;
+            border-radius: 5px;
+        }
+        .colorClass {
+            background-color: bisque;
+            border: 3px solid goldenrod;
+        }
+        .fontClass{
+            font-family: 隶书;
+            color: brown;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        #btn1 {
+            display: block;
+            width: auto;
+            height: auto;
+            font-family: 隶书;
+            background-color: bisque;
+            border-radius: 5px;
+            border: 3px solid goldenrod;
+            color: brown;
+            font-size: 22px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- id法 -->
+    <input type="button" id="btn1" value="按钮"/>
+    <input type="button" id="btn2" value="按钮"/>
+    <input type="button" id="btn3" value="按钮"/>
+    <input type="button" id="btn4" value="按钮"/>
+    <!-- class法 -->
+    <input class="fontClass colorClass shapeClass" type="button" value="按钮"/>
+    <input class="fontClass colorClass" type="button" value="按钮"/>
+    <input class="shapeClass" type="button" value="按钮"/>
+    <input type="button" value="按钮"/>
+</body>
+</html>

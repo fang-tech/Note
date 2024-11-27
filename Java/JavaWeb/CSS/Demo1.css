@@ -1,0 +1,12 @@
+input {
+    display: block;
+    width: auto;
+    height: auto;
+    font-family: 隶书;
+    background-color: bisque;
+    border-radius: 5px;
+    border: 3px solid goldenrod;
+    color: brown;
+    font-size: 22px;
+    line-height: 30px;
+}
