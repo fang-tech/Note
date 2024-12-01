@@ -64,7 +64,11 @@
 			"xtr1common": "cpp",
 			"stack": "cpp",
 			"string": "cpp",
-			"xtree": "cpp"
+			"xtree": "cpp",
+			"bitset": "cpp",
+			"numbers": "cpp",
+			"numeric": "cpp",
+			"set": "cpp"
 		}
 	}
 }
