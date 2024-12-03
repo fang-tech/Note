@@ -1,3 +1,4 @@
+// 序列X, 求序列最大子集和
 #include <iostream>
 #include <cstdio>
 using namespace std;
