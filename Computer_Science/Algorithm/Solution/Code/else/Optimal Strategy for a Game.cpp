@@ -4,8 +4,10 @@
 // dp[i][j] => 第i堆硬币到第j堆硬币你先手拿硬币能拿到的最大价值
 // 输入 :n
 //       v[n]
+
 #include <iostream>
 #include <cstdio>
+#include <algorithm>
 using namespace std;
 
 const int N = 100;
@@ -19,11 +21,21 @@ int main() {
     cin >> n;
     for (int i=1;i<=n;i++) cin>>v[i];
 
-    for (int i=n;i>=1;i-=2) {
-        for (int j=i+2;j<=n;j+=2) {
-            
+    for (int i=n;i>=1;i--) {
+        for (int j=i;j<=n;j++) {
+            if (i == j) dp[i][j] = v[i];
+            else if (j == i + 1) dp[i][j] = max(v[i], v[j]);
+            else dp[i][j] = max({v[j]+min(dp[i+1][j-1], dp[i][j-2]),  // 拿了j
+            v[i]+min(dp[i+1][j-1], dp[i+2][j])}); // 拿了i
         }
     }
-
+    //@test
+    for(int i=1;i<=n;i++) {
+        for (int j=1;j<=n;j++) {
+            cout << dp[i][j] << "\t";
+        }
+        cout << endl;
+    }
+    cout << dp[1][n];
     return 0;
 }
