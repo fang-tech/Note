@@ -4,29 +4,26 @@
 using namespace std;
 
 int N, C;
-int w[1000+3], c[1000], dp[1000+3];
+int w[1000+3], c[1000];
+int dp[1000+3][1000+3];
+const int INF = 0x3f3f3f3f;
 
-int solve() {
-    memset(dp, 0, sizeof(dp));
-    int _new=1, old=0;
-    for (int i = 1; i <= N; i++) {
-        swap(_new, old);
-        for (int j = C; j >= 0; j--) {
-            if (c[i] > j) continue;
-            else dp[j] = max(dp[j-c[i]] + w[i], dp[j]);
-        }
-    }
-    return dp[C];
+int package(int i, int j) {
+    if (dp[i][j] != INF) return dp[i][j];
+    if (i == 0 || j == 0) {dp[i][j] = 0; return dp[i][j];}
+    if (c[i] > j) return package(i-1, j);
+    else return max(package(i-1, j), package(i-1, j-c[i])+w[i]);
 }
 
 int main() {
-    freopen("input.txt", "r", stdin);
+    // freopen("input.txt", "r", stdin);
     int x; cin>>x;
     for (int i = 0; i < x; i++) {
+        memset(dp, 0x3f, sizeof(dp));
         scanf("%d %d", &N, &C);
         for (int j = 1; j <= N; j++) cin>>w[j];
         for (int j = 1; j <= N; j++) cin>>c[j];
-        int ans = solve();
+        int ans = package(N, C);
         printf("%d\n", ans);
     }
     return 0;
