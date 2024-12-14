@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "31b76855c616ca61",
+    "type": "split",
+    "children": [
+      {
+        "id": "64ac531224aad36b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aee748538faf8e86",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b456cd987fab1a57",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d9e0ed665e0e918",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3341b2b405e0a22f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "6fc02fa7b73a8946",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c9f80efb0b1d3323",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d8537fca78f3b749",
+    "type": "split",
+    "children": [
+      {
+        "id": "d91286930ba21a2e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a9fbe31cd38271e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Java/JavaWeb/JS/JavaScript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "JavaScript 的反向链接列表"
+            }
+          },
+          {
+            "id": "584dc131d7befe2a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Java/JavaWeb/JS/JavaScript.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "JavaScript 的出链列表"
+            }
+          },
+          {
+            "id": "f7c84b25f2a75b31",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "b75efeef7b4a27c6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Java/JavaWeb/JS/JavaScript.md"
+              },
+              "icon": "lucide-list",
+              "title": "JavaScript 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "aee748538faf8e86",
+  "lastOpenFiles": [
+    "Java/JavaWeb/JS/JavaScript.md",
+    "Java/JavaWeb/CSS/note.md",
+    "未命名.canvas",
+    "Java/JavaWeb/HTML/note.md",
+    "Computer_Science/Computer_network/Chapter3-Transport-layer.md",
+    "img/TCP.png.md",
+    "img",
+    "Computer_Science/Algorithm/Learning/Algorithms/NumberTheory/01分数规划.md"
+  ]
+}
