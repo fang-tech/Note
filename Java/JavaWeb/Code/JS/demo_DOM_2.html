@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+    function changeAttribute(){
+        // 操作属性
+        var in1 = document.getElementById("in1")
+        
+        console.log(in1.type)
+        console.log(in1.value)
+
+        in1.type = "button"
+        in1.value = "hi"
+    }
+
+    function changeStyle(){
+        // 操作元素的样式
+        var in1 = document.getElementById("in1")
+        in1.style.color = "green"
+        in1.style.fontSize = "45px"
+    }
+
+    function changeText(){
+        // 修改文本
+        var div1 = document.getElementById("div01")
+
+        console.log(div1.innerText)
+        console.log(div1.innerHTML)
+
+        // div1.innerHTML = "<h1>hi</h1>"
+        div1.innerText = "HIHI"
+    }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input id="in1" type="text" value="hello">
+    <div id="div01">
+        hello
+    </div>
+
+    <hr>
+    <button onclick="changeAttribute()">操作属性</button>
+    <button onclick="changeStyle()">操作样式</button>
+    <button onclick="changeText()">操作文本</button>
+</body>
+</html>

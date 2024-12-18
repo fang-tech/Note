@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+    function addCs(){
+        // 添加元素
+        var csli = document.createElement("li")
+        csli.id = "cs"
+        csli.innerText = "长沙"
+
+        // 将元素添加到父元素末尾
+        var cityul = document.getElementById("city")
+        cityul.appendChild(csli)
+    }
+
+    function addCsBeforeSz(){
+        // 在某个元素前面追加子元素
+        // 添加元素
+        var csli = document.createElement("li")
+        csli.id = "cs"
+        csli.innerText = "长沙"
+
+        // 在指定元素前面添加元素
+        var cityul = document.getElementById("city")
+        var szli = document.getElementById("sz")
+        cityul.insertBefore(csli,szli)
+    }
+
+    function replaceSz(){
+        // 在某个元素前面追加子元素
+        var csli = document.createElement("li")
+        csli.id = "cs"
+        csli.innerText = "长沙"
+
+        // 替换子元素
+        var cityul = document.getElementById("city")
+        var szli = document.getElementById("sz")
+        cityul.replaceChild(csli,szli)
+    }
+
+    function removeSz(){
+        // 删除子元素
+        var cityul = document.getElementById("city")
+        var szli = document.getElementById("sz")
+        cityul.removeChild(szli)
+    }
+
+    function clearCity(){
+        // 清空所有
+        var cityul = document.getElementById("city")
+
+        cityul.innerHTML = ""
+    }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="city">
+        <li id="bj">北京</li>
+        <li id="sh">上海</li>
+        <li id="sz">深圳</li>
+        <li id="gz">广州</li>
+    </ul>
+
+    <hr>
+    <!-- 目标1 在城市列表的最后添加一个子标签  <li id="cs">长沙</li>  -->
+    <button onclick="addCs()">增加长沙</button>
+    <!-- 目标2 在城市列表的深圳前添加一个子标签  <li id="cs">长沙</li>  -->
+    <button onclick="addCsBeforeSz()">在深圳前插入长沙</button>
+    <!-- 目标3  将城市列表的深圳替换为  <li id="cs">长沙</li>  -->
+    <button onclick="replaceSz()">替换深圳</button>
+    <!-- 目标4  将城市列表删除深圳  -->
+    <button onclick="removeSz()">删除深圳</button>
+    <!-- 目标5  清空城市列表  -->
+    <button onclick="clearCity()">清空</button>
+</body>
+</html>

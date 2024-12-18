@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function goAtguigu(){
+            var flag = confirm("即将跳转到尚硅谷官网, 你会丢失当前页面的信息, 确定吗");
+            if (flag) {
+                // 通过BOM编程地址栏URL切换
+                window.location.href="http://www.atguigu.com";
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="btn1" value="跳转到尚硅谷官网" onclick="goAtguigu()"/>
+</body>
+</html>

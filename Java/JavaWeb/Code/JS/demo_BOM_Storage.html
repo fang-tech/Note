@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function saveItem(){
+            window.sessionStorage.setItem("sessionMsg", "sessionValue");
+            window.localStorage.setItem("localMsg", "localItem");
+
+            console.log("saved");
+        }
+
+        function removeItem(){
+            window.sessionStorage.removeItem("sessionMsg");
+            window.localStorage.removeItem("localMsg");
+
+            console.log("Deleted");
+        }
+
+        function readItem(){
+            console.log("read");
+            console.log("session : " + sessionStorage.getItem("sessionMsg"));
+            console.log("local : " + localStorage.getItem("localMsg"));
+        }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="saveItem()">存储</button> <br>
+    <button onclick="removeItem()">删除</button> <br>
+    <button onclick="readItem()">读取</button> <br>
+</body>
+</html>
