@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+    {
+        let a = 1
+        let b = 2
+        console.log(a)
+        console.log(b)
+    }
+    // 有作用域
+    // console.log(a)
+    // console.log(b)
+
+    // 不能重复赋值
+    // let name = 1
+    // let name = 2 
+
+    // 变量提升
+    console.log(test)
+    var test = 'test'
+    // console.log(test1)
+    // let test1 = 'test1'
+
+    // 不会成为window属性
+    var a  = 100
+    console.log(window.a) // 100
+    let b = 122
+    console.log(window.b) // undefine
+
+    // 循环中推荐使用
+    for (let i=0;i < 10; i++){
+        console.log(i)
+    }
+    console.log(i)
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

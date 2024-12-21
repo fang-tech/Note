@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // spread 语法可以将[1,2,3] => 1,2,3 , 像是一种拆包
+        let arr = [1,2,3]
+        // let arrSpread = ...arr // 错误, 不能直接拆包, 只能在函数调用的时候作为参数传递
+        let fn1 = (a,b,c) => console.log(a,b,c)
+        fn1(...arr) // 1 2 3
+        fn1(arr) // [1,2,3] undefine undefine
+
+        // 应用场景1 合并数组
+        let arr2 = [2,3,4]
+        console.log(...arr, ...arr2)
+        // 应用场景2 合并对象属性
+        let p1 = {name:"张三"}
+        let p2 = {age:10}
+        let p3 = {gender:"boy"}
+        let person = {...p1, ...p2, ...p3}
+        console.log(person)
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

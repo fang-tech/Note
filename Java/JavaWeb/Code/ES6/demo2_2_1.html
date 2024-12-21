@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    // 数组解构
+        let [a,b,c] = [1,2,"33"]
+        console.log(a)
+        console.log(b)
+        console.log(c)
+
+        // 默认值
+        let [a1,b1,c1, d = 4] = [1,2,3,5]
+        console.log(d)
+
+    // 对象解构
+        let {o1, o2} = {o1:1, o2:2}
+        //新增变量名必须和属性名相同, 本质是初始化变量的值为对象中同名属性的值
+        // 等价于 let o1 = Object.o1, let o2 = Object.o2
+        console.log(o1) // 1
+        console.log(o2) // 2
+
+        let {a2:x, b2:y} = {a2:2, b2:12421}
+        console.log(x) // 2
+        console.log(y) // 12421
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

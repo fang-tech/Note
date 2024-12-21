@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        class Person{
+            // 属性名
+            #n; // 私有成员
+            age;
+            
+            // getter and setter
+            get name() {
+                console.log("getter")
+                return this.#n
+            }
+            set name(n) {
+                console.log("setter")
+                this.#n = n;
+            }
+
+            // 实例方法
+            eat(food) {
+                console.log(`${this.age}的${this.#n}正在吃${food}`)
+            }
+
+            // 构造方法
+            constructor(name, age){
+                this.#n = name
+                this.age = age
+            }
+        }
+
+        let p = new Person();
+        p.name = "zhangsan";
+        p.age = 123;
+        // let p = new Person(" zhangsan ", 123)
+        p.eat("答辩")
+        // p.#n; 私有属性不能直接访问
+
+        // 继承
+        class Student extends Person{
+            score;
+            constructor(name, age, score) {
+                super(name,age)
+                this.score = score
+            }
+
+            study(){
+                console.log(`${this.age}岁的${this.name}考了${this.score}正在装死`)
+            }
+            // 静态方法 
+            static sum(a,b){
+                return a+b
+            }
+        }
+
+        let s = new Student("fun",1213,234)
+        s.study()
+        console.log(Student.sum(1,23))
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

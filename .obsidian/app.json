@@ -1,1 +1,11 @@
-{}
+{
+  "vimMode": true,
+  "useTab": false,
+  "strictLineBreaks": false,
+  "propertiesInDocument": "visible",
+  "showLineNumber": false,
+  "defaultViewMode": "preview",
+  "livePreview": true,
+  "alwaysUpdateLinks": true,
+  "promptDelete": false
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <script>
+        // 浅拷贝
+        let arr = [1,2,3,4]
+        let person = {
+            name:"zhangsn",
+            number : arr
+        }
+
+        let person2 = person
+        person2.name = "sss231"
+        console.log(person)
+        console.log(person2)
+
+        // 深拷贝
+        // 实质上是通过JSON和字符串的转化生成一个新的对象
+        let person3 = JSON.parse(JSON.stringify(person))
+        person3.name = "ssdevice-width"
+        console.log(person)
+        console.log(person3)
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

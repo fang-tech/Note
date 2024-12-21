@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "64ac531224aad36b",
+        "id": "2352b1954801ce58",
         "type": "tabs",
         "children": [
           {
-            "id": "aee748538faf8e86",
+            "id": "b8d2239f521fa947",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Java/JavaWeb/笔记/ES6.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "ES6"
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d8537fca78f3b749",
@@ -89,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/JavaWeb/JS/JavaScript.md",
+                "file": "Java/JavaWeb/笔记/XML_Tomcat_HTTP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "JavaScript 的反向链接列表"
+              "title": "XML_Tomcat_HTTP 的反向链接列表"
             }
           },
           {
@@ -108,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/JavaWeb/JS/JavaScript.md",
+                "file": "Java/JavaWeb/笔记/XML_Tomcat_HTTP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "JavaScript 的出链列表"
+              "title": "XML_Tomcat_HTTP 的出链列表"
             }
           },
           {
@@ -135,18 +140,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/JavaWeb/JS/JavaScript.md"
+                "file": "Java/JavaWeb/笔记/ES6.md"
               },
               "icon": "lucide-list",
-              "title": "JavaScript 的大纲"
+              "title": "ES6 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,15 +163,55 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "aee748538faf8e86",
+  "active": "b8d2239f521fa947",
   "lastOpenFiles": [
-    "Java/JavaWeb/JS/JavaScript.md",
-    "Java/JavaWeb/CSS/note.md",
-    "未命名.canvas",
-    "Java/JavaWeb/HTML/note.md",
-    "Computer_Science/Computer_network/Chapter3-Transport-layer.md",
-    "img/TCP.png.md",
-    "img",
-    "Computer_Science/Algorithm/Learning/Algorithms/NumberTheory/01分数规划.md"
+    "Java/JavaWeb/Code/ES6/默认导出/module.js",
+    "Java/JavaWeb/Code/ES6/默认导出/app.js",
+    "Java/JavaWeb/Code/ES6/默认导出/index.html",
+    "Java/JavaWeb/Code/ES6/默认导出",
+    "Java/JavaWeb/Code/ES6/统一暴露/index.html",
+    "Java/JavaWeb/Code/ES6/统一暴露/module.js",
+    "Java/JavaWeb/Code/ES6/统一暴露/app.js",
+    "Java/JavaWeb/Code/ES6/统一暴露",
+    "Java/JavaWeb/Code/ES6/分别暴露/module.js",
+    "Java/JavaWeb/Code/ES6/分别暴露/app.js",
+    "Java/JavaWeb/Code/ES6/分别暴露/index.html",
+    "Java/JavaWeb/笔记/JavaScript.md",
+    "Java/JavaWeb/笔记/ES6.md",
+    "Java/JavaWeb/笔记/Servlet.md",
+    "Java/JavaWeb/笔记/HTTP.md",
+    "Java/JavaWeb/笔记/HTML.md",
+    "Java/JavaWeb/笔记/Ajax.md",
+    "Java/JavaWeb/笔记/监听器.md",
+    "未命名.md",
+    "Java/JavaWeb/笔记/会话管理.md",
+    "Java/JavaWeb/笔记/过滤器.md",
+    "Java/JavaWeb/笔记/CSS.md",
+    "Java/JavaWeb/笔记/XML.md",
+    "Java/JavaWeb/笔记/Tomcat.md",
+    "README.md",
+    "interview.md",
+    "[.md",
+    "2024-12-15.md",
+    "Java/JavaWeb/官方笔记/03_第三章 JavaScript.md",
+    "Java/JavaWeb/官方笔记/05_第五章 Servlet.md",
+    "Tool/vim.md",
+    "Java/JavaWeb/笔记/images/1557672415271_EgyN-GdbWY.png",
+    "Java/JavaWeb/笔记/images/1681115460825.png",
+    "imges/1681525384347.png.md",
+    "Java/JavaWeb/官方笔记/images/1557672342250_1H8nt17MNz.png",
+    "Java/JavaWeb/笔记/images/1681178113257.png",
+    "Java/JavaWeb/笔记/images/1681177316138.png",
+    "Java/JavaWeb/笔记/images/1681177186528.png",
+    "Java/JavaWeb/笔记/images/1681177160318.png",
+    "Java/JavaWeb/笔记/images/1681176815540.png",
+    "Java/JavaWeb/笔记/images/1681176763818.png",
+    "Java/JavaWeb/笔记/images/1681176635024.png",
+    "Java/JavaWeb/apache-tomcat-10.1.34-windows-x64/apache-tomcat-10.1.34/README.md",
+    "Java/JavaWeb/apache-tomcat-10.1.34-windows-x64/apache-tomcat-10.1.34/CONTRIBUTING.md",
+    "Java/JavaSE/javaAdvance.md",
+    "未命名 1.canvas",
+    "Java/JavaSE/javaBase.md",
+    "未命名.canvas"
   ]
 }

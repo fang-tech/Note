@@ -40,3 +40,10 @@
 18-Dec-2024 13:58:50.661 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\Note\Java\JavaWeb\apache-tomcat-10.1.34-windows-x64\apache-tomcat-10.1.34\webapps\ROOT]的部署已在[14]毫秒内完成
 18-Dec-2024 13:58:50.665 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
 18-Dec-2024 13:58:50.704 信息 [main] org.apache.catalina.startup.Catalina.start [611]毫秒后服务器启动
+19-Dec-2024 22:42:06.423 警告 [main] org.apache.catalina.core.StandardServer.await 收到无效的关闭命令[]
+19-Dec-2024 22:42:34.598 警告 [main] org.apache.catalina.core.StandardServer.await 收到无效的关闭命令[]
+19-Dec-2024 22:42:50.394 信息 [main] org.apache.catalina.core.StandardServer.await 通过关闭端口接收到有效的关闭命令。正在停止服务器实例。
+19-Dec-2024 22:42:50.394 信息 [main] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+19-Dec-2024 22:42:50.834 信息 [main] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+19-Dec-2024 22:42:50.852 信息 [main] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+19-Dec-2024 22:42:50.870 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在销毁协议处理器 ["http-nio-8080"]
