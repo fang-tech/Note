@@ -1,3 +1,9 @@
+---
+tags:
+  - Java
+  - JDBC
+  - MySQL
+---
 # JDBC
 
 ## 基础篇

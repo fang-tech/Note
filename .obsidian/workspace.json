@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2352b1954801ce58",
+        "id": "cd9f9fd181b0b04d",
         "type": "tabs",
         "children": [
           {
-            "id": "b8d2239f521fa947",
+            "id": "e1f2e11abb1ad723",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/JavaWeb/笔记/ES6.md",
+                "file": "Java/Spring/Spring.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ES6"
+              "title": "Spring"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#JavaWeb  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d8537fca78f3b749",
@@ -140,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/JavaWeb/笔记/ES6.md"
+                "file": "Java/Spring/Spring.md"
               },
               "icon": "lucide-list",
-              "title": "ES6 的大纲"
+              "title": "Spring 的大纲"
             }
           }
         ],
@@ -160,58 +159,61 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "b8d2239f521fa947",
+  "active": "e1f2e11abb1ad723",
   "lastOpenFiles": [
-    "Java/JavaWeb/Code/ES6/默认导出/module.js",
-    "Java/JavaWeb/Code/ES6/默认导出/app.js",
-    "Java/JavaWeb/Code/ES6/默认导出/index.html",
-    "Java/JavaWeb/Code/ES6/默认导出",
-    "Java/JavaWeb/Code/ES6/统一暴露/index.html",
-    "Java/JavaWeb/Code/ES6/统一暴露/module.js",
-    "Java/JavaWeb/Code/ES6/统一暴露/app.js",
-    "Java/JavaWeb/Code/ES6/统一暴露",
-    "Java/JavaWeb/Code/ES6/分别暴露/module.js",
-    "Java/JavaWeb/Code/ES6/分别暴露/app.js",
-    "Java/JavaWeb/Code/ES6/分别暴露/index.html",
-    "Java/JavaWeb/笔记/JavaScript.md",
-    "Java/JavaWeb/笔记/ES6.md",
-    "Java/JavaWeb/笔记/Servlet.md",
-    "Java/JavaWeb/笔记/HTTP.md",
-    "Java/JavaWeb/笔记/HTML.md",
-    "Java/JavaWeb/笔记/Ajax.md",
-    "Java/JavaWeb/笔记/监听器.md",
+    "Java/Spring/document/类和类之间的关系.png",
+    "Java/Spring/document/对代理模式的理解.png",
+    "Java/Spring/document/依赖倒置原则（DIP原则）.png",
+    "Java/Spring/document/事务隔离级别.png",
+    "Java/Spring/document/Spring6课件-语雀地址.txt",
+    "Java/Spring/document/Spring6_语雀版讲义.md",
+    "Java/Spring/document/Spring6_wold版讲义.docx",
+    "Java/Spring/document/Spring6_pdf版讲义.pdf",
+    "Java/Spring/document",
+    "Java/Spring/code/Spring6/spring-001/src/test/java",
+    "Java/Spring/code/Spring6/spring-001/src/test",
+    "Java/Spring/code/Spring6/spring-001/src/main/resources",
+    "Java/Spring/code/Spring6/spring-001/src/main/java",
+    "Java/Spring/code/Spring6/spring-001/src/main",
+    "Java/Spring/code/Spring6/spring-001/src",
+    "Java/Spring/Spring.md",
+    "Java/Gradle/Gradle.md",
     "未命名.md",
-    "Java/JavaWeb/笔记/会话管理.md",
-    "Java/JavaWeb/笔记/过滤器.md",
-    "Java/JavaWeb/笔记/CSS.md",
+    "Java/Gradle/code/demo/HELP.md",
+    "Java/Gradle/images/QQ20241223-113254.png",
+    "Java/Maven/Maven依赖管理项目构建工具.md",
+    "Java/Maven/Maven.md",
+    "imges/1681525384347.png",
+    "Java/JavaSE/javaBase.md",
+    "Java/JavaSE/javaAdvance.md",
     "Java/JavaWeb/笔记/XML.md",
     "Java/JavaWeb/笔记/Tomcat.md",
-    "README.md",
-    "interview.md",
-    "[.md",
-    "2024-12-15.md",
-    "Java/JavaWeb/官方笔记/03_第三章 JavaScript.md",
-    "Java/JavaWeb/官方笔记/05_第五章 Servlet.md",
-    "Tool/vim.md",
+    "Java/JavaWeb/笔记/Servlet.md",
+    "Java/JavaWeb/笔记/JavaScript.md",
+    "Java/JavaWeb/笔记/HTTP.md",
+    "Java/JavaWeb/笔记/HTML.md",
+    "Java/JavaWeb/笔记/ES6.md",
+    "Java/JavaWeb/笔记/CSS.md",
+    "Java/JavaWeb/笔记/Ajax.md",
+    "Java/JavaWeb/笔记/监听器.md",
+    "Java/JavaWeb/笔记/会话管理.md",
+    "Java/JavaWeb/笔记/过滤器.md",
+    "Java/JDBC/JDBC.md",
+    "Java/笔记/01_第一章 概述.md",
+    "Java/笔记/02_第二章 HTML&CSS.md",
+    "Java/笔记/03_第三章 JavaScript.md",
+    "未命名.canvas",
     "Java/JavaWeb/笔记/images/1557672415271_EgyN-GdbWY.png",
     "Java/JavaWeb/笔记/images/1681115460825.png",
-    "imges/1681525384347.png.md",
     "Java/JavaWeb/官方笔记/images/1557672342250_1H8nt17MNz.png",
     "Java/JavaWeb/笔记/images/1681178113257.png",
     "Java/JavaWeb/笔记/images/1681177316138.png",
-    "Java/JavaWeb/笔记/images/1681177186528.png",
-    "Java/JavaWeb/笔记/images/1681177160318.png",
-    "Java/JavaWeb/笔记/images/1681176815540.png",
-    "Java/JavaWeb/笔记/images/1681176763818.png",
-    "Java/JavaWeb/笔记/images/1681176635024.png",
-    "Java/JavaWeb/apache-tomcat-10.1.34-windows-x64/apache-tomcat-10.1.34/README.md",
-    "Java/JavaWeb/apache-tomcat-10.1.34-windows-x64/apache-tomcat-10.1.34/CONTRIBUTING.md",
-    "Java/JavaSE/javaAdvance.md",
-    "未命名 1.canvas",
-    "Java/JavaSE/javaBase.md",
-    "未命名.canvas"
+    "未命名 1.canvas"
   ]
 }

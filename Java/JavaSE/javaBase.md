@@ -1,3 +1,7 @@
+---
+tags:
+  - Java
+---
 ## 1. JDK和JRE
 
 ```java

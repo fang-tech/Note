@@ -4,6 +4,7 @@ tags:
   - JavaWeb
   - JS
   - ES6
+  - Java
 ---
 # ES6
 ## 1. ES6的介绍

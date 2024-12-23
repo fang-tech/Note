@@ -4,6 +4,7 @@ tags:
   - JavaWeb
   - Ajax
   - async
+  - Java
 ---
 # Ajax
 ## 1. Ajax概述
