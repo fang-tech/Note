@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-001</artifactId>
+    <artifactId>spring-002</artifactId>
 
     <properties>
         <log4j.version>2.19.0</log4j.version>
@@ -46,5 +46,4 @@
           <version>${log4j.version}</version>
         </dependency>
     </dependencies>
-
 </project>

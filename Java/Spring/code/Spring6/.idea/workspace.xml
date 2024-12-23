@@ -5,413 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68aff73d-fd9b-4af2-8596-3ba642d67f91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Maven/code/maven_test/maven_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../.obsidian/community-plugins.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.obsidian/community-plugins.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-001/src/main/java/com/func/spring/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-001/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-001/src/main/resources/spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-001/src/test/java/com/func/test/Test4Spring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.obsidian/workspace.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JDBC/JDBC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JDBC/JDBC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaSE/javaAdvance.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaSE/javaAdvance.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaSE/javaBase.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaSE/javaBase.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/Ajax.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/Ajax.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/CSS.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/CSS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/ES6.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/ES6.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/HTML.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/HTML.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/HTTP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/HTTP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/JavaScript.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/JavaScript.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/Servlet.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/Servlet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/Tomcat.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/Tomcat.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/XML.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/XML.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/会话管理.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/会话管理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/监听器.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/监听器.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JavaWeb/笔记/过滤器.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JavaWeb/笔记/过滤器.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/01_第一章 概述.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/02_第二章 HTML&amp;CSS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/03_第三章 JavaScript.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/04_第四章 XML_Tomcat_HTTP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/05_第五章 Servlet.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/06_第六章 会话_过滤器_监听器.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/07_第七章 前端工程化.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/08_第八章 微头条项目开发.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1557672342250_1H8nt17MNz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1557672415271_EgyN-GdbWY.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681115424967.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681115460825.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681175338788.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176136290.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176242960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176337725.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176383286.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176504817.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176635024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176763818.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681176815540.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681177160318.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681177186528.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681177316138.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681178113257.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681179289089.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681180017304.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681180239241.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681180699132.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181342911.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181399123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181558166.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181668235.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181764764.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181829641.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181884366.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681181975807.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681182451912.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681182819066.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681192888853.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681192907280.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681193247981.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681194349015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681194434091.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681194504371.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681195535127.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681195890442.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681196233304.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681196276582.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681196307844.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681196961386.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681197062594.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681197299564.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681198068548.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681198354039.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681198393831.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681198448345.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681198540737.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681198559213.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681199376475.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681199471712.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681199589613.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681199672580.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681200198741.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681200358272.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681200435834.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681200467767.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681200487125.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681200503798.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681200662087.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681201322584.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681201553427.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681202361429.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681203591080.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681203748017.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681204269702.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681260732580.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681260842005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681260887708.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681260937920.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681261311289.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681261377875.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681261602297.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681261830830.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681261993904.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681262535006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681262585852.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681263227281.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681263265604.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681265611540.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681266220955.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681267483366.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681269953136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681269970254.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681270260741.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681270974917.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681285904625.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681287264843.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681287540562.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681287984473.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681288692792.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681292306466.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681441674967.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681442513261.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681442778503.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681442849940.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681442946756.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681442998407.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681443038911.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681443124315.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681443202115.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681443273573.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681443314432.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681452257379.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681452377469.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681453620343.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681456086775.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681456161723.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681456447284.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681457611053.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681457711914.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681457800708.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681457879937.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681457921094.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458031957.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458177811.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458194939.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458273381.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458343921.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458393871.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458485837.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458599545.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458672258.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458857830.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458897017.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458917073.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681458939400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681459007273.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681459080873.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681459147133.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681461443278.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681461513406.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681461788411.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681461846178.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681461881121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681461923761.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462053127.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462179671.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462247973.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462523901.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462584524.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462621908.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462626981.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462645070.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462710108.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462754191.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681462798933.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681463011546.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681463049807.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681463212587.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681463361795.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681463386274.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681463481451.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681463867295.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681464081226.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681520068936.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681521240438.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681522138051.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681522600239.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681522638617.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681522962846.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681522998417.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681524200024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681525012046.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681525347456.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681525384347.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681525742901.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681544428055.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681547333799.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681550398774.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681699577344.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681717793500.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681717880183.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681718007772.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681718299804.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681718460738.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1681718676917.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682036233867.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682299663047.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682302307081.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682303205351.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682321228643.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682322389710.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682322460011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682323740343.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682325615922.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682325817829.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682325946725.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682326229063.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682326867396.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682385863928.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682385870660.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682385997927.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682386110151.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682386298048.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682386374464.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682386551684.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682386611945.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682387194348.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682387258428.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682387349916.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682387412704.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682387836615.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682387857587.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682388026978.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682388204239.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682388599014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682389063225.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682389263627.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682389299826.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682389317234.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682390999417.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682411089082.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682411455146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682411522695.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682411576377.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682411757748.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682413051408.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682470547651.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682470652577.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682471183183.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682471232199.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682471342313.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682476206286.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682476311432.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682476350602.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682477498176.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682477884727.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682477914654.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682478412527.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682478633650.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682480592506.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682480716152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682480913847.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682488186891.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682494375365.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682494494396.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682496991032.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682497251883.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682556566084.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682565824241.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682577544086.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682577630284.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682578069348.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682578584193.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682580097305.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1682580126012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683162129053.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683162653050.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683163355943.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683163429211.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683163732991.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683163807012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683188408798.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683188444555.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683188471933.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683350231551.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683350275719.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683351095131.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683354561889.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683354989263.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683363039636-1690349401673.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683363039636.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683364198087-1690533535579.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683364198087.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683364436315-1690533535580.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683364436315.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683364680503.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683365066926-1690533535580.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683365066926.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683385255826.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683385333460.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683385335185.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683385500897.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683385608824.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683882754527.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683882823511.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683882921502.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883074047.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883090728.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883112782.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883374643.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883394612.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883660552.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883695289.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1683883724768.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684157682241.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684158072779.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684302698248.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684302778377.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684460441614.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684461046181.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684461701620.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684463528680.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684478815640.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684480894743.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684487637025.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684487715655.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684487779164.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684487839928.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684488376469.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684488405011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684489112904.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684565503347.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684827427264.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684890693363.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684890943094.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684891013180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684891029981.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684897738491.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684897782833.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1684912274904.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1686885192862.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1687330010547.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1687330312538.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1687657562841.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1687657603246.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1687657661761.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1687765256680.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1687769339457.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690348134594.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690349913931.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690362496438.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690362518448.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690362672386.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690362709902.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690362787035.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690363965192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690507542637.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690507600043.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690511433594.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690516506417.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690533751478.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690533770048.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1690533809917.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1695189588009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1697514669631.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/1697514693682.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/GIF.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/chaolianji.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/chaolianjie2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/chaolianjiex.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/checkuserName.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/fixeddingwei.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_6ZwJPs9HkC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_9dCv8raLh-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_IJOzvAeodc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_PHNwnXnsWv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_UDJErYr8iM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_XMWA0EjBUI.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_bjXPJoLb6a-1690508517199.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_bjXPJoLb6a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_elceCM4Wbp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_hZ6yocZGY3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_j-xo-xB5c8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_kq2Dk1Fggy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_lJfO5hjUqL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_rUX4imBP5t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_rdwmpig76n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/image_uTNSasJcFd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/img008_sCTelqarx-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/jingxi.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/js.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/new.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/newhtml.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/regist.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/switchex.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../笔记/images/v-on.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../img/TCP.png.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../imges/1681525384347.png.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-001/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
@@ -421,11 +35,18 @@
   "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="2qbiCAfsT1RpvjU4Emexqlqpx9N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.Test4Spring.testBean.executor": "Run",
+    "JUnit.Test4Spring.testBeanFactory.executor": "Run",
+    "JUnit.Test4Spring.testLog4j.executor": "Run",
+    "JUnit.Test4Spring.testLog4j2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -439,6 +60,80 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.Test4Spring.testLog4j2">
+    <configuration name="Test4Spring.testBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.test.Test4Spring" />
+      <option name="METHOD_NAME" value="testBean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4Spring.testBeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.test.Test4Spring" />
+      <option name="METHOD_NAME" value="testBeanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4Spring.testLog4j" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.test.Test4Spring" />
+      <option name="METHOD_NAME" value="testLog4j" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4Spring.testLog4j2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.test.Test4Spring" />
+      <option name="METHOD_NAME" value="testLog4j2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test4Spring.testLog4j2" />
+        <item itemvalue="JUnit.Test4Spring.testLog4j" />
+        <item itemvalue="JUnit.Test4Spring.testBeanFactory" />
+        <item itemvalue="JUnit.Test4Spring.testBean" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -455,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734937546628</updated>
-      <workItem from="1734937547690" duration="639000" />
+      <workItem from="1734937547690" duration="3433000" />
     </task>
     <servers />
   </component>

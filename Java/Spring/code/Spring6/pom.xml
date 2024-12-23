@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-001</module>
+        <module>spring-002</module>
     </modules>
 
     <properties>
