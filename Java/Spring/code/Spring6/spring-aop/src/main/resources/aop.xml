@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <context:component-scan base-package="com.func.spring.aop"/>-->
+
+<!--    &lt;!&ndash;生成代理对象&ndash;&gt;-->
+<!--    <aop:aspectj-autoproxy expose-proxy="true"/>-->
+<!--    &lt;!&ndash;强制使用cglib方式动态代理&ndash;&gt;-->
+<!--    <aop:aspectj-autoproxy proxy-target-class="true"/>-->
+        <bean id="timer" class="com.func.spring.aop.TimerAspect"/>
+        <bean id="order" class="com.func.spring.aop.OrderService"/>
+    
+        <!--aop配置-->
+        <aop:config>
+            <!--切面表达式-->
+            <aop:pointcut id="pointcut" expression="execution(* com.func.spring.aop.OrderService.* (..))"/>
+            <!--切面-->
+            <aop:aspect ref="timer">
+                <aop:around method="time" pointcut-ref="pointcut"/>
+            </aop:aspect>
+        </aop:config>
+</beans>

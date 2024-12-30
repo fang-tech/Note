@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+        <bean id="user1" class="com.func.spring.User">
+            <property name="name" value="func"/>
+            <property name="age" value="12"/>
+            <property name="partner" ref="user2"/>
+        </bean>
+
+        <bean id="user2" class="com.func.spring.User">
+            <property name="name" value="fang"/>
+            <property name="age" value="18"/>
+            <property name="partner" ref="user1"/>
+        </bean>
+
+        <bean id="userDao" class="com.func.spring.UserDao"></bean>
+</beans>

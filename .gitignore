@@ -1,2 +1,5 @@
 # 中间文件
 *.exe
+
+# Document文件夹, 其中存放了大的pdf
+Document/

@@ -1515,44 +1515,7 @@ enum Season {
 
 ```
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <bean id="a" class="com.powernode.spring6.beans.A">
-        <property name="b" value="1"/>
-        <property name="s" value="1"/>
-        <property name="i" value="1"/>
-        <property name="l" value="1"/>
-        <property name="f" value="1"/>
-        <property name="d" value="1"/>
-        <property name="flag" value="false"/>
-
-        <property name="c" value="a"/>
-        <property name="b1" value="2"/>
-        <property name="s1" value="2"/>
-        <property name="i1" value="2"/>
-        <property name="l1" value="2"/>
-        <property name="f1" value="2"/>
-        <property name="d1" value="2"/>
-        <property name="flag1" value="true"/>
-        <property name="c1" value="a"/>
-
-        <property name="str" value="zhangsan"/>
-        <!--注意：value后面的日期字符串格式不能随便写，必须是Date对象toString()方法执行的结果。-->
-        <!--如果想使用其他格式的日期字符串，就需要进行特殊处理了。具体怎么处理，可以看后面的课程！！！！-->
-        <property name="date" value="Fri Sep 30 15:26:38 CST 2022"/>
-        <property name="season" value="WINTER"/>
-        <property name="uri" value="/save.do"/>
-        <!--spring6之后，会自动检查url是否有效，如果无效会报错。-->
-        <property name="url" value="http://www.baidu.com"/>
-        <property name="localDate" value="EPOCH"/>
-        <!--java.util.Locale 主要在软件的本地化时使用。它本身没有什么功能，更多的是作为一个参数辅助其他方法完成输出的本地化。-->
-        <property name="locale" value="CHINESE"/>
-        <property name="clazz" value="java.lang.String"/>
-    </bean>
-</beans>
+	x1<?xml version="1.0" encoding="UTF-8"?>2<beans xmlns="http://www.springframework.org/schema/beans"3       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"4       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">56    <bean id="a" class="com.powernode.spring6.beans.A">7        <property name="b" value="1"/>8        <property name="s" value="1"/>9        <property name="i" value="1"/>10        <property name="l" value="1"/>11        <property name="f" value="1"/>12        <property name="d" value="1"/>13        <property name="flag" value="false"/>1415        <property name="c" value="a"/>16        <property name="b1" value="2"/>17        <property name="s1" value="2"/>18        <property name="i1" value="2"/>19        <property name="l1" value="2"/>20        <property name="f1" value="2"/>21        <property name="d1" value="2"/>22        <property name="flag1" value="true"/>23        <property name="c1" value="a"/>2425        <property name="str" value="zhangsan"/>26        <!--注意：value后面的日期字符串格式不能随便写，必须是Date对象toString()方法执行的结果。-->27        <!--如果想使用其他格式的日期字符串，就需要进行特殊处理了。具体怎么处理，可以看后面的课程！！！！-->28        <property name="date" value="Fri Sep 30 15:26:38 CST 2022"/>29        <property name="season" value="WINTER"/>30        <property name="uri" value="/save.do"/>31        <!--spring6之后，会自动检查url是否有效，如果无效会报错。-->32        <property name="url" value="http://www.baidu.com"/>33        <property name="localDate" value="EPOCH"/>34        <!--java.util.Locale 主要在软件的本地化时使用。它本身没有什么功能，更多的是作为一个参数辅助其他方法完成输出的本地化。-->35        <property name="locale" value="CHINESE"/>36        <property name="clazz" value="java.lang.String"/>37    </bean>38</beans>xml
 ```
 编写测试程序：
 ```java
@@ -1975,7 +1938,7 @@ public class People {
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/21376908/1665199868843-bc721edd-e89a-4298-b41a-7c5ac8c93530.png#averageHue=%23917f66&clientId=ufc7e21e2-2cbb-4&from=paste&height=119&id=uab47bd18&originHeight=119&originWidth=737&originalType=binary&ratio=1&rotation=0&showTitle=false&size=14030&status=done&style=shadow&taskId=ua0f55010-1dde-4237-a389-bdb339091f0&title=&width=737)
 **要点：**
 
-- **使用<set>标签**
+- **使用\<set>标签**
 - **set集合中元素是简单类型的使用value标签，反之使用ref标签。**
 
 
@@ -2040,7 +2003,7 @@ public class People {
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/21376908/1665200352800-0b980533-2d1f-4222-8aaf-1b253cb19a39.png#averageHue=%23917c61&clientId=ufc7e21e2-2cbb-4&from=paste&height=121&id=u49b67347&originHeight=121&originWidth=1231&originalType=binary&ratio=1&rotation=0&showTitle=false&size=20036&status=done&style=shadow&taskId=u17844f89-fdf0-45fc-b532-425734c5d39&title=&width=1231)
 **要点：**
 
-- **使用<map>标签**
+- **使用\<map>标签**
 - **如果key是简单类型，使用 key 属性，反之使用 key-ref 属性。**
 - **如果value是简单类型，使用 value 属性，反之使用 value-ref 属性。**
 
@@ -2107,7 +2070,7 @@ public class People {
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/21376908/1665201002733-ae9273da-1fb9-495c-907e-e6c8489a7ec5.png#averageHue=%23968269&clientId=ufc7e21e2-2cbb-4&from=paste&height=121&id=u0920d032&originHeight=121&originWidth=1390&originalType=binary&ratio=1&rotation=0&showTitle=false&size=17881&status=done&style=shadow&taskId=u88c0bcbc-5a5a-46c3-ba4c-0eb0c365cbb&title=&width=1390)
 **要点：**
 
-- **使用<props>标签嵌套<prop>标签完成。**
+- **使用\<props>标签嵌套\<prop>标签完成。**
 
 
 
@@ -2358,6 +2321,7 @@ c命名空间是简化构造方法注入的。
 使用c命名空间的两个前提条件：
 第一：需要在xml配置文件头部添加信息：xmlns:c="http://www.springframework.org/schema/c"
 第二：需要提供构造方法。
+
 ```java
 package com.powernode.spring6.beans;
 
@@ -2422,6 +2386,7 @@ public void testC(){
 使用util命名空间可以让**配置复用**。
 使用util命名空间的前提是：在spring配置文件头部添加配置信息。如下：
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/21376908/1665218059794-30411b76-a22c-4339-ab60-acad8f02ab28.png#averageHue=%23312a2a&clientId=ufc7e21e2-2cbb-4&from=paste&height=212&id=udeece73c&originHeight=212&originWidth=1494&originalType=binary&ratio=1&rotation=0&showTitle=false&size=44224&status=done&style=shadow&taskId=u39d74a7a-b50e-4d8e-b74b-c63406de34f&title=&width=1494)
+
 ```java
 package com.powernode.spring6.beans;
 
@@ -2792,7 +2757,7 @@ password=root123
 ```
 第三步：在spring配置文件中引入context命名空间。
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
+	<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -2989,7 +2954,7 @@ public void testScope(){
     <map>
       <entry key="myThread">
         <bean class="org.springframework.context.support.SimpleThreadScope"/>
-      </entry>
+      </entry>	
     </map>
   </property>
 </bean>
@@ -7863,6 +7828,7 @@ public class Client {
 不过我们看以下这个代码确实有点繁琐，对于客户端来说，用起来不方便：
 ![image.png](https://cdn.nlark.com/yuque/0/2022/png/21376908/1665716434406-4e092df4-b1a7-4d16-bbc1-1f134b8f51f7.png#averageHue=%23fcf9f8&clientId=ue2440d3d-c252-4&from=paste&height=296&id=u40396b71&originHeight=296&originWidth=1314&originalType=binary&ratio=1&rotation=0&showTitle=false&size=49308&status=done&style=shadow&taskId=u4ceb735a-a652-4879-83af-454bfff2cb3&title=&width=1314)
 我们可以提供一个工具类：ProxyUtil，封装一个方法：
+
 ```java
 package com.powernode.mall.util;
 
@@ -7982,6 +7948,7 @@ public class Client {
 ```
 和JDK动态代理原理差不多，在CGLIB中需要提供的不是InvocationHandler，而是：net.sf.cglib.proxy.MethodInterceptor
 编写MethodInterceptor接口实现类：
+
 ```java
 package com.powernode.mall.service;
 
@@ -8037,7 +8004,7 @@ public class TimerMethodInterceptor implements MethodInterceptor {
         return retValue;
     }
 }
-
+t
 ```
 回调已经写完了，可以修改客户端程序了：
 ```java
@@ -8071,7 +8038,7 @@ public class Client {
 }
 ```
 对于高版本的JDK，如果使用CGLIB，需要在启动项中添加两个启动参数：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/21376908/1665719287350-761d69a9-2666-40b3-9332-91d695f1eb86.png#averageHue=%23f1efee&clientId=u71f508e1-87c2-4&from=paste&height=513&id=u454347c1&originHeight=513&originWidth=712&originalType=binary&ratio=1&rotation=0&showTitle=false&size=36664&status=done&style=shadow&taskId=u88589ad8-76f4-42fd-997f-5f989550926&title=&width=712)
+![	](https://cdn.nlark.com/yuque/0/2022/png/21376908/1665719287350-761d69a9-2666-40b3-9332-91d695f1eb86.png#averageHue=%23f1efee&clientId=u71f508e1-87c2-4&from=paste&height=513&id=u454347c1&originHeight=513&originWidth=712&originalType=binary&ratio=1&rotation=0&showTitle=false&size=36664&status=done&style=shadow&taskId=u88589ad8-76f4-42fd-997f-5f989550926&title=&width=712)
 
 - --add-opens java.base/java.lang=ALL-UNNAMED
 - --add-opens java.base/sun.net.util=ALL-UNNAMED
@@ -8347,6 +8314,7 @@ public class MyAspect {
 ```
 **注解@Before表示前置通知。**
 第七步：在spring配置文件中启用自动代理
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -8366,6 +8334,7 @@ public class MyAspect {
 proxy-target-class="true" 表示采用cglib动态代理。
 proxy-target-class="false" 表示采用jdk动态代理。默认值是false。即使写成false，当没有接口的时候，也会自动选择cglib生成代理类。
 测试程序：
+
 ```java
 package com.powernode.spring6.test;
 
@@ -8706,7 +8675,6 @@ public class MyAspect {
 就是编写一个类，在这个类上面使用大量注解来代替spring的配置文件，spring配置文件消失了，如下：
 ```java
 package com.powernode.spring6.service;
-
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -8779,14 +8747,14 @@ public class TimerAspect {
     <!--aop配置-->
     <aop:config>
         <!--切点表达式-->
-        <aop:pointcut id="p" expression="execution(* com.powernode.spring6.service.VipService.*(..))"/>
+        <aop:pointcut id="p" expression="executaion(* com.powernode.spring6.service.VipService.*(..))"/>
         <!--切面-->
         <aop:aspect ref="timerAspect">
             <!--切面=通知 + 切点-->
             <aop:around method="time" pointcut-ref="p"/>
         </aop:aspect>
     </aop:config>
-</beans>
+</beans> 	 	 	  	 	 	                 
 ```
 测试程序：
 ```java

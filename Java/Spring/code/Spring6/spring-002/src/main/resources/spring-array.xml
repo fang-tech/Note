@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="person" class="com.func.spring.bean.Person">
+        <!--测试List-->
+        <property name="names">
+            <list>
+                <value>方</value>
+                <value>天</value>
+                <value>宇</value>
+            </list>
+        </property>
+
+        <!--测试Set-->
+        <property name="addr">
+            <set>
+                <value>ff</value>
+                <value>ff</value>
+                <value>df</value>
+                <value>ff</value>
+            </set>
+        </property>
+
+        <!--测试Map-->
+        <property name="phones">
+            <map>
+                <entry key="1" value="110"/>
+                <entry key="2" value="120"/>
+                <entry key="3" value="119"/>
+            </map>
+        </property>
+
+        <!--测试Properties-->
+        <property name="properties">
+            <props>
+                <prop key="username">root</prop>
+                <prop key="password">root</prop>
+                <prop key="url">jdbc:mysql://localhost:3306:/spring</prop>
+                <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="w1" class="com.func.spring.bean.Woman">
+        <property name="name" value="蔡徐坤"/>
+    </bean>
+    <bean id="w2" class="com.func.spring.bean.Woman">
+        <property name="name" value="陈立农"/>
+    </bean>
+    <bean id="w3" class="com.func.spring.bean.Woman">
+        <property name="name" value="及格"/>
+    </bean>
+
+    <bean id="qian" class="com.func.spring.bean.YuQian">
+        <property name="habits">
+            <array>
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+            </array>
+        </property>
+
+        <property name="women">
+            <array>
+                <ref bean="w1"/>
+                <ref bean="w2"/>
+                <ref bean="w3"/>
+            </array>
+        </property>
+    </bean>
+
+</beans>

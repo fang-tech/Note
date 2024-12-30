@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "tag:#JavaWeb  ",
+  "search": "tag:#Java  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0000000000000049,
-  "close": false
+  "scale": 1.40198289777611,
+  "close": true
 }

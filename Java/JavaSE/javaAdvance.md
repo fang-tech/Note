@@ -2196,6 +2196,7 @@ public class DemoClassLoader {
 }
 ```
 
+^reject
 # 44. 反射
 
 ## 44.1. 反射的意义
@@ -2395,6 +2396,8 @@ public void testGetClass() throws ClassNotFoundException {
 - 如何使用获取的内容
   - 通过`Field.set(对象实例, 值)`的形式赋值
   - 通过`Filed.get(对象)`的形式获取值
+  - 通过`Filed.getType()`的形式获取属性的class对象
+
 
 - code
   ```java
@@ -2430,6 +2433,9 @@ public void testGetClass() throws ClassNotFoundException {
   }
   ```
 
+# 45 注解
+
+[[Spring#10.1 回顾注解开发]]
   
 
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--setter + singleton的方式-->
+    <bean id="husband" class="com.func.spring.Husband" scope="prototype">
+        <property name="name" value="丈夫"/>
+        <property name="wife" ref="wife"/>
+    </bean>
+
+    <bean id="wife" class="com.func.spring.Wife" scope="prototype">
+        <property name="name" value="妻子"/>
+        <property name="husband" ref="husband"/>
+    </bean>
+</beans>

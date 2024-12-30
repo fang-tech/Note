@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="userDao" class="com.func.spring.dao.UserDao"></bean>
+    <bean id="vipDao" class="com.func.spring.dao.VipDao"></bean>
+
+    <!--构造注入-->
+    <!--参数名和索引均不指定, 让spring自己做类型匹配-->
+    <bean id="csbean3" class="com.func.spring.service.CustomService">
+        <constructor-arg ref="userDao"></constructor-arg>
+        <constructor-arg ref="vipDao"></constructor-arg>
+    </bean>
+    <!--根据构造方法的参数名字注入-->
+    <bean id="csbean2" class="com.func.spring.service.CustomService">
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+        <constructor-arg name="vipDao" ref="vipDao"></constructor-arg>
+    </bean>
+    <!--根据索引注入-->
+    <!--ref填入的是ben的id-->
+    <bean id="customService" class="com.func.spring.service.CustomService">
+        <constructor-arg index="0" ref="userDao"></constructor-arg>
+        <constructor-arg index="1" ref="vipDao"></constructor-arg>
+    </bean>
+</beans>

@@ -1,5 +1,6 @@
 " Insert mode: jk to escape
 imap jk <Esc>
+imap JK <Esc>
 
 " HJKL 实现更大范围的 hjkl
 nmap H ^

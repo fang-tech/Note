@@ -2,5 +2,7 @@ package com.func.spring.dao;
 
 public class UserDao {
 
-    public void insert
+    public void insert() {
+        System.out.println("用户正在插入数据");
+    }
 }

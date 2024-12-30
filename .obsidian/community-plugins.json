@@ -1,6 +1,9 @@
 [
   "quick-explorer",
-  "obsidian-vimrc-support",
   "cm-typewriter-scroll-obsidian",
-  "pdf-plus"
+  "pdf-plus",
+  "obsidian-vimrc-support",
+  "obsidian-hover-editor",
+  "dataview",
+  "obsidian-outliner"
 ]

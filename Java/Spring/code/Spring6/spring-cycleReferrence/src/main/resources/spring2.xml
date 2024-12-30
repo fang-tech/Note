@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="h" class="com.func.spring.Husband">-->
+<!--        <constructor-arg index="0" value="丈夫"/>-->
+<!--        <constructor-arg index="1" reg="w"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="w" class="com.func.spring.Wife">-->
+<!--        <constructor-arg index="0" value="妻子"/>-->
+<!--        <constructor-arg index="1" ref="h"/>-->
+<!--    </bean>-->
+
+</beans>

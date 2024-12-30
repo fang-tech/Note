@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="StarBean" class="com.func.spring.StarFactory" factory-method="get"></bean>
+
+    <bean id="GunFactory" class="com.func.spring.GunFactory"></bean>
+    <bean id="gun" factory-method="get" factory-bean="GunFactory"></bean>
+
+    <bean id="person" class="com.func.spring.PersonFactory"></bean>
+
+    <bean class="com.func.spring.DateFactory" id="date">
+        <property name="strDate" value="1980-11-20"/>
+    </bean>
+
+    <bean id="stu" class="com.func.spring.Student">
+        <property name="birth" ref="date"/>
+    </bean>
+</beans>

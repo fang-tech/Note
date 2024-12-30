@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <!-- util命名空间, 让配置复用-->
+    <util:properties id="prop">
+        <prop key="username">root</prop>
+        <prop key="password">root</prop>
+        <prop key="url">jdbc:mysql://localhost:3306/spring</prop>
+        <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+    </util:properties>
+
+    <!--p命名空间注入-->
+<!--    <bean id="dog" class="com.func.spring.bean.Dog" p:age="123" p:name="虎牙"></bean>-->
+    <!--c命名空间注入-->
+    <bean id="dog" class="com.func.spring.bean.Dog" p:age="12" p:name="lichengxing" >
+        <property name="properties" ref="prop"/>
+    </bean>
+    <bean id="dog1" class="com.func.spring.bean.Dog" p:age="2" p:name="Lichengxing">
+        <property name="properties" ref="prop"/>
+    </bean>
+
+    <bean id="math" class="com.func.spring.bean.MathBean">
+        <!--会报错-->
+<!--        <property name="data" value="2 < 3"/>-->
+
+        <!--转义-->
+<!--        <property name="data" value="2 &lt; 3"/>-->
+
+        <!--CDATA方式, 其中的value标签需要额外写出来-->
+        <property name="data">
+            <value><![CDATA[2 < 3]]></value>
+        </property>
+    </bean>
+
+    <bean id="cat" class="com.func.spring.bean.Cat">
+        <!--默认不写的时候, 值就是null-->
+
+        <!--手动设置的方法-->
+<!--        <property name="name">-->
+<!--            <null/>-->
+<!--        </property>-->
+
+        <!--空字符串-->
+        <property name="name" value=""/>
+<!--        <property name="name">-->
+<!--            <value/>-->
+<!--        </property>-->
+    </bean>
+
+    <bean id="dataSource" class="com.func.spring.jdbc.MyDataSource">
+        <property name="password" value="root"/>
+        <property name="username" value="root"/>
+        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3360/spring6"/>
+    </bean>
+
+    <bean id="spv" class="com.func.spring.bean.SimpleValue">
+        <property name="i1" value="213"/>
+        <property name="i2" value="123"/>
+        <property name="b1" value="false"/>
+        <property name="b2" value="true"/>
+        <property name="c1" value="c"/>
+        <property name="c2" value="d"/>
+        <property name="string" value="fung"/>
+        <property name="season" value="SPRING"/>
+        <property name="clazz" value="java.lang.String"/>
+        <!--如果要把Data当成简单类型, 输入需要满足特定的格式-->
+        <!--value后面的日期字符串格式不能随便写，必须是Date对象toString()方法执行的结果-->
+        <!--实际开发中, 一般不会将Data当成简单类型-->
+<!--        <property name="birth" value="Fri Sep 30 15:26:38 CST 2022"/>-->
+    </bean>
+
+    <!--简单类型的set注入-->
+    <bean id="user" class="com.func.spring.bean.UserBean">
+        <!--简单类型需要使用value赋值-->
+        <property name="name" value="方天宇"/>
+        <property name="password" value="123455"/>
+        <property name="uid" value="13124"/>
+    </bean>
+
+    <!--外部bean, 通过ref引用-->
+    <bean id="oderDao" class="com.func.spring.dao.OderDao"></bean>
+    <bean id="oderServ1" class="com.func.spring.service.com.func.spring.gofProxy.OrderService">
+        <property name="oderDao" ref="oderDao"></property>
+    </bean>
+
+    <!--内部bean, 通过嵌套生成-->
+    <bean id="oderServ2" class="com.func.spring.service.com.func.spring.gofProxy.OrderService">
+        <property name="oderDao">
+            <bean class="com.func.spring.dao.OderDao"></bean>
+        </property>
+    </bean>
+
+</beans>
