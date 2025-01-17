@@ -1,0 +1,6 @@
+a.c
+添加内容
+int main () {
+	printf("hello");
+	return 0;
+}

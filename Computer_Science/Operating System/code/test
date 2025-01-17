@@ -1,0 +1,29 @@
+systemd-+-2*[agetty]
+        |-cron
+        |-dbus-daemon
+        |-init-systemd(Ub-+-SessionLeader---Relay(109268)-+-bash-+-nvim-+-nvim---{nvim}
+        |                 |                               |      |      `-2*[{nvim}]
+        |                 |                               |      |-pstree
+        |                 |                               |      `-strace---nvim-+-nvim---{nvim}
+        |                 |                               |                      `-3*[{nvim}]
+        |                 |                               `-nvim-+-nvim---{nvim}
+        |                 |                                      `-3*[{nvim}]
+        |                 |-init---{init}
+        |                 |-2*[login---bash]
+        |                 `-{init-systemd(Ub}
+        |-networkd-dispat
+        |-packagekitd---2*[{packagekitd}]
+        |-polkitd---2*[{polkitd}]
+        |-rsyslogd---3*[{rsyslogd}]
+        |-snapd---18*[{snapd}]
+        |-4*[snapfuse---2*[{snapfuse}]]
+        |-3*[snapfuse---10*[{snapfuse}]]
+        |-snapfuse---8*[{snapfuse}]
+        |-subiquity-serve---python3.10-+-python3
+        |                              `-5*[{python3.10}]
+        |-2*[systemd---(sd-pam)]
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-resolve
+        |-systemd-udevd
+        `-unattended-upgr---{unattended-upgr}

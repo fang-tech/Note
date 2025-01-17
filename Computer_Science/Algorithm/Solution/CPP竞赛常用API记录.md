@@ -45,6 +45,26 @@ p.second;
   // 使用拷贝构造
   std::vector<int> v6(v3);
   ```
+  
+### unorder_map\<obj,obj>
+
+> 可以用重复, 就直接当正常的hashmap使用就行
+
+```cpp
+unorder_map <int, int> map;
+
+map[index] = val;
+```
+
+### unorder_set\<obj> 
+
+>没有重复的
+
+```cpp
+unorder_set<int> set;
+set.insert(int);
+set.count(int); // 返回1说明存在, 返回0说明不存在
+```
 
 
 ## 常用操作的实现
