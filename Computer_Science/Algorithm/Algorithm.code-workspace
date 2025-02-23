@@ -68,7 +68,13 @@
 			"bitset": "cpp",
 			"numbers": "cpp",
 			"numeric": "cpp",
-			"set": "cpp"
+			"set": "cpp",
+			"*.tcc": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"string_view": "cpp",
+			"chrono": "cpp",
+			"variant": "cpp"
 		}
 	}
 }

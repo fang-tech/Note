@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-005-advanced-mapping" />
+        <module name="mybatis-003-web" />
+        <module name="mybatis-001-hello-world" />
+        <module name="mybatis-006-cache" />
+        <module name="mybatis-002-CRUD" />
+        <module name="mybatis-004-Select" />
+        <module name="mybatis-007-pagerhelper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis-004-select" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -10,6 +10,6 @@
   "promptDelete": false,
   "focusNewTab": true,
   "newFileLocation": "current",
-  "showUnsupportedFiles": true,
+  "showUnsupportedFiles": false,
   "attachmentFolderPath": "./"
 }

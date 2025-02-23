@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SpringMVC-005-view/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC-005-view/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-001-helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-001-helloworld/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-002-restful/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-002-restful/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-003-header/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-003-header/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-004-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc-004-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

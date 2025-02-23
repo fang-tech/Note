@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.func.bank.dao.AccountDao">
+    <select id="selectByActno" resultType="com.func.bank.pojo.Account">
+        SELECT *
+        FROM t_act
+        WHERE actno = #{actno}
+    </select>
+
+    <update id="update">
+        UPDATE t_act
+        SET balance = #{balance}
+        where actno = #{actno}
+    </update>
+</mapper>
