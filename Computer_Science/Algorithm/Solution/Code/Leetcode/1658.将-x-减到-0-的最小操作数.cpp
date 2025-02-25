@@ -29,7 +29,7 @@ public:
                 ans = max(ans, right - left + 1);
             }
         }
-        return ans < 0 ? -1 : n - ans;
+        return ans == -1? -1 : n - ans;
     }
 };
 // @lc code=end

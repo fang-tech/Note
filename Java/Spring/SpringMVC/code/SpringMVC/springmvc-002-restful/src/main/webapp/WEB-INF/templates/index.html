@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index page</title>
+</head>
+<body>
+<h1>index page</h1>
+<a th:href="@{/user/detail}">用户详情</a>
+<a th:href="@{/product/detail}">商品详情</a>
+<a th:href="@{/x2z/detail}">Ant</a>
+<a th:href="@{/table/user/pwd}">RESTful</a>
+<form th:action="@{/login}" method="post">
+    用户名 : <input type="text" name="username"/><br/>
+    密码 :  <input type="text" name="passwd"/> <br/>
+            <input type="submit" value="登录"/>
+</form>
+
+<a th:href="@{/login?username=1}">只有username的时候</a>
+<a th:href="@{/login?passwd=1}">只有passwd的时候</a>
+</body>
+</html>

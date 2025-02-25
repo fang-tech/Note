@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68aff73d-fd9b-4af2-8596-3ba642d67f91" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2qbiCAfsT1RpvjU4Emexqlqpx9N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Client.executor": "Run",
+    "Application.TestComponent.executor": "Run",
+    "Application.com.func.spring.cglib_test.Client.executor": "Run",
+    "JUnit.SpringTest.testScope.executor": "Run",
+    "JUnit.SpringTest.testThreadScope.executor": "Run",
+    "JUnit.Test4Spring.testBean.executor": "Run",
+    "JUnit.Test4Spring.testBeanFactory.executor": "Run",
+    "JUnit.Test4Spring.testLog4j.executor": "Run",
+    "JUnit.Test4Spring.testLog4j2.executor": "Run",
+    "JUnit.TestAop.executor": "Run",
+    "JUnit.TestAop.testAnnotation.executor": "Run",
+    "JUnit.TestAop.testAop.executor": "Run",
+    "JUnit.TestAop.testXml.executor": "Run",
+    "JUnit.TestBeanInstantiation.testDateFactory.executor": "Run",
+    "JUnit.TestBeanInstantiation.testFactoryBean.executor": "Run",
+    "JUnit.TestBeanInstantiation.testFactoryBeanImpl.executor": "Run",
+    "JUnit.TestBeanInstantiation.testSimpleFactory.executor": "Run",
+    "JUnit.TestComponent.test.executor": "Run",
+    "JUnit.TestComponent.testBeanComponent.executor": "Run",
+    "JUnit.TestComponent.testConfigClass.executor": "Run",
+    "JUnit.TestCycleReference.executor": "Run",
+    "JUnit.TestCycleReference.test2.executor": "Run",
+    "JUnit.TestCycleReference.testCycleReference.executor": "Run",
+    "JUnit.TestInject.testArray.executor": "Run",
+    "JUnit.TestInject.testAuto.executor": "Run",
+    "JUnit.TestInject.testCap.executor": "Run",
+    "JUnit.TestInject.testCascade.executor": "Run",
+    "JUnit.TestInject.testCat.executor": "Run",
+    "JUnit.TestInject.testConstructor.executor": "Run",
+    "JUnit.TestInject.testDataSource.executor": "Run",
+    "JUnit.TestInject.testInject.executor": "Run",
+    "JUnit.TestInject.testMath.executor": "Run",
+    "JUnit.TestInject.testOutFile.executor": "Run",
+    "JUnit.TestInject.testSetDi.executor": "Run",
+    "JUnit.TestInject.testSimpleType.executor": "Run",
+    "JUnit.TestInject.testSimpleTypeInject.executor": "Run",
+    "JUnit.TestLifeCycle.testLifeCycleFive.executor": "Run",
+    "JUnit.TestLifeCycle.testRegisterBean.executor": "Run",
+    "JUnit.TestMySpring.executor": "Run",
+    "JUnit.TestMySpring.testMySpring (1).executor": "Run",
+    "JUnit.TestMySpring.testMySpring.executor": "Run",
+    "Maven.myspring [install].executor": "Run",
+    "Maven.myspring [package].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17 (2)",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Note/Java/Spring/code/Spring6/Spring-Gof-proxy/src/main/java/com/func/spring/cglib_test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Note\Java\Spring\code\Spring6\Spring-Gof-proxy\src\main\java\com\func\spring\cglib_test" />
+      <recent name="D:\Note\Java\Spring\code\Spring6\spring-002\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.func.spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.func.spring" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestAop.testXml">
+    <configuration name="com.func.spring.cglib_test.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.func.spring.cglib_test.Client" />
+      <module name="Spring-Gof-proxy" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.spring.cglib_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.spring.aop.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.spring.aop.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.spring.aop.test.TestAop" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAop.testAnnotation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.spring.aop.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.spring.aop.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.spring.aop.test.TestAop" />
+      <option name="METHOD_NAME" value="testAnnotation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAop.testAop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.spring.aop.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.spring.aop.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.spring.aop.test.TestAop" />
+      <option name="METHOD_NAME" value="testAop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAop.testXml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.func.spring.aop.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.func.spring.aop.test" />
+      <option name="MAIN_CLASS_NAME" value="com.func.spring.aop.test.TestAop" />
+      <option name="METHOD_NAME" value="testXml" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.func.spring.cglib_test.Client" />
+      <item itemvalue="JUnit.TestAop" />
+      <item itemvalue="JUnit.TestAop.testAnnotation" />
+      <item itemvalue="JUnit.TestAop.testAop" />
+      <item itemvalue="JUnit.TestAop.testXml" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestAop.testXml" />
+        <item itemvalue="JUnit.TestAop.testAnnotation" />
+        <item itemvalue="JUnit.TestAop.testAop" />
+        <item itemvalue="JUnit.TestAop" />
+        <item itemvalue="Application.com.func.spring.cglib_test.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68aff73d-fd9b-4af2-8596-3ba642d67f91" name="Changes" comment="" />
+      <created>1734937546628</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734937546628</updated>
+      <workItem from="1734937547690" duration="7622000" />
+      <workItem from="1734965877346" duration="109000" />
+      <workItem from="1734965997530" duration="597000" />
+      <workItem from="1735008183290" duration="14357000" />
+      <workItem from="1735106433451" duration="11058000" />
+      <workItem from="1735223162186" duration="4474000" />
+      <workItem from="1735305077102" duration="595000" />
+      <workItem from="1735365378652" duration="14000" />
+      <workItem from="1735374122793" duration="9213000" />
+      <workItem from="1735449943735" duration="16355000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
