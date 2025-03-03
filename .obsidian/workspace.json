@@ -11,10 +11,14 @@
             "id": "0d0e4be258370b03",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Operating System/9. 并发控制-同步(1).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "9. 并发控制-同步(1)"
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ce28f712db3770b7",
@@ -132,9 +137,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Computer_Science/Operating System/9. 并发控制-同步(1).md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "9. 并发控制-同步(1) 的大纲"
             }
           }
         ],
@@ -159,10 +166,24 @@
   },
   "active": "0d0e4be258370b03",
   "lastOpenFiles": [
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test/test_abstract_machine/build/x86_64-qemu",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test/test_abstract_machine/build",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test/test_abstract_machine",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/Makefile~",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/Makefile",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/hello.c~",
+    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/hello.c",
+    "Computer_Science/Operating System/模拟系统的解释.md",
+    "Computer_Science/Operating System/c4-数学视角的操作系统/模拟系统的解释.md",
+    "Computer_Science/模拟系统的解释.md",
+    "Computer_Science/Operating System/workplace/Operating-System/9-并法控制-同步1/spinlock/README.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/回溯-子集型.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/77. 组合.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/未命名.md"
   ]
 }
