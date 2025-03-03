@@ -10,31 +10,34 @@ using namespace std;
 // @lc code=start
 class Solution {
 public:
-    int ans = 0;
 
-    bool found = false;
-    int path = 0;
-    // 判断这个数字是不是惩罚数
-    bool dfs(string& s,int start, int i, int target) {
-        int n = s.size();
-        if (i == n)
-            return path == target;
+    int sum = 0;
+    bool isFound = false;
+    // i 当前字符串在的位置
+    void dfs(string& str, int i, int target) {
+        int n = str.length();
+        if (i == n) {
+            if (sum == target) isFound = true;
+            return;
+        }
+        // 从答案的视角
+        // 这一步选择的字符串 str[i,,,j]
         for (int j = i; j < n; j++) {
-            int num = stoi(s.substr(start, i - start + 1));
-            path += num;
-            return dfs(s, j, i,target);
-            path -= num;
+            int num = stoi(str.substr(i, j - i + 1));
+            sum += num;
+            dfs(str, j + 1, target);
+            sum -= num;
         }
     }
 
     int punishmentNumber(int n) {
         int ans = 0;
         for (int i = 1; i <= n; i++) {
-            string s = to_string(i*i);
-            found = false;
-            dfs(s, 0, 0, i);
-            if (found) {
-                ans += i*i; 
+            string str = to_string(i*i);
+            isFound = false;
+            dfs(str, 0, i);
+            if (isFound) {
+                ans += i*i;
             }
         }
         return ans;

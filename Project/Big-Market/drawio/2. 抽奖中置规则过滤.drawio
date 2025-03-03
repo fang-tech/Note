@@ -1,0 +1,110 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="3058" dy="1299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="duz1Y-5PVrEEevAg_t8W-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="查询奖品规则" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="145" y="180" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-0" value="过滤流程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="110" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-1" value="新增类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-330" y="48" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;StrategyAwardRuleModelVO&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;String ruleModels&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ raffleCenterRuleModelList() : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;: 返回所有是中置过滤的ruleModel&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ raffleAfterRuleModelList() : String&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;: 返回所有是后置过滤的ruleModel&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fillColor=default;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-442.22" y="100" width="284.44" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="duz1Y-5PVrEEevAg_t8W-11" target="WIyWlLk6GJQsqaUBKTNV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-11" value="在performRaffle方法的第四个步骤, 我们正常抽奖获取到了awardId之后" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="125" y="20" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="duz1Y-5PVrEEevAg_t8W-13" target="duz1Y-5PVrEEevAg_t8W-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-13" value="规则过滤" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="145" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="320" as="targetPoint" />
+            <mxPoint x="480" y="320.02857142857135" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-17" value="ruleActionCenterEntity" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="duz1Y-5PVrEEevAg_t8W-16">
+          <mxGeometry x="0.1925" y="1" relative="1" as="geometry">
+            <mxPoint x="15" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="duz1Y-5PVrEEevAg_t8W-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-23" value="doCheckRaffleCenterLogic" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="620" y="287" width="245" height="66" as="geometry">
+            <mxRectangle x="480" y="305" width="60" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-46" value="和doCheckRaffleBeforeLogic的代码基本一致,&lt;div&gt;只取后半部分过滤剩余规则的部分就行了&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="duz1Y-5PVrEEevAg_t8W-23">
+          <mxGeometry y="26" width="245" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="duz1Y-5PVrEEevAg_t8W-29" target="duz1Y-5PVrEEevAg_t8W-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-36" value="TAKE_OVER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="duz1Y-5PVrEEevAg_t8W-32">
+          <mxGeometry x="-0.2057" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="duz1Y-5PVrEEevAg_t8W-29" target="duz1Y-5PVrEEevAg_t8W-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-35" value="ALLOW" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="duz1Y-5PVrEEevAg_t8W-34">
+          <mxGeometry x="-0.0619" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-29" value="是否放行" style="rhombus;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="165" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="duz1Y-5PVrEEevAg_t8W-31" target="duz1Y-5PVrEEevAg_t8W-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-31" value="通过抽奖后规则rule_lock_award走保底" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="145" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-33" value="返回带有AwardId的RaffleAward类" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-37" value="这部分还没有处理, 所以暂时返回在awardDesc中记录了现在要走保底的抽奖奖品类" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="142.5" y="730" width="125" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-39" value="修改类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-330" y="510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-40" value="RuleLockLogicFilter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-420" y="320" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-41" value="+ userRaffleCount : 用户抽奖的次数" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="duz1Y-5PVrEEevAg_t8W-40">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="duz1Y-5PVrEEevAg_t8W-40">
+          <mxGeometry y="70" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-43" value="+ filter(RuleMatterEntity) : RuleActionEntity&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;: 这个方法在这个类中用于处理rule_lock, 不携带data, 只需要告知是不是放行" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="duz1Y-5PVrEEevAg_t8W-40">
+          <mxGeometry y="78" width="240" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-44" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DefaultLogicFactory.LogicModel|&lt;br&gt;enum&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ RULE_LOCK&lt;br&gt;+ RULE_LUCK_AWARD&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isCenter(String code)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isAfter(String code)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-415" y="575" width="230" height="135" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

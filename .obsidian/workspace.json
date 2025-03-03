@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f80aa7824255ff4c",
+        "id": "559b93295e01761c",
         "type": "tabs",
         "children": [
           {
-            "id": "fbe34e15b2d9ae38",
+            "id": "ff93f7c5fbc2fd51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project/Big-Market/8. 抽奖中置规则过滤.md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8. 抽奖中置规则过滤"
+              "title": "2698. 求一个整数的惩罚数"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file: 11 .",
+                "query": "锁",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Project/Big-Market/8. 抽奖中置规则过滤.md"
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md"
               },
               "icon": "lucide-list",
-              "title": "8. 抽奖中置规则过滤 的大纲"
+              "title": "2698. 求一个整数的惩罚数 的大纲"
             }
           }
         ],
@@ -165,46 +165,46 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "fbe34e15b2d9ae38",
+  "active": "ff93f7c5fbc2fd51",
   "lastOpenFiles": [
-    "Project/Big-Market/7. 抽奖前置规则过滤.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/77.combine.exe",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/77.combine.cpp",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/77.组合.cpp",
+    "Project/Big-Market/drawio/drawio.zip",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/78.子集.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/17. 电话号码的字母组合.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/回溯-子集型.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md",
+    "Project/Big-Market/12. 不超卖库存规则实现.md",
+    "Project/Big-Market/drawio/6. 不超卖规则实现.zip",
+    "Project/Big-Market/10. 抽奖规则树模型结构设计.md",
+    "Project/Big-Market/11. 模板模式串联抽奖规则 && 设计模式总结.md",
+    "Computer_Science/Operating System/7. 并发编程-内核中的实现.md",
+    "Project/Big-Market/drawio/6. 不超卖规则实现.drawio",
+    "Project/Big-Market/drawio/总结与drawio.zip",
+    "Project/Big-Market/drawio/11. 模板模式串联抽奖规则 && 设计模式总结.md",
+    "Project/Big-Market/4. 基础层持久化数据.md",
+    "Project/Big-Market/3. 设计库表.md",
+    "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
+    "Project/Big-Market/drawio/5. 模板模式串联抽奖规则.drawio",
+    "Project/Big-Market/drawio/模板模式串联抽奖规则.drawio",
+    "Project/Big-Market/9. 使用责任链处理抽奖规则.md",
+    "Project/Big-Market/drawio/4. 抽奖规则树模型结构设计.rar",
+    "Project/Big-Market/drawio/4. 抽奖规则树模型结构设计.drawio",
     "Project/Big-Market/8. 抽奖中置规则过滤.md",
+    "Project/Big-Market/7. 抽奖前置规则过滤.md",
     "Project/Big-Market/drawio/前置规则过滤.svg",
-    "Project/Big-Market/drawio/前置规则过滤.drawio",
     "Project/Big-Market/drawio/前置规则过滤.drawio.png",
-    "Project/Big-Market/drawio/前置规则过滤.drawio.html",
-    "Project/Big-Market/drawio/前置规则过滤.drawio.pdf",
-    "Project/Big-Market/新建文件夹",
-    "Project/Big-Market/drawio",
-    "Project/新建文件夹",
-    "Project/前置规则过滤.drawio",
-    "Project/Big-Market/前置规则过滤.drawio",
     "Java/Spring/Spring_/Spring.md",
     "Java/JavaSE/javaAdvance.md",
     "Project/Big-Market/6. 权重装配处理.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/131. 分隔回文串.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
     "Project/Big-Market/5. 概率策略装配处理.md",
     "Explore/README.md",
     "Explore/Map.md",
     "Explore/从GPT获取到的信息/防止过拟合训练.md",
     "Plans/Need To Do.md",
-    "interview.md",
-    "Project/Big-Market/4. 基础层持久化数据.md",
-    "Project/Big-Market/3. 设计库表.md",
-    "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
-    "Project/Big-Market",
-    "Project",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/78.子集.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/17. 电话号码的字母组合.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/1. 二叉树和递归/模板题/题解/111. 二叉树的最小深度.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/1. 二叉树和递归/模板题/题解/112.路径总和.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/5. 层序遍历与队列/题解/103. 二叉树的锯齿形层序遍历.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/5. 层序遍历与队列/题解/2415. 反转二叉树的奇数层.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/5. 层序遍历与队列/题解/2641.二叉树的堂兄弟节点-ii.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/5. 层序遍历与队列/题解/102. 二叉树的层序遍历.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/5. 层序遍历与队列/题解/116. 填充每个节点的下一个右侧节点指针.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二叉树/5. 层序遍历与队列/题解/513.找树左下角的值.md",
     "Java/MyBatis/官方文档/document/008-分页查询的原理.png",
     "Java/JavaWeb/笔记/images/1681521240438.png",
     "Java/JavaWeb/笔记/images/1681463361795.png",

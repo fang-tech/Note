@@ -1,0 +1,311 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="5303" dy="2144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-91" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="800" y="387.5" width="410" height="592.5" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-63" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="800" y="160" width="290" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="oXg1LIYxwjziT1s_v5uo-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="AbstractRaffleStrrategy : performRaffle" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="380" y="70" width="135" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="duz1Y-5PVrEEevAg_t8W-0" value="进行抽奖的流程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="617.5" y="43" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-0" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;类&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-400" y="43" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-1" value="POJO类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-790" y="210" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-2" value="Dao" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-790" y="430" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-3" value="repository添加的方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-810" y="707.5" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-9" target="oXg1LIYxwjziT1s_v5uo-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-9" value="RuleTreeNode" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-445" y="180" width="140" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-12" value="+ id :Long 自增Id&lt;div&gt;+ treeId : String 规则树ID&lt;/div&gt;&lt;div&gt;+ ruleKey : String 规则key, 也就是这个节点是什么规则&lt;/div&gt;&lt;div&gt;+ ruleDesc : String 规则描述&lt;/div&gt;&lt;div&gt;+ ruleValue : String 规则值&lt;/div&gt;&lt;div&gt;+ createTime&lt;br&gt;+updateTime&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-9">
+          <mxGeometry y="26" width="140" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-13" target="oXg1LIYxwjziT1s_v5uo-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-13" value="RuleTree" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-690" y="180" width="140" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-14" value="+ id : Long 自增Id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-13">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-15" value="+ treeId : String 树Id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-13">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-16" value="+ treeName : String 树名称&lt;br&gt;&lt;div&gt;+ treeRootRuleKey : String 规则树根节点名称&lt;/div&gt;&lt;div&gt;+ createTime&lt;br&gt;+ updateTime&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-13">
+          <mxGeometry y="78" width="140" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-17" target="oXg1LIYxwjziT1s_v5uo-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-17" value="RuleTreeNodeLine" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-220" y="180" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-20" value="+ id :Long 自增Id&lt;div&gt;+ treeId : String 规则树ID&lt;/div&gt;&lt;div&gt;+ ruleNodeFrom : String 这条边的入节点&lt;/div&gt;&lt;div&gt;+ ruleNodeTo : String 这条边的出节点&lt;/div&gt;&lt;div&gt;+ ruleLimitValue : String 限定值, 填的是ALLOW, TAKE_OVER, 后面需要转化为RuleCheckTypeVO&lt;/div&gt;&lt;div&gt;+ ruleLimitType : String 限定类型 填入的是EQUAL等内容&lt;/div&gt;&lt;div&gt;+ createTime&lt;br&gt;+updateTime&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-17">
+          <mxGeometry y="26" width="220" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-21" value="RuleTreeNodeDao" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-495" y="498" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-24" value="+ queryRuleTreeNodeListByTreeId(String treeId) : List&amp;lt;RuleTreeNode&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-21">
+          <mxGeometry y="26" width="240" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-25" value="RuleTreeDao" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-715" y="498" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-28" value="+ queryRuleTreeByTreeId(String treeId) : RuleTree" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-25">
+          <mxGeometry y="26" width="190" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-29" value="RuleTreeNodeLineDao" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-245" y="498" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-32" value="+ queryRuleTreeNodeLineByTreeId(String treeId) : List&amp;lt;RuleTreeNodeLine&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="oXg1LIYxwjziT1s_v5uo-29">
+          <mxGeometry y="26" width="270" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-40" value="规则树POJO对象" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-680" y="140" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-41" value="规则树节点POJO对象" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-450" y="140" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-42" value="规则树边POJO对象" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-215" y="138" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-49" target="oXg1LIYxwjziT1s_v5uo-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-49" value="已经通过repository获取到了userId和strategyId" style="ellipse;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="401.25" y="160" width="92.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-53" target="oXg1LIYxwjziT1s_v5uo-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-53" value="raffloLogicChain(userId, strategyId) : DefaultChainFactory.StrategyAwardVO" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="328.75" y="310" width="237.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-55" value="通过责任链执行抽奖" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="275" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-59" value="在DefaultRaffleStrategy中实现" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="843.75" y="180" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-60" value="从责任链工厂中获取openLogicChain并执行logic从而返回StrategyAwardVO" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="860" y="250" width="181.25" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-67" target="oXg1LIYxwjziT1s_v5uo-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-67" value="raffleLogicTree(userId, strategyId, awardId)&lt;div&gt;DefaultChainFatory.StrategyAwardVO&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="321.25" y="460" width="252.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-69" value="通过规则树进行抽奖过滤" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="430" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-70" value="返回抽奖结果" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="387.5" y="588" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-73" value="在DefaultRaffleStrategy中实现" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="910" y="400" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-75" target="oXg1LIYxwjziT1s_v5uo-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-75" value="通过strategyId和awardId查询到对应的奖品规则VO对象" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="805" y="448" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-78" target="oXg1LIYxwjziT1s_v5uo-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-82" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;null&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oXg1LIYxwjziT1s_v5uo-81">
+          <mxGeometry x="-0.1837" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-78" target="oXg1LIYxwjziT1s_v5uo-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-85" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;!=null&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oXg1LIYxwjziT1s_v5uo-84">
+          <mxGeometry x="-0.0554" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-78" value="策略奖品规则VO对象" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="825" y="530" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-80" value="直接返回原奖品" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1055" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-83" target="oXg1LIYxwjziT1s_v5uo-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-83" target="oXg1LIYxwjziT1s_v5uo-95">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-310" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-83" value="通过规则树Id从repository的queryRuleTreeVOByTreeId方法, 获取RuleTreeVO对象" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="817.5" y="675" width="155" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-86" value="这里对库表中的strategy_award表中&lt;br&gt;的rule_models字段有特殊的处理&lt;br&gt;这里直接添加的就是规则树的id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="965" y="660" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-87" target="oXg1LIYxwjziT1s_v5uo-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-87" value="通过规则树工厂方法将规则树装配到规则树引擎中" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="835" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-89" value="在规则树引擎中通过process方法执行一次过滤操作" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="835" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.181;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-67" target="oXg1LIYxwjziT1s_v5uo-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-95" target="oXg1LIYxwjziT1s_v5uo-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-95" value="queryRuleTreeVOByTreeId(String TreeId)&lt;br&gt;: RuleTreeVO" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-490" y="635" width="185" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-96" value="该方法传入一个TreeId, 返回构建好的树&lt;br&gt;这个方法的主要功能就是构建一棵树" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-280" y="670" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-99" target="oXg1LIYxwjziT1s_v5uo-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-99" value="优先从缓存中获取" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-457.5" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-101" target="oXg1LIYxwjziT1s_v5uo-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-101" target="oXg1LIYxwjziT1s_v5uo-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-101" value="从数据库中获取树相关的对象群" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-457.5" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-154" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-114" target="oXg1LIYxwjziT1s_v5uo-153">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-114" value="RuleTree" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-650" y="1060" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-115" target="oXg1LIYxwjziT1s_v5uo-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-115" value="List&amp;lt;RuleTreeNode&amp;gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-486.25" y="1060" width="177.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-116" target="oXg1LIYxwjziT1s_v5uo-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-116" value="list&amp;lt;RuleTreeNodeLine&amp;gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-240" y="1060" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-101" target="oXg1LIYxwjziT1s_v5uo-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-120" target="oXg1LIYxwjziT1s_v5uo-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-120" value="创建Map&amp;lt;String, List&amp;lt;RuleTreeNodeLineVO&amp;gt;&lt;br&gt;其中的String是当前这个节点的ruleKey值&lt;br&gt;List存的是这个节点相关的所有出边" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-70" y="1190" width="197.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-123" target="oXg1LIYxwjziT1s_v5uo-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-123" value="将RuleTreeNodeLine转化为VO对象" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-31.25" y="1330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-130" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-127" target="oXg1LIYxwjziT1s_v5uo-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-131" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oXg1LIYxwjziT1s_v5uo-130">
+          <mxGeometry x="-0.0299" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-127" target="oXg1LIYxwjziT1s_v5uo-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-134" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oXg1LIYxwjziT1s_v5uo-133">
+          <mxGeometry x="-0.0575" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-127" value="Map中存在当前节点的ruleKey&lt;br&gt;作为MapKey" style="rhombus;whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-62.5" y="1440" width="182.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-129" target="oXg1LIYxwjziT1s_v5uo-132">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="296.25" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-129" value="新增这个Key, 并存入new ArrayList&amp;lt;&amp;gt;()" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="231.25" y="1460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-147" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-132" target="oXg1LIYxwjziT1s_v5uo-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-132" value="返回通过这个key获取到的List, 并向List中添加这条边" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-31.25" y="1610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-143" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-138" target="oXg1LIYxwjziT1s_v5uo-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-138" value="创建Map&amp;lt;String, RuleTreeNodeVO&amp;gt;&lt;br&gt;&lt;div&gt;其中String是这个节点的ruleKey&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-457.5" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-149" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-142" target="oXg1LIYxwjziT1s_v5uo-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-142" value="对于每个节点, 向Map中put" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-457.5" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-146" target="oXg1LIYxwjziT1s_v5uo-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-146" value="ruleTreeNodeLineMap" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-260" y="1290" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="oXg1LIYxwjziT1s_v5uo-148" target="oXg1LIYxwjziT1s_v5uo-153">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-148" value="treeNodeMap" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-486.25" y="1420" width="177.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oXg1LIYxwjziT1s_v5uo-153" value="为RuleTreeVO对象填充值" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-685" y="1410" width="170" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
