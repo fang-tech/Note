@@ -1,26 +1,20 @@
 {
   "main": {
-    "id": "ee1c94776afb2fc8",
+    "id": "b102d35d5930e273",
     "type": "split",
     "children": [
       {
-        "id": "559b93295e01761c",
+        "id": "9db1f3745a1ff0bc",
         "type": "tabs",
         "children": [
           {
-            "id": "ff93f7c5fbc2fd51",
+            "id": "0d0e4be258370b03",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
-                "mode": "source",
-                "file": "Computer_Science/Linux/tmux/tmux常用操作.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2698. 求一个整数的惩罚数"
+              "title": "新标签页"
             }
           }
         ]
@@ -29,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f9c8da747862a95d",
+    "id": "651c7e7757301be2",
     "type": "split",
     "children": [
       {
-        "id": "4b0805857170076f",
+        "id": "201b62a39b010f63",
         "type": "tabs",
         "children": [
           {
-            "id": "b467c9ada0b66ddf",
+            "id": "3e119fb0ab39dbab",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -49,12 +43,12 @@
             }
           },
           {
-            "id": "d82badd838ece3d5",
+            "id": "5102b4b01fb9b177",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "锁",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +60,7 @@
             }
           },
           {
-            "id": "3c83703724352462",
+            "id": "6c91da100b84b382",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -82,20 +76,19 @@
     "width": 300
   },
   "right": {
-    "id": "2fee6276a807b8d5",
+    "id": "ce28f712db3770b7",
     "type": "split",
     "children": [
       {
-        "id": "d9af370fd814c756",
+        "id": "e1421718dc64bcc1",
         "type": "tabs",
         "children": [
           {
-            "id": "355b0a3992a5f418",
+            "id": "efa7f4df8ac32921",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Spring/Spring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,12 +98,11 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Spring 的反向链接列表"
               "title": "反向链接"
             }
           },
           {
-            "id": "546b59e2831ee392",
+            "id": "fb2f6f87f58d7518",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -123,7 +115,7 @@
             }
           },
           {
-            "id": "34270576936721ce",
+            "id": "ac691b8fa5ddbcf6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -136,25 +128,21 @@
             }
           },
           {
-            "id": "f148c90c2c6c1d8c",
+            "id": "84655fe92001dbe5",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md"
-              },
               "state": {},
               "icon": "lucide-list",
-              "title": "2698. 求一个整数的惩罚数 的大纲"
+              "title": "大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,64 +157,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ff93f7c5fbc2fd51",
+  "active": "0d0e4be258370b03",
   "lastOpenFiles": [
-    "就业/JavaGuide/docs/system-design/framework/spring/images/spring-transaction/roollbackFor.png",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/spring-transaction/PlatformTransactionManager.png",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/spring-annotations/@RequestBody.png",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/async/async.png",
-    "就业/JavaGuide/docs/system-design/security/images/design-of-authority-system/permission-application.png",
-    "就业/JavaGuide/docs/system-design/security/images/design-of-authority-system/new-authority-system-management-interface.png",
-    "就业/JavaGuide/docs/system-design/security/images/design-of-authority-system/new-authority-system-menu-management-interface.png",
-    "就业/JavaGuide/docs/system-design/security/images/design-of-authority-system/new-authority-system-menu.png",
-    "就业/JavaGuide/docs/system-design/security/images/design-of-authority-system/new-authority-system-design-access-flow-chart.png",
-    "就业/JavaGuide/docs/system-design/security/images/design-of-authority-system/new-authority-system-design.png",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/spring-transaction",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/spring-annotations",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/mvc-mode1.drawio",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/mvc-model2.drawio",
-    "就业/JavaGuide/docs/system-design/framework/spring/images/async",
-    "就业/JavaGuide/docs/java/jvm/pictures/jdk监控和故障处理工具总结/4线程监控.png",
-    "就业/JavaGuide/docs/distributed-system/protocol/images/gossip/反熵-闭环.drawio",
-    "就业/JavaGuide/docs/cs-basics/data-structure/pictures/线性数据结构/栈实现浏览器倒退和前进.drawio",
-    "就业/JavaGuide/docs/system-design/security/images/design-of-authority-system",
-    "就业/JavaGuide/docs/system-design/framework/spring/springboot-knowledge-and-questions-summary.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/springboot-source-code.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/spring-transaction.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/spring-knowledge-and-questions-summary.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/spring-design-patterns-summary.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/spring-common-annotations.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/spring-boot-auto-assembly-principles.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/ioc-and-aop.md",
-    "就业/JavaGuide/docs/system-design/framework/spring/images",
-    "就业/JavaGuide/docs/system-design/framework/spring/async.md",
-    "就业/JavaGuide/docs/system-design/framework/mybatis/mybatis-interview.md",
-    "就业/JavaGuide/docs/system-design/basis/pictures/programming-principles.drawio",
-    "就业/JavaGuide/docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-plus.md",
-    "就业/JavaGuide/docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.md",
-    "就业/JavaGuide/docs/distributed-system/distributed-process-coordination/zookeeper/zookeeper-in-action.md",
-    "就业/JavaGuide/docs/tools/gradle/gradle-core-concepts.md",
-    "就业/JavaGuide/docs/tools/maven/maven-core-concepts.md",
-    "就业/JavaGuide/docs/tools/maven/maven-best-practices.md",
-    "就业/JavaGuide/docs/tools/docker/docker-intro.md",
-    "就业/JavaGuide/docs/tools/docker/docker-in-action.md",
-    "就业/JavaGuide/docs/tools/git/github-tips.md",
-    "就业/JavaGuide/docs/tools/git/git-intro.md",
-    "就业/JavaGuide/docs/system-design/security/sso-intro.md",
-    "就业/JavaGuide/docs/system-design/security/jwt-intro.md",
-    "就业/JavaGuide/docs/system-design/security/sentive-words-filter.md",
-    "就业/JavaGuide/docs/system-design/security/encryption-algorithms.md",
-    "就业/JavaGuide/docs/system-design/security/design-of-authority-system.md",
-    "未命名.canvas",
-    "未命名 1.canvas"
-    "Computer_Science/Operating System/code/m1/mainArgs",
-    "Computer_Science/Operating System/code/m1/a.out",
-    "Computer_Science/Linux/tmux/manaul.md",
-    "Computer_Science/Linux/tmux/manual.md",
-    "Computer_Science/Computer_network/ssh.md",
-    "Computer_Science/Operating System/6. 并发控制-互斥.md",
-    "Computer_Science/Computer_network/未命名",
-    "interview.md",
-    "README.md"
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/回溯-子集型.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/77. 组合.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/未命名.md"
   ]
 }
