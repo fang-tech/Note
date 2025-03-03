@@ -115,7 +115,8 @@ void trans2tree(){
 
 /**
  * @author fang-tech
- * @brief Traverse the proc linkedlist
+ * @br
+ief Traverse the proc linkedlist
  */
 void traverselist(){
   Process* curr = &root;
