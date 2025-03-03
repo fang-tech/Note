@@ -1,0 +1,271 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16" pages="2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="4658" dy="1450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="h3uN96VIlg2lQt_zLqYY-47" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120.00000000000045" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="从工厂中获取到抽奖责任链" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="60" y="260" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-0" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;新创建的类&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1000" y="30" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-34" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;抽奖流程&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="244" y="30" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-38" target="WIyWlLk6GJQsqaUBKTNV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-38" value="获取到userId和strategyId" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-43" target="h3uN96VIlg2lQt_zLqYY-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-43" value="openLogicChain()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-47" target="h3uN96VIlg2lQt_zLqYY-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-47" value="通过责任链的logic方法, 执行抽奖获取到awardId" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-49" value="和上一节相同, 执行抽奖中过滤规则" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-52" target="WIyWlLk6GJQsqaUBKTNV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-52" value="责任链的头节点 ILogicChain" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="280" y="250" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-57" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;责任链过滤流程&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="209" y="565" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-58" target="h3uN96VIlg2lQt_zLqYY-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-58" target="h3uN96VIlg2lQt_zLqYY-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-58" target="h3uN96VIlg2lQt_zLqYY-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="840" />
+              <mxPoint x="330" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-58" target="h3uN96VIlg2lQt_zLqYY-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-58" value="从Bean中获取到所有ILogicChain" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-50" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-59" target="h3uN96VIlg2lQt_zLqYY-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-59" target="h3uN96VIlg2lQt_zLqYY-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-59" value="BackListLogicChain" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="580" y="670" width="131" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-61" target="h3uN96VIlg2lQt_zLqYY-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-61" target="h3uN96VIlg2lQt_zLqYY-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-61" value="RuleWeightLogicChain" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="580" y="810" width="131" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-62" target="h3uN96VIlg2lQt_zLqYY-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-62" value="DefaultLogicChain" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="580" y="970" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-69" value="通过StrategyDispatch执行一次默认抽奖, 将awardId返回" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="795" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-1" target="h3uN96VIlg2lQt_zLqYY-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-27" value="extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h3uN96VIlg2lQt_zLqYY-26">
+          <mxGeometry x="-0.0701" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ILoigicChain&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ logic(String userId, Long strategyid): Integer&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;执行抽奖, 根据责任链, 依层过滤, 最后返回得到的awardId&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1125.01" y="155" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-2" target="h3uN96VIlg2lQt_zLqYY-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-2" value="AbstractLogicChain" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1127.17" y="455" width="254.33" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-3" value="+ ILogicChain next : 内部维护的指针, 用于指向下一个我们需要遍历的节点" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-2">
+          <mxGeometry y="26" width="254.33" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-2">
+          <mxGeometry y="76" width="254.33" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-5" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ appendNext(ILogicChain next)&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ ILogicChain next()&lt;br&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-2">
+          <mxGeometry y="84" width="254.33" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-7" target="h3uN96VIlg2lQt_zLqYY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-7" value="BackListLogicChain" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1387.6399999999999" y="705" width="260.47" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-8" value="+ ILogicChain next : 内部维护的指针, 用于指向下一个我们需要遍历的节点" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-7">
+          <mxGeometry y="26" width="260.47" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-7">
+          <mxGeometry y="80" width="260.47" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-10" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ logic(String userId, Long strategyid): Integer&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ ruleModel() : String&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回rule_blacklist&lt;br&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-7">
+          <mxGeometry y="88" width="260.47" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-12" target="h3uN96VIlg2lQt_zLqYY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-12" value="RuleWeightListLogicChain" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-900" y="705" width="260.47" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-13" value="+ ILogicChain next : 内部维护的指针, 用于指向下一个我们需要遍历的节点" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-12">
+          <mxGeometry y="26" width="260.47" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-12">
+          <mxGeometry y="80" width="260.47" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-15" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ logic(String userId, Long strategyid): Integer&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ ruleModel() : String&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回rule_weight&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-12">
+          <mxGeometry y="88" width="260.47" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-17" target="h3uN96VIlg2lQt_zLqYY-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-17" value="DefaultLogicChain" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1130.24" y="915" width="260.47" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-18" value="+ ILogicChain next : 内部维护的指针, 用于指向下一个我们需要遍历的节点" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-17">
+          <mxGeometry y="26" width="260.47" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-17">
+          <mxGeometry y="80" width="260.47" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-20" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ logic(String userId, Long strategyid): Integer&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ ruleModel() : String&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回default&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-17">
+          <mxGeometry y="88" width="260.47" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-22" value="全部都放行的时候默认执行的抽奖" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-869.77" y="965" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-23" value="黑名单过滤, 如果这个链结点过滤成功&lt;br&gt;则会直接在这层链上直接返回抽奖的奖品ID" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1630" y="715" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-24" value="和黑名单过滤同理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-639.53" y="705" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-25" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ILoigicChainArmory&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ appendNext(ILogicChain next): ILogicChain&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;添加下一个node&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ILogicChain next()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;获取下一个node&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1480" y="155" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-28" value="DefautChainFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-600" y="310" width="350" height="258" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-29" value="+ Map&amp;lt;String, ILogicChain&amp;gt; logicChainGroup&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;里面存有链表的各个还没有连接起来的节点, 里面装有从Bean中获取到的所有ILogicChain&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ IStrategyReposity reposity&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-28">
+          <mxGeometry y="26" width="350" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-28">
+          <mxGeometry y="110" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-31" value="+ openLogicChain(Long strategyId) : ILogicChain&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回责任链的第一个节点, 该方法用于将各个过滤节点连接起来, 并返回链表的第一个节点&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="h3uN96VIlg2lQt_zLqYY-28">
+          <mxGeometry y="118" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-33" value="&lt;font&gt;通过策略Id, 构建责任链&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-510" y="270" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-73" value="DefaultLogicFactory" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="124" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-75" target="h3uN96VIlg2lQt_zLqYY-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-75" value="和原先的执行权重抽奖的过程相同" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="860" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-77" target="h3uN96VIlg2lQt_zLqYY-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-77" target="h3uN96VIlg2lQt_zLqYY-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-84" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h3uN96VIlg2lQt_zLqYY-83">
+          <mxGeometry x="-0.2487" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-77" value="过滤成功" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1080" y="800" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-79" value="返回权重抽奖抽到的内容" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1220" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-81" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1170" y="818" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-82" value="返回next, 进行下一步得抽奖" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1060" y="935" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-86" target="h3uN96VIlg2lQt_zLqYY-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-86" value="和原先的执行黑名单过滤的过程相同" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="860" y="665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-90" target="h3uN96VIlg2lQt_zLqYY-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="h3uN96VIlg2lQt_zLqYY-90" target="h3uN96VIlg2lQt_zLqYY-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-89" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h3uN96VIlg2lQt_zLqYY-88">
+          <mxGeometry x="-0.2487" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-90" value="过滤成功" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1080" y="655" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-91" value="返回黑名单默认奖品" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1220" y="665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-92" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1170" y="673" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-93" value="返回next, 进行下一步得抽奖" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1060" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h3uN96VIlg2lQt_zLqYY-95" value="现在我们不在逻辑层面保证黑名单一定会最先执行&lt;br&gt;我们顺序装配抽奖前策略&lt;br&gt;通过数据库中的装配的策略的顺序保证" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="730" width="290" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pc0LRBSBq2T3dBTWiot5" name="第 2 页">
+    <mxGraphModel dx="1502" dy="725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

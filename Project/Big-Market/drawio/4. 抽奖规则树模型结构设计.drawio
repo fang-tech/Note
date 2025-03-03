@@ -1,0 +1,208 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="6689" dy="2413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;新创建的类&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-980" y="50" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-3" value="RuleTreeNodeVO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-840" y="230" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-4" value="+ treeId : Integet 规则树Id&lt;div&gt;+ ruleKey : String 规则key&lt;/div&gt;&lt;div&gt;+ ruleDesc : String 规则描述&lt;/div&gt;&lt;div&gt;+ ruleValue : String 规则值&lt;/div&gt;&lt;div&gt;+ treeNodeLineVOList : List&amp;lt;RuleTreeNodeLineVO&amp;gt; 规则树的之间的连线&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-3">
+          <mxGeometry y="26" width="160" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-7" value="RuleTreeVO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-600" y="230" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-8" value="+ treeId : Integer 规则树Id&lt;div&gt;+ treeName : String 规则树名字&lt;/div&gt;&lt;div&gt;+ treeDesc : String 规则树描述&lt;/div&gt;&lt;div&gt;+ treeRootRuleNode : String 规则树根节点&lt;/div&gt;&lt;div&gt;+ treeNodeMap : Map&amp;lt;String, RuleTreeNodeVO&amp;gt; 规则树节点?&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-7">
+          <mxGeometry y="26" width="160" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-11" value="RuleTreeNodeLineVO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1090" y="230" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-12" value="+ treeId : Integer 规则树Id&lt;div&gt;+ ruleNodeFrom :String 这条边的入节点&lt;/div&gt;&lt;div&gt;+ ruleNodeTo : String 规则树这条边的出节点&lt;/div&gt;&lt;div&gt;+ ruleLimitType : RuleLimitTypeVO 限定类型&lt;br&gt;暂时不知道作用&lt;br&gt;+ ruleLimitValue : RuleLogicCheckTypeVO 限定值, 能不能到下一个节点&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-11">
+          <mxGeometry y="26" width="160" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-27" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;valobj&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-960" y="130" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-30" value="RulelimitTypeVO enum" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1330" y="230" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-31" value="+ code : Integer&amp;nbsp;&lt;div&gt;+ info : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-30">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-32" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-30">
+          <mxGeometry y="70" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-33" value="EQUAL(1, &quot;等于&quot;),&lt;div&gt;GT(2, &quot;大于&quot;),&lt;div&gt;LT(3, &quot;小于&quot;),&lt;div&gt;GE(4, &quot;大于&amp;amp;等于&quot;),&lt;div&gt;LE(5, &quot;小于&amp;amp;等于&quot;),&lt;div&gt;ENUM(6, &quot;枚举&quot;),&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-30">
+          <mxGeometry y="78" width="160" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-35" value="规则树对象" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-560" y="198" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-36" value="规则树节点对象" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-815" y="198" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-37" value="规则树的边对象" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1070" y="198" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-38" value="规则限定枚举值 ? 作用未知" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1345" y="198" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-39" value="&lt;div&gt;运行流程&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=22;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="20" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-40" target="ubf9A73zMyeK7Ps5CmEu-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-40" value="RuleStockLogicTreeNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1280" y="850" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-40">
+          <mxGeometry y="26" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-43" value="+ logic : 现在只是构建框架, 直接返回接管, 也就是库存不足的TreeActionFactory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-40">
+          <mxGeometry y="34" width="170" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-44" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;ILogicTreeNode&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1035" y="463" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-45" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ILogicTreeNode&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ logic(String userId, Long strategyId, Integer awardId) DefaultTreeFactory.TreeActionEntity&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1040" y="555" width="200" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-940" y="700" as="targetPoint" />
+            <mxPoint x="-940" y="850" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-940" y="700" as="targetPoint" />
+            <mxPoint x="-650" y="850" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-57" value="RuleLockLogicTreeNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-720" y="850" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-57">
+          <mxGeometry y="26" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-59" value="+ logic : 现在只是构建框架, 直接返回放行, 也就是次数足够" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-57">
+          <mxGeometry y="34" width="170" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-60" value="RuleLuckLogicTreeNode" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1025" y="850" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-61" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-60">
+          <mxGeometry y="26" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-62" value="+ logic : 现在只是构建框架, 直接返回接管, 也就是到这个节点以后直接返回幸运奖, 同时在节点内简单设置值" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-60">
+          <mxGeometry y="34" width="170" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-63" value="检验库存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1275" y="818" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-64" value="幸运奖" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1020" y="818" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-65" value="次数锁" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-710" y="818" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-67" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Factory&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1000" y="1003" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-68" value="DefaultTreeFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1020" y="1083" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-69" value="+ logicTreeNodeGroup : Map&amp;lt;String, ILogicTreeNode&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-68">
+          <mxGeometry y="26" width="210" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-70" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-68">
+          <mxGeometry y="80" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-71" value="+ openLogicTree(RuleTreeVO) : IDecisionTreeEngine&amp;nbsp;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回决策树引擎?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-68">
+          <mxGeometry y="88" width="210" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-72" value="TreeActionEntity" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1185" y="1310" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-73" value="+ ruleLogicCheckType : RuleLogicCheckTypeVO&lt;div&gt;+ strategyAwardData : StrategyAwardData&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-72">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.556;entryY=0.996;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-72" target="ubf9A73zMyeK7Ps5CmEu-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-79" value="StrategyAwardData" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-780" y="1310" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-80" value="+ awardId : Integer&lt;div&gt;+ awardRuleValue : String&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;抽奖的奖品规则&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-79">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.556;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-79" target="ubf9A73zMyeK7Ps5CmEu-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-85" value="决策树这一个节点是放行还是接管" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1100" y="1270" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.015;entryY=0.866;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.014;exitY=0.845;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-780" y="1398.53" as="sourcePoint" />
+            <mxPoint x="-1024.8400000000001" y="1400.0839999999998" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-780" y="1400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-89" value="用于给决策树记录节点返回的奖品信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-705" y="1270" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-90" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;Engine&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-980" y="1490" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-91" target="ubf9A73zMyeK7Ps5CmEu-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-91" value="DecisionTreeEngine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1055" y="1740" width="280" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-92" value="+ logcicTreeNodeGroup : Map&amp;lt;String, ILogicTreeNode&amp;gt;&lt;br&gt;+ ruleTreeVO : RuleTreeVo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-91">
+          <mxGeometry y="26" width="280" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-93" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-91">
+          <mxGeometry y="90" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-94" value="+ process&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;从决策树的根节点出发, 走到叶子节点以后, 这个节点就是要返回的节点, 获取这个节点中的奖品信息, 返回信息&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ nextNode(String matterValue, List&amp;lt;RuleTreeNodeLineVO&amp;gt; treeNodeLineVOList) String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;传入当前节点执行过滤以后返回的TreeActionEntity中的放行还是接管的信息, 以及这个当前节点的所有出边&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回树的下一个节点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ decisionLogic(String matterValue, RuleTreeNodeLineVO nodeLine)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;边上存储了能通过这条边到达下一个节点, 是ALLOW还是TAKE_OVER, 函数通过判断这条边的规则和节点传入的是ALLOW还是TAKE_OVER&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ubf9A73zMyeK7Ps5CmEu-91">
+          <mxGeometry y="98" width="280" height="272" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-95" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;IDecisionTreeEngine&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ process(String userId, Long strategyId, Integer awardId) : DefaultTreeFactory.StrategyAwardData&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1040" y="1550" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-97" target="ubf9A73zMyeK7Ps5CmEu-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-97" value="获取根节点以及这颗树中的所有节点" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="235" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-99" target="ubf9A73zMyeK7Ps5CmEu-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-99" value="运行的过程发生在Engine的process函数中" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="110" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ubf9A73zMyeK7Ps5CmEu-101" target="ubf9A73zMyeK7Ps5CmEu-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-101" value="不断地进入下一个节点, 并在其中更新返回的strategyAwardData的数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="235" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ubf9A73zMyeK7Ps5CmEu-103" value="最后出循环的时候, 这个时候strategyAwardData就是走到了叶子节点以后的值" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="227.5" y="490" width="135" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
