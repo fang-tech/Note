@@ -1,1 +1,0 @@
-execve("/usr/bin/gcc", ["gcc", "hello.c"], 0x7fff4f7fd948 /* 29 vars */) = 0
