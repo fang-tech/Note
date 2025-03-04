@@ -525,11 +525,8 @@
   
   - rebase可以整理 
 
+## 拉取所有的远程分支
 
-
-
-
-
-
-
-
+```bash
+for i in `git branch -r`; do git checkout `basename $i` && git reset --hard && git pull --all; done
+```

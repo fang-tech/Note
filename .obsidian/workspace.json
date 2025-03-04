@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9db1f3745a1ff0bc",
+        "id": "67fc53507b85563d",
         "type": "tabs",
         "children": [
           {
-            "id": "0d0e4be258370b03",
+            "id": "23e9e6083846d341",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "除",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,6 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "22. 括号生成 的反向链接列表"
             }
           },
           {
@@ -107,11 +108,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "22. 括号生成 的出链列表"
             }
           },
           {
@@ -157,12 +159,43 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "0d0e4be258370b03",
+  "active": "23e9e6083846d341",
   "lastOpenFiles": [
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/51.n-皇后.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/46. 全排列.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/回溯-子集型.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/39.组合总和.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/46.全排列.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/code/39.组合总和.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/77. 组合.md",
+    "Tool/Git.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/39.组合总和.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/216. 组合总和-ii.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/22. 括号生成.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/code/22.括号生成.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/code/77.combine.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/code/216.组合总和-iii.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/code",
+    "Tool/GitFlow.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/216. 组合总和-ii.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/77. 组合.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/未命名.md"
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/特殊二分(2)/33. 搜索旋转排序数组.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/特殊二分(2)/162. 寻找峰值.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/特殊二分(2)/154.寻找旋转排序数组中的最小值-ii.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/check类二分/875.爱吃香蕉的珂珂.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/特殊二分(2)/1901.寻找峰值-ii.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/特殊二分(2)/153. 寻找旋转排序数组中的最小值.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/131. 分隔回文串.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/78.子集.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/17. 电话号码的字母组合.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/双指针/滑动窗口/0. 滑动窗口.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/双指针/滑动窗口/特殊题/题解/2779. 数组的最大美丽值.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/双指针/滑动窗口/特殊题/题解/2730. 找到最长的半重复子字符串.md"
   ]
 }
