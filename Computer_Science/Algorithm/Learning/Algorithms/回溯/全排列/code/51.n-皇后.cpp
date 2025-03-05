@@ -12,8 +12,8 @@ class Solution {
 public:
     vector<vector<string>> ans;
     vector<int> col; // 全排列数组
-    bool diag1[20]; // 记录所有已经出现过的r+c, 用于判断是不是在上斜对角线
-    bool diag2[20]; // 记录所有已经出现过的r-c, 用于判断是不是在下斜对角线, 
+    bool diag1[17]; // 记录所有已经出现过的r+c, 用于判断是不是在上斜对角线
+    bool diag2[17]; // 记录所有已经出现过的r-c, 用于判断是不是在下斜对角线, 
                     // 因为会出现负数, 比如r = 1, c = 2, 同时需要将正数和负数区别开来, 所以计算出来的 + n - 1
     
     bool on_path[10]; // 记录这个数字有没有被选过
