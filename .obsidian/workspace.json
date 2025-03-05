@@ -5,10 +5,12 @@
     "children": [
       {
         "id": "f505b9c44a5f286d",
+        "id": "67fc53507b85563d",
         "type": "tabs",
         "children": [
           {
             "id": "da3f9c41fcc5b662",
+            "id": "23e9e6083846d341",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -49,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "除",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,6 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "22. 括号生成 的反向链接列表"
             }
           },
           {
@@ -108,11 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "22. 括号生成 的出链列表"
             }
           },
           {
@@ -138,6 +142,7 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
+              "state": {},
               "icon": "lucide-list",
               "title": "大纲"
             }
@@ -162,26 +167,43 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "3e119fb0ab39dbab",
+  "active": "23e9e6083846d341",
   "lastOpenFiles": [
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test/test_abstract_machine/build/x86_64-qemu",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test/test_abstract_machine/build",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test/test_abstract_machine",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System/test",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace/Operating-System",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System/workplace",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/System",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/Makefile~",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/Makefile",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/hello.c~",
-    "Computer_Science/Operating System/workplace/Operating-System/test/test_abstract_machine/hello.c",
-    "Computer_Science/Operating System/模拟系统的解释.md",
-    "Computer_Science/Operating System/c4-数学视角的操作系统/模拟系统的解释.md",
-    "Computer_Science/模拟系统的解释.md",
-    "Computer_Science/Operating System/workplace/Operating-System/9-并法控制-同步1/spinlock/README.md",
+    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/thread.h",
+    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/README.md",
+    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/thread-sync.h",
+    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/Makefile",
+    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/hello.c",
+    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/hello",
+    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib",
+    "Computer_Science/Operating-System/workplace/Operating-System/test/test_abstract_machine/build/x86_64-qemu/hello.o",
+    "Computer_Science/Operating-System/workplace/Operating-System/test/test_abstract_machine/build/x86_64-qemu/hello.d",
+    "Computer_Science/Operating-System/workplace/Operating-System/test/test_abstract_machine/build/x86_64-qemu",
+    "Computer_Science/Operating-System/workplace/Operating-System/test/test_abstract_machine/build/hello-x86_64-qemu.elf",
+    "Computer_Science/Operating-System/workplace/Operating-System/test/test_abstract_machine/build/hello-x86_64-qemu",
+    "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-locked/README.md",
+    "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-atomic/README.md",
+    "Computer_Science/Operating-System/workplace/Operating-System/sum/README.md",
+    "Computer_Science/Operating-System/workplace/Operating-System/9-并法控制-同步1/sync/README.md",
+    "Computer_Science/Operating-System/workplace/Operating-System/9-并法控制-同步1/spinlock/README.md",
+    "Computer_Science/Operating-System/9. 并发控制-同步(1).md",
+    "Computer_Science/Operating-System/8. 调试理论与实践.md",
+    "Computer_Science/Operating-System/6. 并发控制-互斥.md",
+    "Computer_Science/Operating-System/7. 并发编程-内核中的实现.md",
+    "Computer_Science/Operating-System/2. 硬件视角下的操作系统.md",
+    "Computer_Science/Operating-System/5. 并发编程入门.md",
+    "Computer_Science/Operating-System/1. 应用视角的操作系统.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/46. 全排列.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/回溯-子集型.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/77. 组合.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/2698. 求一个整数的惩罚数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/题解/未命名.md"
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/39.组合总和.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/77. 组合.md",
+    "Tool/Git.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/216. 组合总和-ii.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/22. 括号生成.md",
+    "Tool/GitFlow.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/216. 组合总和-ii.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/77. 组合.md"
   ]
 }
