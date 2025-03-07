@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "67fc53507b85563d",
+        "id": "674c647d4310bdb5",
         "type": "tabs",
         "children": [
           {
-            "id": "23e9e6083846d341",
+            "id": "c3c1e6e661cefafe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
-                "mode": "preview",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Maven依赖管理项目构建工具"
+              "title": "198. 打家劫舍"
+            }
+          },
+          {
+            "id": "31b1f1d7ee2c351f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "70. 爬楼梯"
+            }
+          },
+          {
+            "id": "404b632968134152",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "746.使用最小花费爬楼梯"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -40,7 +69,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -139,10 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md"
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Maven依赖管理项目构建工具 的大纲"
+              "title": "746.使用最小花费爬楼梯 的大纲"
             }
           }
         ],
@@ -165,10 +198,18 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "23e9e6083846d341",
+  "active": "404b632968134152",
   "lastOpenFiles": [
-    "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/746.使用最小花费爬楼梯.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/70.爬楼梯.cpp",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/198.打家劫舍.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/else/73.setZeros.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/else",
     "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
+    "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
     "Java/Dependency-Manager/Maven/image/image-20231021150134082.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151753318.png",
@@ -178,7 +219,6 @@
     "Java/Dependency-Manager/Maven/image/img012.5a3b1f11.png",
     "Java/Dependency-Manager/Maven/image/img010.e3573d0b.png",
     "Java/Dependency-Manager/Maven/image/img009.7f737ed7.png",
-    "Java/Dependency-Manager/Maven/image/img006.ab4f2e31.png",
     "Java/Dependency-Manager/Maven/image",
     "就业/JavaGuide/docs/tools/maven/maven-core-concepts.md",
     "就业/JavaGuide/docs/tools/maven/maven-best-practices.md",
@@ -189,11 +229,6 @@
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/code/52.n-皇后-ii.cpp",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/52.n-皇后-ii.cpp",
     "~/Desktop/Note/Computer_Science/Algorithm/Solution/Code/Leetcode/52.n-皇后-ii.cpp",
-    "~/Desktop/Note/Computer_Science/Algorithm/Solution/Code/Leetcode",
-    "~/Desktop/Note/Computer_Science/Algorithm/Solution/Code",
-    "~/Desktop/Note/Computer_Science/Algorithm/Solution",
-    "~/Desktop/Note/Computer_Science/Algorithm",
-    "~/Desktop/Note/Computer_Science",
     "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-locked/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-atomic/README.md",
@@ -210,8 +245,6 @@
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/46. 全排列.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/回溯-子集型.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/39.组合总和.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/77. 组合.md",
-    "Tool/Git.md"
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/39.组合总和.md"
   ]
 }
