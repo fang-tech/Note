@@ -6,3 +6,6 @@ Document/
 
 # obsidian的工作区文件
 # .obsidian/workspace.json
+
+# 忽视所有的vscode文件夹
+*.vscode/
