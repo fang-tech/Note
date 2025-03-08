@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "674c647d4310bdb5",
+        "id": "c004e2053b01e6b1",
         "type": "tabs",
         "children": [
           {
-            "id": "c3c1e6e661cefafe",
+            "id": "f774d454ac3bee61",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
-                "mode": "source",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "198. 打家劫舍"
-            }
-          },
-          {
-            "id": "31b1f1d7ee2c351f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "70. 爬楼梯"
-            }
-          },
-          {
-            "id": "404b632968134152",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "746.使用最小花费爬楼梯"
+              "title": "0. 二分查找"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "746.使用最小花费爬楼梯 的大纲"
+              "title": "0. 二分查找 的大纲"
             }
           }
         ],
@@ -198,12 +169,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "404b632968134152",
+  "active": "f774d454ac3bee61",
   "lastOpenFiles": [
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/2563.统计公平数对的数目.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/746.使用最小花费爬楼梯.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/70.爬楼梯.cpp",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/198.打家劫舍.cpp",
     "Computer_Science/Algorithm/Learning/Algorithms/else/73.setZeros.cpp",
@@ -243,8 +216,6 @@
     "Computer_Science/Operating-System/5. 并发编程入门.md",
     "Computer_Science/Operating-System/1. 应用视角的操作系统.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/46. 全排列.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/子集型/回溯-子集型.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/题解/39.组合总和.md"
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md"
   ]
 }
