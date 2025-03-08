@@ -33,7 +33,6 @@ public:
         } 
     }
 
-
     vector<vector<int>> permute(vector<int>& nums) {
         path.resize(nums.size());
         on_path.resize(nums.size());
