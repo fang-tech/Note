@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "31fe44f7af1be21c",
+        "id": "4599c96dbae597b5",
         "type": "tabs",
         "children": [
           {
-            "id": "ce3fb74adc784a31",
+            "id": "7e753505a30fc679",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Project/Big-Market/14.DDD总结.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "14.DDD总结"
+              "title": "New tab"
             }
           }
         ]
@@ -43,7 +39,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -138,11 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Project/Big-Market/14.DDD总结.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "14.DDD总结 的大纲"
+              "title": "Outline"
             }
           }
         ],
@@ -154,23 +148,23 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "3e119fb0ab39dbab",
+  "active": "7e753505a30fc679",
   "lastOpenFiles": [
-    "Project/Big-Market/drawio/8. 抽奖活动订单流程设计.drawio",
-    "Project/Big-Market/14.DDD总结.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
+    "Project/Big-Market/14.DDD总结.md",
+    "Project/Big-Market/drawio/8. 抽奖活动订单流程设计.drawio",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/746.使用最小花费爬楼梯.cpp",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/70.爬楼梯.cpp",
@@ -197,7 +191,6 @@
     "Project/Big-Market/drawio/7. 抽奖API实现.zip",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/code/52.n-皇后-ii.cpp",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/52.n-皇后-ii.cpp",
-    "~/Desktop/Note/Computer_Science/Algorithm/Solution/Code/Leetcode/52.n-皇后-ii.cpp",
     "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-locked/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-atomic/README.md",

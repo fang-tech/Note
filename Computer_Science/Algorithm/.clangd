@@ -1,0 +1,34 @@
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -Wall
+    - -Wextra
+    - -I${workspaceFolder}
+    - -IG:/environment/winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5/mingw64/include
+    - -IG:/environment/winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5/mingw64/include/c++/13.2.0
+    - -IG:/environment/winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r5/mingw64/include/c++/13.2.0/x86_64-w64-mingw32
+
+Diagnostics:
+  ClangTidy:
+    Add: 
+      - modernize*
+      - performance*
+      - readability*
+      - bugprone*
+    Remove:
+      - modernize-use-trailing-return-type
+      - modernize-use-nodiscard
+
+Index:
+  Background: Build
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
+
+Hover:
+  ShowAKA: Yes
+
+Style:
+  FullyQualifiedNamespaces: No 
