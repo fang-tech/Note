@@ -1,63 +1,41 @@
 {
   "main": {
-    "id": "b102d35d5930e273",
+    "id": "3248f5c497ec07c2",
     "type": "split",
     "children": [
       {
-        "id": "c004e2053b01e6b1",
-        "id": "7f54e8fcf9ab4bc8",
+        "id": "0261246085321c91",
         "type": "tabs",
         "children": [
           {
-            "id": "f774d454ac3bee61",
-            "id": "1f39b16e65ab4d7e",
+            "id": "39a18c9b85eeea9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
-                "mode": "preview",
-                "file": "2466. 统计构造好字符串的方案数.md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0. 二分查找"
-            }
-              "title": "2466. 统计构造好字符串的方案数"
-            }
-          },
-          {
-            "id": "11353d10804f274d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2266. 统计打字方案数.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2266. 统计打字方案数"
+              "title": "198. 打家劫舍"
             }
           }
         ]
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "651c7e7757301be2",
+    "id": "6b1072096dec0023",
     "type": "split",
     "children": [
       {
-        "id": "201b62a39b010f63",
+        "id": "a0233679aa76880d",
         "type": "tabs",
         "children": [
           {
-            "id": "3e119fb0ab39dbab",
+            "id": "8254bc53ea506913",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -66,16 +44,16 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
-            "id": "5102b4b01fb9b177",
+            "id": "1bb2652cf6fea437",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "file: maven",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +65,7 @@
             }
           },
           {
-            "id": "6c91da100b84b382",
+            "id": "fb552c44847bb871",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -103,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "ce28f712db3770b7",
+    "id": "7f7e0d959f7da5a7",
     "type": "split",
     "children": [
       {
-        "id": "e1421718dc64bcc1",
+        "id": "34d26a37c1da35f3",
         "type": "tabs",
         "children": [
           {
-            "id": "efa7f4df8ac32921",
+            "id": "1d6422350b338640",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,133 +104,87 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "22. 括号生成 的反向链接列表"
+              "title": "198. 打家劫舍 的反向链接列表"
             }
           },
           {
-            "id": "fb2f6f87f58d7518",
+            "id": "2c499485f8ba8099",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "22. 括号生成 的出链列表"
+              "title": "198. 打家劫舍 的出链列表"
             }
           },
           {
-            "id": "ac691b8fa5ddbcf6",
+            "id": "f03b2f7ac97700d4",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
             }
           },
           {
-            "id": "84655fe92001dbe5",
+            "id": "bd68ff2cf40d31b4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
-                "file": "2266. 统计打字方案数.md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "0. 二分查找 的大纲"
-              "title": "Outline of 2266. 统计打字方案数"
+              "title": "198. 打家劫舍 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f774d454ac3bee61",
-  "active": "11353d10804f274d",
+  "active": "39a18c9b85eeea9f",
   "lastOpenFiles": [
-    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/2563.统计公平数对的数目.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.cpp",
-    "2466. 统计构造好字符串的方案数.md",
-    "2266. 统计打字方案数.md",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.统计打字方案数.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.count Good Strings.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.count Good Strings.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.Í³¼Æ¹¹ÔìºÃ×Ö·û´®µÄ·½°¸Êý.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.统计构造好字符串的方案数.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/746.使用最小花费爬楼梯.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/70.爬楼梯.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/198.打家劫舍.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/else/73.setZeros.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/else",
-    "Computer_Science/Algorithm/EnvironmentTest.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/3162.find-the-number-of-good-pairs-i.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/377.combination-sum-iv.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/377.combination-sum-iv.cpp",
-    "Project/Big-Market/14.DDD总结.md",
-    "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
-    "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
-    "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
-    "Java/Dependency-Manager/Maven/image/image-20231021150134082.png",
-    "Java/Dependency-Manager/Maven/image/image-20231021151753318.png",
-    "Java/Dependency-Manager/Maven/image/image-20231021153444864.png",
-    "Java/Dependency-Manager/Maven/image/img015.b413af9d.png",
-    "Java/Dependency-Manager/Maven/image/img014.cc0e87c3.png",
-    "Java/Dependency-Manager/Maven/image/img012.5a3b1f11.png",
-    "Java/Dependency-Manager/Maven/image/img010.e3573d0b.png",
-    "Java/Dependency-Manager/Maven/image/img009.7f737ed7.png",
-    "就业/JavaGuide/docs/tools/maven/maven-core-concepts.md",
-    "就业/JavaGuide/docs/tools/maven/maven-best-practices.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/2850. 将石头分散到网格图的最少移动次数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/51. N-皇后.md",
-    "Java/Spring/SpringMVC/官方文档/document-md文件请安装typora工具打开/第3章 获取请求数据.md",
-    "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/README.md",
-    "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-locked/README.md",
-    "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-atomic/README.md",
-    "Computer_Science/Operating-System/workplace/Operating-System/sum/README.md",
-    "Computer_Science/Operating-System/workplace/Operating-System/9-并法控制-同步1/sync/README.md",
-    "Computer_Science/Operating-System/workplace/Operating-System/9-并法控制-同步1/spinlock/README.md",
-    "Computer_Science/Operating-System/9. 并发控制-同步(1).md",
-    "Computer_Science/Operating-System/8. 调试理论与实践.md",
-    "Computer_Science/Operating-System/6. 并发控制-互斥.md",
-    "Computer_Science/Operating-System/7. 并发编程-内核中的实现.md",
-    "Computer_Science/Operating-System/2. 硬件视角下的操作系统.md",
-    "Computer_Science/Operating-System/5. 并发编程入门.md",
-    "Computer_Science/Operating-System/1. 应用视角的操作系统.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/46. 全排列.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md"
-    "Computer_Science/Operating-System/5. 并发编程入门.md"
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/a.out",
+    "Computer_Science/a.out",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/ a.out",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/64.minPathSum",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/64.minPathSum.cpp",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/64.min Path Sum",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/64.min Path Sum.cpp",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/64.最小路径和",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/64.最小路径和.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/213. 打家劫舍-ii.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/213.rob-ii",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/213.rob-ii.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md"
   ]
 }
