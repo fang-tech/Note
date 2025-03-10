@@ -17,7 +17,7 @@ public:
     void setZeroes(vector<vector<int>>& matrix) {
         
         for (int x = 0; x < matrix.size(); x++) {
-            for (int y = 0; y < matrix.size(); y++) {
+            for (int y = 0; y < matrix[0].size(); y++) {
                 if (on_path[x][y]) continue;
                 on_path[x][y] = true;
                 if (matrix[x][y]) continue;

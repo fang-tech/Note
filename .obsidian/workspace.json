@@ -5,23 +5,45 @@
     "children": [
       {
         "id": "c004e2053b01e6b1",
+        "id": "7f54e8fcf9ab4bc8",
         "type": "tabs",
         "children": [
           {
             "id": "f774d454ac3bee61",
+            "id": "1f39b16e65ab4d7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
                 "mode": "preview",
+                "file": "2466. 统计构造好字符串的方案数.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "0. 二分查找"
             }
+              "title": "2466. 统计构造好字符串的方案数"
+            }
+          },
+          {
+            "id": "11353d10804f274d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2266. 统计打字方案数.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2266. 统计打字方案数"
+            }
           }
         ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +66,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -141,12 +163,14 @@
               "type": "outline",
               "state": {
                 "file": "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
+                "file": "2266. 统计打字方案数.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "0. 二分查找 的大纲"
+              "title": "Outline of 2266. 统计打字方案数"
             }
           }
         ],
@@ -158,22 +182,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "f774d454ac3bee61",
+  "active": "11353d10804f274d",
   "lastOpenFiles": [
     "Computer_Science/Algorithm/Learning/Algorithms/二分查找/特殊题/题解/2563.统计公平数对的数目.md",
     "Computer_Science/Algorithm/Learning/Algorithms/二分查找/0. 二分查找.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.exe",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.cpp",
+    "2466. 统计构造好字符串的方案数.md",
+    "2266. 统计打字方案数.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.统计打字方案数.cpp",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.count Good Strings.exe",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.count Good Strings.cpp",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.Í³¼Æ¹¹ÔìºÃ×Ö·û´®µÄ·½°¸Êý.exe",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.统计构造好字符串的方案数.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/746.使用最小花费爬楼梯.cpp",
@@ -181,6 +216,12 @@
     "Computer_Science/Algorithm/Solution/Code/Leetcode/198.打家劫舍.cpp",
     "Computer_Science/Algorithm/Learning/Algorithms/else/73.setZeros.cpp",
     "Computer_Science/Algorithm/Learning/Algorithms/else",
+    "Computer_Science/Algorithm/EnvironmentTest.exe",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/3162.find-the-number-of-good-pairs-i.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/377.combination-sum-iv.exe",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/377.combination-sum-iv.cpp",
+    "Project/Big-Market/14.DDD总结.md",
     "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
@@ -192,16 +233,11 @@
     "Java/Dependency-Manager/Maven/image/img012.5a3b1f11.png",
     "Java/Dependency-Manager/Maven/image/img010.e3573d0b.png",
     "Java/Dependency-Manager/Maven/image/img009.7f737ed7.png",
-    "Java/Dependency-Manager/Maven/image",
     "就业/JavaGuide/docs/tools/maven/maven-core-concepts.md",
     "就业/JavaGuide/docs/tools/maven/maven-best-practices.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/2850. 将石头分散到网格图的最少移动次数.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/51. N-皇后.md",
     "Java/Spring/SpringMVC/官方文档/document-md文件请安装typora工具打开/第3章 获取请求数据.md",
-    "Project/Big-Market/drawio/7. 抽奖API实现.zip",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/code/52.n-皇后-ii.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/52.n-皇后-ii.cpp",
-    "~/Desktop/Note/Computer_Science/Algorithm/Solution/Code/Leetcode/52.n-皇后-ii.cpp",
     "Computer_Science/Operating-System/workplace/Operating-System/thread-lib/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-locked/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-atomic/README.md",
@@ -217,5 +253,6 @@
     "Computer_Science/Operating-System/1. 应用视角的操作系统.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/46. 全排列.md",
     "Computer_Science/Algorithm/Learning/Algorithms/回溯/回溯.md"
+    "Computer_Science/Operating-System/5. 并发编程入门.md"
   ]
 }
