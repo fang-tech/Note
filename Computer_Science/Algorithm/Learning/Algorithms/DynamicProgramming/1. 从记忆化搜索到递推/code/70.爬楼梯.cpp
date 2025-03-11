@@ -4,20 +4,19 @@
  * [70] 爬楼梯
  */
 
-#include <vector>
-using namespace std;
 // @lc code=start
 class Solution {
 public:
-    vector<int> f;
 
     int climbStairs(int n) {
-        f.resize(n + 2);
-        f[0] = 0, f[1] = 1;
+        int f0 = 0, f1 = 1;
         for (int i = 0; i < n; i++) {
-            f[i+2] = f[i] + f[i+1];
+            int f_new = f0 + f1;
+            f0 = f1;
+            f1 = f_new;
         }
-        return f[n+1];
+
+        return f1;
     }
 };
 // @lc code=end

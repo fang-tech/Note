@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "7f54e8fcf9ab4bc8",
+        "id": "a2e0964793200066",
         "type": "tabs",
         "children": [
           {
-            "id": "1f39b16e65ab4d7e",
+            "id": "381371f8f5fed18f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2466. 统计构造好字符串的方案数.md",
+                "file": "Plans/Review/Algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2466. 统计构造好字符串的方案数"
-            }
-          },
-          {
-            "id": "11353d10804f274d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2266. 统计打字方案数.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2266. 统计打字方案数"
+              "title": "Algorithm"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2266. 统计打字方案数.md",
+                "file": "Plans/Review/Algorithm.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2266. 统计打字方案数"
+              "title": "Outline of Algorithm"
             }
           }
         ],
@@ -184,26 +169,32 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "11353d10804f274d",
+  "active": "381371f8f5fed18f",
   "lastOpenFiles": [
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.cpp",
+    "Plans/Need To Do.md",
+    "Plans/Review/Algorithm.md",
+    "Plans/Review",
+    "README.md",
+    "Project/Big-Market/14. 抽奖活动订单流程设计.md",
+    "Computer_Science/Algorithm/Review/复习.md",
+    "Computer_Science/Algorithm/Review",
+    "Computer_Science/Algorithm/review",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2466. 统计构造好字符串的方案数.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2266. 统计打字方案数.md",
+    "Project/Big-Market/14.DDD总结.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md",
     "2466. 统计构造好字符串的方案数.md",
     "2266. 统计打字方案数.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.exe",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.cpp",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.统计打字方案数.cpp",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.count Good Strings.exe",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.count Good Strings.cpp",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.Í³¼Æ¹¹ÔìºÃ×Ö·û´®µÄ·½°¸Êý.exe",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/2466.统计构造好字符串的方案数.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
-    "Computer_Science/Algorithm/EnvironmentTest.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/3162.find-the-number-of-good-pairs-i.cpp",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/377.combination-sum-iv.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/377.combination-sum-iv.cpp",
-    "Project/Big-Market/14.DDD总结.md",
     "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
@@ -225,12 +216,6 @@
     "Computer_Science/Operating-System/workplace/Operating-System/sum/sum-atomic/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/sum/README.md",
     "Computer_Science/Operating-System/workplace/Operating-System/9-并法控制-同步1/sync/README.md",
-    "Computer_Science/Operating-System/workplace/Operating-System/9-并法控制-同步1/spinlock/README.md",
-    "Computer_Science/Operating-System/9. 并发控制-同步(1).md",
-    "Computer_Science/Operating-System/8. 调试理论与实践.md",
-    "Computer_Science/Operating-System/6. 并发控制-互斥.md",
-    "Computer_Science/Operating-System/7. 并发编程-内核中的实现.md",
-    "Computer_Science/Operating-System/2. 硬件视角下的操作系统.md",
-    "Computer_Science/Operating-System/5. 并发编程入门.md"
+    "Computer_Science/Operating-System/workplace/Operating-System/9-并法控制-同步1/spinlock/README.md"
   ]
 }
