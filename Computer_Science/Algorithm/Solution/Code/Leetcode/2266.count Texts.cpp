@@ -4,7 +4,6 @@
  * [2266] 统计打字方案数
  */
 
-#include <pthread.h>
 #include <string>
 #include <iostream>
 using namespace std;
