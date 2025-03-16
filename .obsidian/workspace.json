@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "0c3431cef5de04a1",
+        "id": "a10405ebf89042cf",
         "type": "tabs",
         "children": [
           {
-            "id": "2f488a353da5404e",
+            "id": "3ff7daf62a271260",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project/Big-Market/14. 抽奖活动订单流程设计.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "14. 抽奖活动订单流程设计"
-            }
-          },
-          {
-            "id": "596df61514036f2e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Project/Big-Market/16..md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/LCR 166 珠宝的最高价值.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "16."
+              "title": "LCR 166 珠宝的最高价值"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Project/Big-Market/16..md",
+                "file": "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/LCR 166 珠宝的最高价值.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 16."
+              "title": "Outline of LCR 166 珠宝的最高价值"
             }
           }
         ],
@@ -184,10 +169,36 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "596df61514036f2e",
+  "active": "3ff7daf62a271260",
   "lastOpenFiles": [
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/LCR 166.珠宝的最高价值.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/LCR 166 珠宝的最高价值.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/1,3,1],[1,5,1],[4,2,1.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2266. 统计打字方案数.md",
+    "Computer_Science/Algorithm/Solution/Code/Leetcode/LCR 166.珠宝的最高价值.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/code/2850.minimumMoves.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/2466.count Good Strings.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/2266.count Texts.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/377.combination-sum-iv.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/213.rob-ii.cpp",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2466. 统计构造好字符串的方案数.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/213. 打家劫舍-ii.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
+    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
+    "Project/Big-Market/19. 写入中奖记录和任务补偿发送MQ.md",
+    "Project/Big-Market/20. 抽奖活动流程串联.md",
+    "Project/Big-Market/drawio/19. 写入中奖记录和任务补偿发送MQ.zip",
+    "Project/Big-Market/drawio/19. 写入中奖记录和任务补偿发送MQ.md",
+    "Project/Big-Market/drawio/19. 写入中奖记录和任务补偿发送MQ.drawio",
+    "Project/Big-Market/18. 领取活动扣减账户额度.md",
+    "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
+    "Project/Big-Market/17. 用于领取活动库表设计.md",
+    "Project/Big-Market/16. 引入MQ处理活动SKU库存一致性.md",
+    "Project/Big-Market/4. 基础层持久化数据.md",
+    "Project/Big-Market/3. 设计库表.md",
     "Project/Big-Market/14. 抽奖活动订单流程设计.md",
-    "Project/Big-Market/16..md",
     "Project/Big-Market/14.DDD总结.md",
     "Project/Big-Market/15. 活动抽奖流程实现.md",
     "Computer_Science/Operating-System/Note/1. 程序与进程 - 进程管理API.md",
@@ -196,29 +207,7 @@
     "Java/DataBase/MyBatis/Mybatis.md",
     "Java/DataBase/MyBatis/官方文档/document/MyBatis.md",
     "Untitled.canvas",
-    "Plans/Review/Algorithm.md",
     "Computer_Science/Algorithm/Solution/Code/Leetcode/64.minPathSum.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/213.rob-ii.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/213.rob-ii",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/213. 打家劫舍-ii.md",
-    "Plans/Need To Do.md",
-    "Plans/Review",
-    "README.md",
-    "Computer_Science/Algorithm/Review/复习.md",
-    "Computer_Science/Algorithm/Review",
-    "Computer_Science/Algorithm/review",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2466. 统计构造好字符串的方案数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2266. 统计打字方案数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md",
-    "2466. 统计构造好字符串的方案数.md",
-    "2266. 统计打字方案数.md",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.exe",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.count Texts.cpp",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/2266.统计打字方案数.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
-    "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
     "Java/Dependency-Manager/Maven/image/image-20231021150134082.png",
@@ -228,10 +217,6 @@
     "Java/Dependency-Manager/Maven/image/img014.cc0e87c3.png",
     "Java/Dependency-Manager/Maven/image/img012.5a3b1f11.png",
     "Java/Dependency-Manager/Maven/image/img010.e3573d0b.png",
-    "Java/Dependency-Manager/Maven/image/img009.7f737ed7.png",
-    "就业/JavaGuide/docs/tools/maven/maven-core-concepts.md",
-    "就业/JavaGuide/docs/tools/maven/maven-best-practices.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/2850. 将石头分散到网格图的最少移动次数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/题解/51. N-皇后.md"
+    "Java/Dependency-Manager/Maven/image/img009.7f737ed7.png"
   ]
 }
