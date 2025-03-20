@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1302" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2231" dy="1299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -40,7 +40,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XUIjMFj9oymNm-IWU2-W-17" value="SendMessage" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="380" y="233" width="140" height="90" as="geometry" />
+          <mxGeometry x="380" y="220" width="140" height="90" as="geometry" />
         </mxCell>
         <mxCell id="XUIjMFj9oymNm-IWU2-W-18" value="+ filed : data1&lt;div&gt;+ filed : data2&lt;/div&gt;&lt;div&gt;+ filed : data3&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XUIjMFj9oymNm-IWU2-W-17">
           <mxGeometry y="26" width="140" height="64" as="geometry" />
@@ -52,16 +52,128 @@
           <mxGeometry x="140" y="190" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XUIjMFj9oymNm-IWU2-W-27" value="内部类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="400" y="203" width="60" height="30" as="geometry" />
+          <mxGeometry x="400" y="195" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-28" target="XUIjMFj9oymNm-IWU2-W-39">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XUIjMFj9oymNm-IWU2-W-28" value="TaskEntity" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="650" y="205" width="310" height="120" as="geometry" />
+          <mxGeometry x="750" y="230" width="310" height="120" as="geometry" />
         </mxCell>
         <mxCell id="XUIjMFj9oymNm-IWU2-W-31" value="+ String UserId&lt;div&gt;+ String topic&lt;/div&gt;&lt;div&gt;+ String messageId&lt;/div&gt;&lt;div&gt;+ BaseEvent.EventMessage&amp;lt;SendMessage&amp;gt; message&lt;br&gt;+ TaskStateVO state&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XUIjMFj9oymNm-IWU2-W-28">
           <mxGeometry y="26" width="310" height="94" as="geometry" />
         </mxCell>
         <mxCell id="XUIjMFj9oymNm-IWU2-W-38" value="Task表" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="530" y="460" width="60" height="60" as="geometry" />
+          <mxGeometry x="1330" y="260" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-39" target="XUIjMFj9oymNm-IWU2-W-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-39" value="Task" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1080" y="235" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-42" value="+ String userId&lt;div&gt;+ String messageId&lt;/div&gt;&lt;div&gt;+ String message : 消息内容, 是Task的message实体JSON序列化后的String&lt;/div&gt;&lt;div&gt;+ String state : 任务状态&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XUIjMFj9oymNm-IWU2-W-39">
+          <mxGeometry y="26" width="230" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-48" value="EventPublisher" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="113" width="390" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-49" value="+ publish(String topic, eventMEssageJSON)&lt;div&gt;+ publish(String topic, BaseEvent.EventMessage&amp;lt;?&amp;gt; eventMessage)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XUIjMFj9oymNm-IWU2-W-48">
+          <mxGeometry y="26" width="390" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-13" target="XUIjMFj9oymNm-IWU2-W-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-55" value="生产消息进消息队列中" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="570" y="118" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-13" target="XUIjMFj9oymNm-IWU2-W-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="303" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-59" value="同步将信息存进TaskEntity, 并将其入库" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="525" y="268" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-60" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;生产并消费一个消息的全流程&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="350" y="370" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-61" target="XUIjMFj9oymNm-IWU2-W-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-61" value="构建 T data, 也就是SendMessage内部数据类" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="390" y="430" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-62" target="XUIjMFj9oymNm-IWU2-W-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-62" target="XUIjMFj9oymNm-IWU2-W-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-62" value="通过这个SendXXXMessage向上构建一个携带该类型数据的SendXXXMessageEvent&amp;lt;SendMessage&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="300" y="520" width="340" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-64" target="XUIjMFj9oymNm-IWU2-W-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-64" value="SendXXXMessageEvent&amp;lt;SendMessage&amp;gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="640" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-66" target="XUIjMFj9oymNm-IWU2-W-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-66" value="使用SendXXXMessageEvent&amp;lt;SendMessage&amp;gt;中的build方法" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="530" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-68" target="XUIjMFj9oymNm-IWU2-W-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-68" value="为消息的Id和timestamp赋值" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="790" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-72" target="XUIjMFj9oymNm-IWU2-W-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-72" target="XUIjMFj9oymNm-IWU2-W-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-72" value="将该事件消息和Topic存入taskEntity中" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="390" y="730" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-75" value="Task表" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="670" y="830" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-76" target="XUIjMFj9oymNm-IWU2-W-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-76" value="Task&lt;br&gt;只存入Topic和MessageId以及消息状态, 用于超时重发" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-78" value="task的MessageId在build中赋值的消息id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="745" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-79" target="XUIjMFj9oymNm-IWU2-W-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-79" value="EventMessage.publish" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="320" y="830" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-82" value="将taskEntity中的topic和message中发出去" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="325" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-84" value="在这个方法中, 我们会将传进来的&lt;br&gt;事件消息实体转化成JSON序列化, &lt;br&gt;再发送" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="185" y="790" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="XUIjMFj9oymNm-IWU2-W-86" target="XUIjMFj9oymNm-IWU2-W-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-86" value="Customer类" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XUIjMFj9oymNm-IWU2-W-87" value="获取到String message, 将message反序列化为实体对象, 再进行消费, 并标记任务表中该id的任务为已消费" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="730" y="1020" width="270" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

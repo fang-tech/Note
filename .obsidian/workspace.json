@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8124f992dbec5657",
+        "id": "48718d918d27feff",
         "type": "tabs",
         "children": [
           {
-            "id": "17ea68c1d4085773",
+            "id": "4b9a411e1b5c1137",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project/Big-Market/21. 活动信息API迭代和功能完善.md",
+                "file": "就业/OS/CPU是怎么执行程序的.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "21. 活动信息API迭代和功能完善"
+              "title": "CPU是怎么执行程序的"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#{}和",
+                "query": "install",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,13 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ce28f712db3770b7",
@@ -140,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Project/Big-Market/21. 活动信息API迭代和功能完善.md",
+                "file": "就业/OS/CPU是怎么执行程序的.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 21. 活动信息API迭代和功能完善"
+              "title": "Outline of CPU是怎么执行程序的"
             }
           }
         ],
@@ -169,15 +171,23 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "17ea68c1d4085773",
+  "active": "4b9a411e1b5c1137",
   "lastOpenFiles": [
-    "Project/Big-Market/14.DDD总结.md",
-    "Project/Big-Market/21. 活动信息API迭代和功能完善.md",
-    "就业/OS/系统调用.md",
+    "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
+    "就业/OS/CPU是怎么执行程序的.md",
+    "interview.md",
+    "README.md",
     "就业/OS/用户态和内核态.md",
+    "就业/OS/系统调用.md",
+    "Project/Big-Market/23. 用户行为返利结算.md",
+    "Project/Big-Market/22. MQ消息发送和重发流程总结.md",
+    "Project/Big-Market/18. 领取活动扣减账户额度.md",
+    "Project/Big-Market/20. 抽奖活动流程串联.md",
+    "Project/Big-Market/21. 活动信息API迭代和功能完善.md",
+    "Project/Big-Market/15. 活动抽奖流程实现.md",
+    "Project/Big-Market/14.DDD总结.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/LCR 166 珠宝的最高价值.md",
     "就业/OS",
-    "interview.md",
     "Untitled",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/LCR 166.珠宝的最高价值.cpp",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/1,3,1],[1,5,1],[4,2,1.md",
@@ -195,18 +205,10 @@
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
     "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
     "Project/Big-Market/19. 写入中奖记录和任务补偿发送MQ.md",
-    "Project/Big-Market/20. 抽奖活动流程串联.md",
     "Project/Big-Market/drawio/19. 写入中奖记录和任务补偿发送MQ.zip",
     "Project/Big-Market/drawio/19. 写入中奖记录和任务补偿发送MQ.md",
-    "Project/Big-Market/18. 领取活动扣减账户额度.md",
     "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
     "Project/Big-Market/17. 用于领取活动库表设计.md",
-    "Project/Big-Market/16. 引入MQ处理活动SKU库存一致性.md",
-    "Project/Big-Market/4. 基础层持久化数据.md",
-    "Project/Big-Market/3. 设计库表.md",
-    "Project/Big-Market/14. 抽奖活动订单流程设计.md",
-    "Project/Big-Market/15. 活动抽奖流程实现.md",
-    "Computer_Science/Operating-System/Note/1. 程序与进程 - 进程管理API.md",
     "Untitled.canvas",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
