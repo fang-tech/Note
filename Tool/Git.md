@@ -530,3 +530,22 @@
 ```bash
 for i in `git branch -r`; do git checkout `basename $i` && git reset --hard && git pull --all; done
 ```
+
+## 修复commit了大文件以后上传失败
+
+- 让本地仓库回退到commit之前的版本
+```bash
+git reset --soft <hashcode>
+```
+
+- 在工作区将文件移除(只是在git中删除, 不在磁盘中删除)
+```bash
+git rm --cache (-r, 用于递归删除文件夹) file/folder
+```
+
+- 重新提交并推送
+```bash
+git add .
+git commit -m ""
+git push
+```

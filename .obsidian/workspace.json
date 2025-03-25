@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "48718d918d27feff",
+        "id": "81da3bd198e2fe1e",
         "type": "tabs",
         "children": [
           {
-            "id": "4b9a411e1b5c1137",
+            "id": "82c4b717e3a2e352",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "就业/OS/CPU是怎么执行程序的.md",
+                "file": "就业/Java/Java集合.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CPU是怎么执行程序的"
+              "title": "Java集合"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "install",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,13 +74,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ce28f712db3770b7",
@@ -142,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "就业/OS/CPU是怎么执行程序的.md",
+                "file": "就业/Java/Java集合.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CPU是怎么执行程序的"
+              "title": "Outline of Java集合"
             }
           }
         ],
@@ -171,44 +169,45 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "4b9a411e1b5c1137",
+  "active": "82c4b717e3a2e352",
   "lastOpenFiles": [
-    "Java/Dependency-Manager/Maven/Maven依赖管理项目构建工具.md",
-    "就业/OS/CPU是怎么执行程序的.md",
-    "interview.md",
-    "README.md",
-    "就业/OS/用户态和内核态.md",
-    "就业/OS/系统调用.md",
-    "Project/Big-Market/23. 用户行为返利结算.md",
-    "Project/Big-Market/22. MQ消息发送和重发流程总结.md",
-    "Project/Big-Market/18. 领取活动扣减账户额度.md",
-    "Project/Big-Market/20. 抽奖活动流程串联.md",
-    "Project/Big-Market/21. 活动信息API迭代和功能完善.md",
-    "Project/Big-Market/15. 活动抽奖流程实现.md",
-    "Project/Big-Market/14.DDD总结.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/LCR 166 珠宝的最高价值.md",
-    "就业/OS",
+    "就业/Java/Java集合.md",
+    "就业/Java/Java基础.md",
+    "就业/Java/未解决的问题.md",
+    "就业/JavaGuide/docs/java/basis/unsafe.md",
+    "就业/Java/Untitled",
+    "就业/Java",
     "Untitled",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/LCR 166.珠宝的最高价值.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/1,3,1],[1,5,1],[4,2,1.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/746.使用最小花费爬楼梯.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2266. 统计打字方案数.md",
-    "Computer_Science/Algorithm/Solution/Code/Leetcode/LCR 166.珠宝的最高价值.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/回溯/全排列/code/2850.minimumMoves.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/2466.count Good Strings.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/2266.count Texts.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/377.combination-sum-iv.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/code/213.rob-ii.cpp",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/2466. 统计构造好字符串的方案数.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/377. 组合总和 - IV.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/213. 打家劫舍-ii.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/198. 打家劫舍.md",
-    "Computer_Science/Algorithm/Learning/Algorithms/DynamicProgramming/1. 从记忆化搜索到递推/题解/70. 爬楼梯.md",
-    "Project/Big-Market/19. 写入中奖记录和任务补偿发送MQ.md",
-    "Project/Big-Market/drawio/19. 写入中奖记录和任务补偿发送MQ.zip",
-    "Project/Big-Market/drawio/19. 写入中奖记录和任务补偿发送MQ.md",
-    "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
-    "Project/Big-Market/17. 用于领取活动库表设计.md",
+    "就业/MySQL/间隙锁.md",
+    "Project/Big-Market/未理解的问题记录.md",
+    "Project/Big-Market/drawio/大营销梳理.drawio",
+    "Project/Big-Market/26. 积分领域调额服务.md",
+    "就业/MySQL/未理解的问题记录.md",
+    "就业/MySQL/MySQL一行记录时怎么存储的.md",
+    "就业/MySQL/什么是索引.md",
+    "Untitled.md",
+    "就业/MySQL/Pasted image 20250322180948.png",
+    "就业/OS/用户态和内核态.md",
+    "就业/OS/CPU是怎么执行程序的.md",
+    "Project/Big-Market/22. MQ消息发送和重发流程总结.md",
+    "就业/CS-Base-main/redis/module/strategy.md",
+    "就业/CS-Base-main/redis/storage/bigkey_aof_rdb.md",
+    "就业/CS-Base-main/redis/storage/rdb.md",
+    "就业/CS-Base-main/redis/storage/aof.md",
+    "就业/CS-Base-main/redis/data_struct/data_struct.md",
+    "就业/CS-Base-main/redis/data_struct/command.md",
+    "就业/CS-Base-main/redis/base/redis_interview.md",
+    "就业/CS-Base-main/redis/cluster/sentinel.md",
+    "就业/CS-Base-main/redis/cluster/master_slave_replication.md",
+    "就业/CS-Base-main/redis/cluster/cache_problem.md",
+    "就业/CS-Base-main/redis/cluster/cluster.md",
+    "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
+    "就业/CS-Base-main/redis/module",
+    "就业/CS-Base-main/redis/storage",
+    "就业/CS-Base-main/redis/data_struct",
+    "就业/CS-Base-main/redis/base",
+    "就业/CS-Base-main/redis/cluster",
+    "就业/CS-Base-main/redis/architecture",
     "Untitled.canvas",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
@@ -218,7 +217,6 @@
     "Java/Dependency-Manager/Maven/image/img015.b413af9d.png",
     "Java/Dependency-Manager/Maven/image/img014.cc0e87c3.png",
     "Java/Dependency-Manager/Maven/image/img012.5a3b1f11.png",
-    "Java/Dependency-Manager/Maven/image/img010.e3573d0b.png",
-    "Java/Dependency-Manager/Maven/image/img009.7f737ed7.png"
+    "Java/Dependency-Manager/Maven/image/img010.e3573d0b.png"
   ]
 }
