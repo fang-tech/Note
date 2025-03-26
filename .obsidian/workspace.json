@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "就业/Java/Java集合.md",
+                "file": "就业/Java/Java基础-泛型机制.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java集合"
+              "title": "Java基础-泛型机制"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "就业/Java/Java集合.md",
+                "file": "就业/Java/Java基础-泛型机制.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java集合"
+              "title": "Outline of Java基础-泛型机制"
             }
           }
         ],
@@ -171,8 +171,9 @@
   },
   "active": "82c4b717e3a2e352",
   "lastOpenFiles": [
-    "就业/Java/Java集合.md",
     "就业/Java/Java基础.md",
+    "就业/Java/Java基础-泛型机制.md",
+    "就业/Java/Java集合.md",
     "就业/Java/未解决的问题.md",
     "就业/JavaGuide/docs/java/basis/unsafe.md",
     "就业/Java/Untitled",
@@ -201,7 +202,6 @@
     "就业/CS-Base-main/redis/cluster/master_slave_replication.md",
     "就业/CS-Base-main/redis/cluster/cache_problem.md",
     "就业/CS-Base-main/redis/cluster/cluster.md",
-    "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
     "就业/CS-Base-main/redis/module",
     "就业/CS-Base-main/redis/storage",
     "就业/CS-Base-main/redis/data_struct",
