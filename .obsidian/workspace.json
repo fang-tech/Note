@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "81da3bd198e2fe1e",
+        "id": "1e60145d3846bd7d",
         "type": "tabs",
         "children": [
           {
-            "id": "82c4b717e3a2e352",
+            "id": "aa51b6b47a09c061",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "就业/Java/Java基础-泛型机制.md",
-                "mode": "source",
+                "file": "就业/CS-Base-main/os/3_memory/cache_lru.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java基础-泛型机制"
+              "title": "cache_lru"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -140,13 +140,33 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "就业/Java/Java基础-泛型机制.md",
+                "file": "就业/CS-Base-main/os/3_memory/cache_lru.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java基础-泛型机制"
+              "title": "cache_lru 的大纲"
+            }
+          },
+          {
+            "id": "adff4b2208fbbdf6",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "b1d8ea10ce441f4b",
+            "type": "leaf",
+            "state": {
+              "type": "smart-lookup-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
@@ -154,60 +174,62 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 361.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "smart-connections:Open: View Smart Connections": false,
+      "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "82c4b717e3a2e352",
+  "active": "aa51b6b47a09c061",
   "lastOpenFiles": [
-    "就业/Java/Java基础.md",
-    "就业/Java/Java基础-泛型机制.md",
+    "就业/OS/3.4  内存管理-如何避免预读失效和缓存污染的问题.md",
+    "就业/OS/3.4  内存管理-如何避免预读失败和缓存污染的问题.md",
+    "就业/OS/Untitled.md",
+    "就业/CS-Base-main/os/3_memory/alloc_mem.md",
+    "就业/CS-Base-main/os/3_memory/cache_lru.md",
+    "就业/CS-Base-main/os/3_memory/malloc.md",
+    "就业/CS-Base-main/os/3_memory/vmem.md",
+    "就业/CS-Base-main/os/3_memory/mem_reclaim.md",
+    "就业/OS/3.3 内存管理-内存满了, 会发生什么.md",
+    "就业/OS/3.2 内存管理-malloc是怎么分配内存的.md",
+    "就业/OS/3.2maalocl.md",
+    "就业/OS/2. CPU缓存一致性.md",
+    "就业/OS/3.1 内存管理-为什么要有虚拟内存.md",
+    "就业/OS/3. 内存管理.md",
+    "就业/OS/3. .md",
+    "就业/OS/1. CPU是怎么执行程序的.md",
+    "就业/OS/用户态和内核态.md",
+    "就业/OS/系统调用.md",
+    "就业/Java/JVM/JVM基础-类字节码.md",
+    "interview.md",
+    "就业/Java/JVM/JVM.md",
+    "就业/Java/JVM",
+    "就业/未命名",
+    "就业/CS-Base-main/network/3_tcp/tcp_tcpdump.md",
+    "就业/CS-Base-main/network/3_tcp/tcp_feature.md",
+    "就业/CS-Base-main/network/3_tcp/tcp_three_fin.md",
     "就业/Java/Java集合.md",
-    "就业/Java/未解决的问题.md",
-    "就业/JavaGuide/docs/java/basis/unsafe.md",
+    "就业/Java/Java基础-泛型机制.md",
     "就业/Java/Untitled",
     "就业/Java",
     "Untitled",
-    "就业/MySQL/间隙锁.md",
-    "Project/Big-Market/未理解的问题记录.md",
     "Project/Big-Market/drawio/大营销梳理.drawio",
-    "Project/Big-Market/26. 积分领域调额服务.md",
-    "就业/MySQL/未理解的问题记录.md",
-    "就业/MySQL/MySQL一行记录时怎么存储的.md",
-    "就业/MySQL/什么是索引.md",
-    "Untitled.md",
     "就业/MySQL/Pasted image 20250322180948.png",
-    "就业/OS/用户态和内核态.md",
-    "就业/OS/CPU是怎么执行程序的.md",
-    "Project/Big-Market/22. MQ消息发送和重发流程总结.md",
-    "就业/CS-Base-main/redis/module/strategy.md",
-    "就业/CS-Base-main/redis/storage/bigkey_aof_rdb.md",
-    "就业/CS-Base-main/redis/storage/rdb.md",
-    "就业/CS-Base-main/redis/storage/aof.md",
-    "就业/CS-Base-main/redis/data_struct/data_struct.md",
-    "就业/CS-Base-main/redis/data_struct/command.md",
-    "就业/CS-Base-main/redis/base/redis_interview.md",
-    "就业/CS-Base-main/redis/cluster/sentinel.md",
-    "就业/CS-Base-main/redis/cluster/master_slave_replication.md",
-    "就业/CS-Base-main/redis/cluster/cache_problem.md",
-    "就业/CS-Base-main/redis/cluster/cluster.md",
     "就业/CS-Base-main/redis/module",
     "就业/CS-Base-main/redis/storage",
     "就业/CS-Base-main/redis/data_struct",
     "就业/CS-Base-main/redis/base",
-    "就业/CS-Base-main/redis/cluster",
-    "就业/CS-Base-main/redis/architecture",
     "Untitled.canvas",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
