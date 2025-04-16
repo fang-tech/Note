@@ -549,3 +549,10 @@ git add .
 git commit -m ""
 git push
 ```
+
+## 移除所有提交记录中的某个文件
+
+```bash
+ git filter-branch --force --index-filter "git rm --cached --ignore-unmatch **/<file-name>" --prune-empty --tag-name-filter cat -- --all 
+```
+
