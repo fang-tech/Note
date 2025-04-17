@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1e60145d3846bd7d",
+        "id": "25a76a4483b0b9d0",
         "type": "tabs",
         "children": [
           {
-            "id": "aa51b6b47a09c061",
+            "id": "ef07c99b8db05a06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "就业/CS-Base-main/os/6_file_system/file_system.md",
-                "mode": "preview",
+                "file": "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "file_system"
+              "title": "mysql_redis_consistency"
             }
           }
         ]
@@ -128,7 +128,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
@@ -140,33 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "就业/CS-Base-main/os/6_file_system/file_system.md",
+                "file": "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "file_system 的大纲"
-            }
-          },
-          {
-            "id": "adff4b2208fbbdf6",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
-            }
-          },
-          {
-            "id": "b1d8ea10ce441f4b",
-            "type": "leaf",
-            "state": {
-              "type": "smart-lookup-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "title": "mysql_redis_consistency 的大纲"
             }
           }
         ],
@@ -186,13 +168,30 @@
       "command-palette:打开命令面板": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "aa51b6b47a09c061",
+  "active": "ef07c99b8db05a06",
   "lastOpenFiles": [
+    "就业/Redis/Redis数据库和缓存如何保持一致性.md",
+    "就业/Redis/Untitled.md",
+    "就业/CS-Base-main/redis/base/redis_interview.md",
+    "就业/Redis/redis面试题.md",
+    "就业/Redis/Redis中的数据结构.md",
+    "Computer_Science/Linux/tmux/manaul.md",
+    "Project/Big-Market/4. 基础层持久化数据.md",
+    "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
+    "Computer_Science/Database/MySQL/MySQLbase/SQL.md",
+    "Computer_Science/Database/MySQL/MySQLbase/imgs/tpye.png",
+    "Computer_Science/Database/MySQL/MySQLbase/imgs/JOINS.png",
+    "Computer_Science/Database/MySQL/MySQLbase/imgs/date.png",
+    "Computer_Science/Database/MySQL/MySQLbase/imgs/BLOB.png",
+    "Document/深入理解Linux网络： 修炼底层内功，掌握高性能原理.pdf",
+    "Document/OS-textbook/27-threads-api.pdf",
+    "Document/OS-textbook/26-threads-intro.pdf",
+    "Document/OS-textbook/25-dialogue-concurrency.pdf",
+    "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
+    "就业/CS-Base-main/os/6_file_system/file_system.md",
     "就业/CS-Base-main/os/5_schedule/schedule.md",
     "就业/OS/总结.md",
     "就业/OS/新建 文本文档.txt",
@@ -203,42 +202,23 @@
     "就业/CS-Base-main/os/4_process/process_base.md",
     "就业/CS-Base-main/os/4_process/multithread_sync.md",
     "就业/CS-Base-main/os/4_process/process_commu.md",
-    "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
     "就业/CS-Base-main/os/8_network_system/zero_copy.md",
     "就业/CS-Base-main/os/8_network_system/selete_poll_epoll.md",
     "就业/CS-Base-main/os/8_network_system/reactor.md",
     "就业/CS-Base-main/os/8_network_system/hash.md",
     "就业/CS-Base-main/os/7_device/device.md",
     "就业/CS-Base-main/os/9_linux_cmd/linux_network.md",
-    "就业/CS-Base-main/os/9_linux_cmd/pv_uv.md",
-    "就业/CS-Base-main/os/10_learn/draw.md",
-    "就业/CS-Base-main/os/10_learn/learn_os.md",
-    "就业/CS-Base-main/os/3_memory/cache_lru.md",
-    "就业/OS/3.4  内存管理-如何避免预读失效和缓存污染的问题.md",
-    "就业/OS/3.4  内存管理-如何避免预读失败和缓存污染的问题.md",
-    "就业/OS/Untitled.md",
-    "就业/CS-Base-main/os/3_memory/alloc_mem.md",
-    "就业/CS-Base-main/os/3_memory/malloc.md",
-    "就业/CS-Base-main/os/3_memory/vmem.md",
     "就业/Java/JVM",
     "就业/未命名",
     "就业/Java/Untitled",
     "就业/Java",
     "Untitled",
-    "Project/Big-Market/drawio/大营销梳理.drawio",
     "就业/MySQL/Pasted image 20250322180948.png",
-    "就业/CS-Base-main/redis/module",
-    "就业/CS-Base-main/redis/storage",
-    "就业/CS-Base-main/redis/data_struct",
     "Untitled.canvas",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151040531.png",
     "Java/Dependency-Manager/Maven/image/image-20231021150134082.png",
     "Java/Dependency-Manager/Maven/image/image-20231021151753318.png",
-    "Java/Dependency-Manager/Maven/image/image-20231021153444864.png",
-    "Java/Dependency-Manager/Maven/image/img015.b413af9d.png",
-    "Java/Dependency-Manager/Maven/image/img014.cc0e87c3.png",
-    "Java/Dependency-Manager/Maven/image/img012.5a3b1f11.png",
-    "Java/Dependency-Manager/Maven/image/img010.e3573d0b.png"
+    "Java/Dependency-Manager/Maven/image/image-20231021153444864.png"
   ]
 }

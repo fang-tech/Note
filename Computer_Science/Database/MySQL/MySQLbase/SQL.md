@@ -2202,7 +2202,7 @@ WHERE column1 operator
                     				outer.expr2)
 ```
 
-> 这里的outer是<table1> 的别名
+> 这里的outer是\<table1> 的别名
 
 **题目：查询员工中工资大于本部门平均工资的员工的last_name,salary和其department_id**
 
