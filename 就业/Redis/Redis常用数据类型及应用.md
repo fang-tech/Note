@@ -183,3 +183,73 @@ TODO :
 
 对于有权重值的表, 我们都能使用ZSET来实现, 相较于SET, ZSET不支持差集集合运算
 
+## BitMap
+
+### BitMap数据结构详解
+
+内部使用String类型存储二进制字节数组
+
+### 常用命令
+
+- bitmap基本操作
+
+```redis
+# 设置偏移量offset位置的值为value(0/1)
+SETBIT key offset value
+
+# 获取偏移量offset位置的值
+GETBIT key offset
+
+# 统计从start位置到end位置之间的1的数量
+# 这里的start和end是以字节为单位的
+BITCOUNT key start end
+```
+
+- bitmap运算操作
+
+```redis
+# BitMap之间的运算, 也就是二进制数之间的运算, 
+# opreation 执行的运算操作
+    # AND 与运算
+    # NOT 非运算, 非运算是唯一一个单目的运算, 后面的key只有一个
+    # XOR 异或
+    # OR 或运算
+# destkey 存储结果的key
+# key [keys...] 参与运算的key
+# 参与运算的时候, 较短的key中的空位会被视作0
+BITOP [operation] [destkey] key [keys...]
+
+# key中第一次出现value(0/1)的位置
+BITPOS key value
+```
+
+### 应用场景
+
+#### 签到统计
+
+现在我们需要记录用户在4月的登录情况
+
+基本操作
+
+- 用户登录
+
+```redis
+SETBIT sign uid:sign:100:202504 1
+```
+
+- 用户退出
+
+```redis
+SETBIT sign uid:sign:100:202504 0
+```
+
+- 统计用户在4月的登录情况
+
+```redis
+BITCOUNT uid:sign:100:202504
+```
+
+
+
+
+
