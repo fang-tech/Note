@@ -249,7 +249,158 @@ SETBIT sign uid:sign:100:202504 0
 BITCOUNT uid:sign:100:202504
 ```
 
+> 获取4月的第一次登陆的日期 ?
 
+```redis
+BITPOS uid:sign:100:202504
+```
+因为返回的数字是从0开始计数的, 所以最后计算的结果是value + 1
 
+> 统计连续签到7天的用户总数
 
+使用日期作为key, 用户ID作为offset, 然后将这些key做AND运算, 再统计destkey中的1的个数就能得出最新的七天的用户总数
 
+```redis
+BITOP AND destkey day:1 day:2 day:3 ... day:7
+BITCOUNT destkey
+```
+
+## HyperLogLog
+
+### 介绍
+
+适用于超大规模的基数统计, 也就是我们需要统计一个集合中有多少不同的元素. 不论统计的数据量有多少, HyperLogLog数据结构都能使用固定的12KB大小的内存完成统计, 但是最后的出来的数量值并不是精确的, 标准误差率是0.81%
+
+### 内部实现
+
+内部实现主要是数学原理, 以后再说
+
+### 常用命令
+
+就当作只能添加, 合并, 统计集合中的元素个数的集合操作就行
+
+```redis
+# 向HyperLogLog中添加元素
+PFADD key element [elements...]
+
+# 统计HyperLogLog中的元素个数
+PFCOUNT key
+
+# 合并多个HyperLogLog集合
+PFMERGE destkey sourcekey [sourcekey...]
+```
+
+### 应用场景 : 百万级网站UV计数
+
+UV : Unique Visitor, 独立访客
+统计一个网站某一段时间的独立访客数量
+
+- 添加访客 : `PFADD uv:202504 user1 user2`
+- 统计访客数量 : `PFCOUNT uv:202504`
+
+## Stream
+
+这个数据类型实在Redis5.0版本引入的, 就是为专门解决使用Redis作为消息队列的情景, 这个数据类型能自动生成全局唯一ID, 而不再用生产者自己实现
+
+### 应用场景 : 消息队列
+
+- 生产者添加消息
+
+```redis
+# 向mymq消息队列插入一条消息
+# * 表示由redis自己生成全局唯一ID
+# 生产的消息的key是name, value是xiaolin
+XADD mymq * name xiaolin
+"1654254953808-0" # result
+```
+
+添加消息成功以后返回生成的全局ID, ID由两部分组成
+
+- 1654254953808 : 数据插入的时候, 以毫秒为单位服务器的时间戳
+- 0 : 在这1ms中的第几个消息
+
+- 消费者消费消息
+
+```redis
+XREAD STREAMS mymq 1654254953808-0
+1) 1) "mymq"
+   2) 1) 1) "1654254953808-0"
+         2) 1) "name"
+            2) "xiaolin"
+```
+
+如果想实现**阻塞读**, 加上BLOCK \[time\]选项
+
+```redis
+# $表示读取最新的一条消息
+XREAD BLOCK 10000 STREAMS mymq $
+(nil)
+(10.00s)
+```
+
+- STREAM支持通过消费组来消费消息, 同一个组内不能消费同一条消息, 但是不同组之间能重复消费同一条消息
+
+- 创建消费组
+
+```redis
+# 创建消费组group1
+# 0-0表示从第一条消息开始读
+XGROUP CREATE mymq group1 0-0
+
+XGROUP CREATE mymq group2 0-0
+```
+
+- 通过消费组从队列中读取消息
+
+```redis
+# 消费组group1中的消费者consumer1从mymq中消费一条消息
+XREADGROUP GROUP group1 consumer1 COUNT 1 STREAMS mymq
+
+XREADGROUP GROUP group1 consumer2 COUNT 1 STREAMS mymq
+
+XREADGROUP GROUP group1 consumer3 COUNT 1 STREAMS mymq
+```
+
+> 使用消费组的原因
+
+消费组是组件本身提供的一种可靠的消息分发机制, 通过将一个流中的消息分发给不同组中的消费者, 实现负载均衡, 水平拓展了系统的能力
+
+> 基于STREAM实现的消费队列, 如何保证消费者在宕机或者故障的时候, 消息不丢失
+
+Redis内部会维护一个Pending list队列, 用于留存消费者阅读的消息, 只有在消费阅读后, 并成功消费发送了ACK给Redis以后, Pending list中留存的消息才会被删除
+
+可以使用`XPENDING`命令来查看**已经被读取, 但是还没有被确认**的消息
+
+```redis
+XPENDING mymq group2
+```
+
+如果想查看组内的某个具体的消费者消费了什么数据
+
+```redis
+XPENDING mymq group2 - + 10 consumer2
+```
+
+一旦消息已经被consumer2处理了, consumer2就能通过XACK来确认消息, 这个时候内部队列中消息就会被删除掉
+
+```redis
+XACK mymq group2 1654256265584-0
+```
+
+> Redis实现的消息队列和专业的消息队列组件之间的差别
+
+一个专业的消费队列必须实现 : **消息可靠**, **消息可堆积**两个功能
+
+- 消息可靠性 : 从**生产者生产消息**, **队列中间件**, **消费者消费消息两个维度考虑消息的可靠性**
+  - 生产消息的可靠性 : 也就是生产者生产的消息会不会出现丢失的情况, 生产者会不会丢失消息, 取决于消费者对于异常情况的处理, 如果有合适且充足的异常重发机制, 如果没有接收队列中间件的ACK, 就重发消息, 能实现消息可靠
+  - 消费端消息会不会丢失 ? Redis通过内部队列保障了只要消费端没有主动ACK消息, 就仍然能重新消费信息
+  - 队列中间件会不会丢失消息 : **会**
+    - AOF文件的写盘是以秒为单位的, 但是这个操作是异步的, 如果在写盘前redis宕机了, 重启后仍然会出现消息丢失
+    - 主从复制也是异步的, **主从切换的时候也会出现数据的丢失**
+
+- 消息堆积
+
+Redis的消息是保存在内存里的, 如果发生了消息堆积, 会有OOM的风险
+也是为了避免这种风险, Redis可以设置队列的最大长度, 如果队列的长度超过了最大长度, 就会丢失旧的消息, 可见如果设置了队列的最大长度又会带来消息丢失的风险
+
+但是专业的消息队列组件将消息保存在磁盘中, 就不会有OOM的风险
