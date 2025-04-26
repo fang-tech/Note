@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
+                "file": "就业/CS-Base-main/redis/data_struct/data_struct.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mysql_redis_consistency"
+              "title": "data_struct"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ce28f712db3770b7",
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
+                "file": "就业/CS-Base-main/redis/data_struct/data_struct.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "mysql_redis_consistency 的大纲"
+              "title": "data_struct 的大纲"
             }
           }
         ],
@@ -173,9 +174,21 @@
   },
   "active": "ef07c99b8db05a06",
   "lastOpenFiles": [
+    "就业/CS-Base-main/redis/data_struct/command.md",
+    "就业/CS-Base-main/redis/base/redis_interview.md",
+    "redis/data_struct/data_struct.md",
+    "就业/CS-Base-main/redis/README.md",
+    "redis/data_struct",
+    "redis",
+    "就业/CS-Base-main/README.md",
+    "就业/CS-Base-main/redis/storage/bigkey_aof_rdb.md",
+    "就业/CS-Base-main/redis/module/strategy.md",
+    "就业/CS-Base-main/redis/cluster/cache_problem.md",
+    "就业/CS-Base-main/redis/cluster/cluster.md",
+    "就业/CS-Base-main/redis/cluster/master_slave_replication.md",
+    "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
     "就业/Redis/Redis数据库和缓存如何保持一致性.md",
     "就业/Redis/Untitled.md",
-    "就业/CS-Base-main/redis/base/redis_interview.md",
     "就业/Redis/redis面试题.md",
     "就业/Redis/Redis中的数据结构.md",
     "Computer_Science/Linux/tmux/manaul.md",
@@ -190,7 +203,6 @@
     "Document/OS-textbook/27-threads-api.pdf",
     "Document/OS-textbook/26-threads-intro.pdf",
     "Document/OS-textbook/25-dialogue-concurrency.pdf",
-    "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
     "就业/CS-Base-main/os/6_file_system/file_system.md",
     "就业/CS-Base-main/os/5_schedule/schedule.md",
     "就业/OS/总结.md",
@@ -199,20 +211,9 @@
     "就业/CS-Base-main/os/4_process/create_thread_max.md",
     "就业/CS-Base-main/os/4_process/deadlock.md",
     "就业/CS-Base-main/os/4_process/pessim_and_optimi_lock.md",
-    "就业/CS-Base-main/os/4_process/process_base.md",
-    "就业/CS-Base-main/os/4_process/multithread_sync.md",
-    "就业/CS-Base-main/os/4_process/process_commu.md",
-    "就业/CS-Base-main/os/8_network_system/zero_copy.md",
-    "就业/CS-Base-main/os/8_network_system/selete_poll_epoll.md",
-    "就业/CS-Base-main/os/8_network_system/reactor.md",
-    "就业/CS-Base-main/os/8_network_system/hash.md",
-    "就业/CS-Base-main/os/7_device/device.md",
-    "就业/CS-Base-main/os/9_linux_cmd/linux_network.md",
     "就业/Java/JVM",
     "就业/未命名",
     "就业/Java/Untitled",
-    "就业/Java",
-    "Untitled",
     "就业/MySQL/Pasted image 20250322180948.png",
     "Untitled.canvas",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
