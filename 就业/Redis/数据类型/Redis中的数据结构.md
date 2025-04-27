@@ -363,7 +363,7 @@ typedef struct zskiplistNode {
 3. 下一层的权重等于4, 但是sds元素的大小 > abcd, 不符合, 访问下一层
 4. level[0]的下一个节点的权重 == 4, 同时元素值 == abcd, 找到了符合要求的节点
 
-### 跳表的层高设置以及是如何实现的logN的查询
+### 跳表是如何实现的logN的查询
 
 在最开始的时候, 看小林coding的图示, 以为跳表只有三层, 那么最快的情况, 需要查询的节点都在最高层, 那么查询时间复杂度也不过是n/3, 并没有做到logN
 
@@ -371,8 +371,167 @@ typedef struct zskiplistNode {
 
 假设元素的数量是n, 层高为L, 新增一层的概率为p, 我们从执行查询的时候查询路径分析
 
-一个节点的期望层高 = $\sum_{i=1}^{\inf} P_{L>=i} = \sum_{i=1}^{\inf} p^{(i-1)} = 1*(1-p^{inf} ) / (1-p) = 1/(1-p) = 4/3$
+想象跳表就是一个金字塔, 一共有L层, P(层高 >= n) = p^(n-1)
 
-所以所有节点的期望总层高就是 N \* 4/3
+- 所以P(层高 >= 1) = 1
+- P(层高 >= 2) = p
+- P(层高 >= 3) = p^2
+- ...
+- P(层高 >= N) = p^(N-1)
 
-想象跳表就是一个金字塔, 一共有
+所以节点在第一层的期望是 P(层高>=1) - P(层高>=2)
+
+在第i层的期望是P(层高==i) = P(层高>=i) - P(层高>=i+1) = p^(i-1) - p^i
+
+**第i层的节点个数是$N * (p^{(i-1)} - p^i) = N *(1-p)*p^{(i-1)}$**
+
+设层高为L, 则$\sum_{i=1}^{L} (p^{(i-1)} - p^i) = 1$
+
+由等比数列的求和公式得 $1-p^L = 1$, 但是这个公式只有在**L趋近于inf 的时候才成立**, 实际上的跳表的高度肯定不是无穷, 所以我们只能**使用$N*(1-p)*p^{(L-1)}$这个期望值为1的项来近似1**
+
+所以**最后的公式是$\sum_{i=1}^{L} (p^{(i-1)} - p^i) = N*(1-p)*p^{(L-1)}$**
+
+$1-p^L = N*(p^{L-1} - p^L)$ 得到 **$L = log_pN + C$也就是$**L = O(log_2N)$
+
+从查询路径分析时间复杂度
+
+- 在第i层, 节点出现的概率是$p^{i-1}$
+- 在第i层, 相邻两个节点之间的距离是$1/p^{(i-1)}$
+- 也就是从第i层出发, 大概每$1/p^{(i-1)}$会遇到一个节点
+- **第i+1层的两个节点之间, 第i层平均有1/p个节点**
+- 也就是从第i+1层降到第i层的时候, 我们**最多访问1/p个节点**
+
+所以最后的时间复杂度 = O(log_2N) + O(1/p) = O(log_2N)
+
+> Redis中的p是多少
+
+理论上来讲p = 1/2是查询最快速的值, 但是实际上Redis取得是1/4, 这里是内存效率和查询性能的平衡
+
+由一个节点的期望层高 = $\sum_{i=1}^{\inf} P_{L>=i} = \sum_{i=1}^{\inf} p^{(i-1)} = 1*(1-p^{inf} ) / (1-p) = 1/(1-p)$
+
+所以所有节点的期望总层高就是 N \* 1/(1-p), **p越大, 层数越多, 要占用越多的内存**
+
+### 跳表是的层高设置
+
+跳表在**创建节点的时候会生成一个[0,1]随机数, 如果随机数的大小 <= 0.25, 则层数增加一层, 循环直到最后随机数 > 0.25为止**
+
+创建跳表的头节点的时候, **如果层高的最大限制是64, 创建跳表的头节点的时候会直接创建64层高的头节点**
+
+```c
+/* Create a new skiplist. */
+zskiplist *zslCreate(void) {
+    int j;
+    zskiplist *zsl;
+
+    zsl = zmalloc(sizeof(*zsl));
+    zsl->level = 1;
+    zsl->length = 0;
+    zsl->header = zslCreateNode(ZSKIPLIST_MAXLEVEL,0,NULL);
+    for (j = 0; j < ZSKIPLIST_MAXLEVEL; j++) {
+        zsl->header->level[j].forward = NULL;
+        zsl->header->level[j].span = 0;
+    }
+    zsl->header->backward = NULL;
+    zsl->tail = NULL;
+    return zsl;
+}
+```
+
+ZSKIPLIST_MAXLEVEL 定义的是最高的层数，Redis 7.0 定义为 32，Redis 5.0 定义为 64，Redis 3.0 定义为 32。
+
+### 为什么使用跳表而不使用平衡树
+
+- 跳表在实现和维护上都是更加简单的
+- 内存开销更小, 每个节点的指针数量期望值为1/(1-p) = 4/3而不是平衡树的2
+- 更新操作开销更小, BTree在更新节点的时候涉及到复杂的节点分裂合并和平衡操作
+- 天然支持范围查询, 只需要沿着底层链表遍历就行
+- 空间局部性更好, 更能利用CPU的高速缓存
+  - 跳表在Redis中采用了连续分配的内存块来存储节点, 而不是和传统的链表一样完全随机分配的链表节点
+  - B树节点内部是内存是连续的, 但是节点之间内存连续性是不保证的, 同时因为频繁的动态调整节点以维护平衡, 内存碎片和不连续会更进一步
+
+## quicklist
+
+这个数据结构的出现主要是为了解决压缩列表的设计缺陷
+
+- 节点数量多了以后的查询性能差
+- 节点数量多了以后难以承受的连锁更新
+
+### 数据结构
+
+```c
+typedef struct quicklist {
+    //quicklist 的链表头
+    quicklistNode *head;      //quicklist 的链表头
+    //quicklist 的链表尾
+    quicklistNode *tail; 
+    //所有压缩列表中的总元素个数
+    unsigned long count;
+    //quicklistNodes 的个数
+    unsigned long len;       
+    ...
+} quicklist;
+```
+
+```c
+typedef struct quicklistNode {
+    //前一个 quicklistNode
+    struct quicklistNode *prev;     //前一个 quicklistNode
+    //下一个 quicklistNode
+    struct quicklistNode *next;     //后一个 quicklistNode
+    //quicklistNode 指向的压缩列表
+    unsigned char *zl;              
+    //压缩列表的的字节大小
+    unsigned int sz;                
+    //压缩列表的元素个数
+    unsigned int count : 16;        //ziplist 中的元素个数 
+    ....
+} quicklistNode;
+```
+
+![](https://img-blog.csdnimg.cn/img_convert/f46cbe347f65ded522f1cc3fd8dba549.png)
+
+quicklist的解决方案就是让压缩列表的节点数量控制在一定数量以内, 在添加一个元素的时候, 会先尝试检查插入位置的压缩列表能不能容纳该元素, 如果不能容纳就会创建一个新的压缩列表, 将新节点添加到新的压缩列表中
+
+## listpack
+
+quicklist并不是解决了压缩列表中的连锁更新的问题, 只是控制了这个问题发生的时候的成本, 而listpack是确实实现了解决连锁更新的问题
+
+解决方式也很简单, 删除了entry中的prevlen属性将entry修改为
+
+```c
+<encoding-type><element-data><element-tot-len>
+```
+
+从原先的
+
+- pervlen
+- encoding
+- contents
+
+变为
+
+- encoding
+- data
+- backlen : encoding + data 的长度, 也就是只记录当前entry的元信息, 就不会导致连锁更新的问题
+
+### 删除prevlen以后listpack是怎么同样实现向前遍历的?
+
+
+
+```txt
+					  当前位置
+                         ↓
+[Header][E1-type][E1-data][E1-backlen][E2-type][E2-data][E2-backlen][EOF]
+```
+
+我们怎么向前遍历E1?
+
+backlen的高位会有特殊的编码标识, 我们从当前位置向前读取字节, 也就是想低位读取字节
+
+1. 如果最高位是**0**（即0xxxxxxx），表示这是一个1字节的backlen，直接表示0-127的长度值
+2. 如果高两位是**10**（即10xxxxxx），表示这是一个2字节backlen的第一个字节
+3. 如果高三位是**110**（即110xxxxx），表示这是一个3字节backlen的第一个字节
+4. 如果高四位是**1110**（即1110xxxx），表示这是一个4字节backlen的第一个字节
+5. 如果高五位是**11110**（即11110xxx），表示这是一个5字节backlen的第一个字节
+
+第一次读取到了这样的特殊的编码标识, 就说明我们已经读取完了backlen, 就能完整得到backlen的值 
