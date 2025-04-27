@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "data_struct"
             }
+          },
+          {
+            "id": "fbbd7984086ab048",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,7 +185,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ef07c99b8db05a06",
+  "active": "fbbd7984086ab048",
   "lastOpenFiles": [
     "就业/CS-Base-main/redis/data_struct/command.md",
     "就业/CS-Base-main/redis/base/redis_interview.md",
