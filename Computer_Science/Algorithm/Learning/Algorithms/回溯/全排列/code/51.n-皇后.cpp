@@ -40,19 +40,19 @@ public:
             return;
         }
 
-    // 从n个数中, 选下一个数字
-    for (int j = 0; j < n; j++) {
-        // 没有被选过才能选, 并且对角线上没有元素
-        if (!on_path[j] && !diag2[i-j+n-1] && !diag1[i+j]) {
-            // 第i行, 第j列, 有皇后
-            col[i] = j;
-            on_path[j] = true; // 第j个数字我们已经选过了
-            diag2[i-j+n-1] = true; diag1[i+j] = true; // 记录对角线已经选过了
-            dfs(n, i+1);
-            on_path[j] = false; // 恢复现场
-            diag2[i-j+n-1] = false; diag1[i+j] = false; // 记录对角线已经选过了
+        // 从n个数中, 选下一个数字
+        for (int j = 0; j < n; j++) {
+            // 没有被选过才能选, 并且对角线上没有元素
+            if (!on_path[j] && !diag2[i-j+n-1] && !diag1[i+j]) {
+                // 第i行, 第j列, 有皇后
+                col[i] = j;
+                on_path[j] = true; // 第j个数字我们已经选过了
+                diag2[i-j+n-1] = true; diag1[i+j] = true; // 记录对角线已经选过了
+                dfs(n, i+1);
+                on_path[j] = false; // 恢复现场
+                diag2[i-j+n-1] = false; diag1[i+j] = false; // 记录对角线已经选过了
+            }
         }
-    }
     }
 
     vector<vector<string>> solveNQueens(int n) {

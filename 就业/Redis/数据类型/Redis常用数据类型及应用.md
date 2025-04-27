@@ -37,7 +37,72 @@ embstr相比于raw编码方式, 是一种更加更加快速的存储方式, 但�
 
 ### 常用指令
 
-TODO
+```redis
+SET key value
+# OK
+
+GET key
+# value
+
+STRLEN key
+# 5
+
+EXISTS key
+# 1
+
+DEL key
+# 1
+```
+
+- 批量设置
+
+```redis
+MSET key1 value1 key2 value2 ....
+# OK
+
+MGET key1 key2 ...
+# 1) value1
+# 2) value2
+```
+
+- 计数器
+
+```redis
+SET cnt 1
+# OK
+
+INCR cnt
+# (integer) 2
+
+DECR cnt 
+# (integer) 1
+
+INCRBY cnt 2
+# (integer) 3
+
+DECRBY cnt 3
+# (integer) 0
+```
+
+- 过期时间
+
+```redis
+EXPIRE key 60 (60s后过期)
+
+TTL key
+# 51
+
+SET key value EX 60
+
+SETEX key 60 value
+```
+
+- 不存在就插入
+
+```redis
+SETNX key value
+# (integer) 1
+```
 
 ### 应用场景
 
@@ -91,7 +156,20 @@ List内部的存储方式有**双向链表**和**压缩链表**两种, 最多能
 
 ### 常用命令
 
-TODO :
+```redis
+LPUSH key value [value...]
+RPUSH key value [value...]
+
+# 移除并返回
+RPOP key
+LPOP key
+
+# 返回范围内的元素, 从strat到end, 从0计数
+LRANGE key start end
+
+# timeout是超时的时间
+BLPOP key [key...] timeout
+```
 
 ### 应用场景
 
@@ -126,7 +204,21 @@ String类型实际上是使用JSON串存储的对象, 所以变动是很不方�
 
 ### 常用命令
 
-TODO :
+```redis
+HSET key field value
+
+HGET key field
+
+HMSET key field value [field value ...]
+
+HMGET key field [field]
+
+HLEN key
+
+HGETALL key
+
+HINCRBY key field 10
+```
 
 ### 应用场景
 
@@ -146,6 +238,48 @@ TODO :
 
 - 如果元素的数量小于512(默认, 由`set-maxintentries`配置), 使用**整数集合**实现
 - 如果元素的数量大于等于512的时候, 使用**哈希表**实现
+
+### 常用命令
+
+```redis
+SADD key member [member...]
+
+SREM key member
+
+# 获取集合中的全部元素
+SMEMBERS key member
+
+# 集合中的元素数量
+SCARD key
+
+# member在不在key集合中
+SISMEMBER key member
+
+# 从key集合中随机取出count个元素, 不删除
+SRANDMEMBER key [count]
+
+# 从key集合中取出并删除count个元素
+SPOP key [count]
+```
+
+- 运算操作
+
+```redis
+# 交集操作
+SINER key1 key2 [keyn...]
+
+SINERSTORE destkey key1 [keyn...]
+
+# 并集操作
+SUNION key1 key2 [keyn...]
+
+SUNIONSTORE destkey key1 key2 [keyn...]
+
+# 差集操作
+SDIFF key1 key2
+
+SDIFF STORE destkey key1 key2 [keyn...]
+```
 
 ### 应用场景
 
@@ -177,7 +311,15 @@ TODO :
 
 ### 常用命令
 
-TODO :
+```redis
+ZADD key score member [[score member]...]
+
+ZREM key member [member...]
+
+ZSCORE key member
+
+
+```
 
 ### 应用场景
 
