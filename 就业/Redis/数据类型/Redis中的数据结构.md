@@ -184,3 +184,190 @@ encoding会根据存储的数据类型和长度动态分配内存空间, 主要�
 
 ## 哈希表
 
+Redis中的哈希表采用的是**链式哈希**来解决哈希冲突
+
+### Hash的结构
+
+哈希表数据结构
+
+```c
+typedef struct dictht {
+    //哈希表数组
+    dictEntry **table;
+    //哈希表大小
+    unsigned long size;  
+    //哈希表大小掩码，用于计算索引值
+    unsigned long sizemask;
+    //该哈希表已有的节点数量
+    unsigned long used;
+} dictht;
+```
+
+哈希表表项数据结构
+
+```c
+typedef struct dictEntry {
+    //键值对中的键
+    void *key;
+  
+    //键值对中的值
+    union {
+        void *val;
+        uint64_t u64;
+        int64_t s64;
+        double d;
+    } v;
+    //指向下一个哈希表节点，形成链表
+    struct dictEntry *next;
+} dictEntry;
+```
+
+![哈希表结构](https://img-blog.csdnimg.cn/img_convert/dc495ffeaa3c3d8cb2e12129b3423118.png)
+
+简单来说dictht中存有table和size属性, table指向dictEntry表, 也就是hash映射表, 每个表项也指向dictEntry也就是真实的数据
+
+dictEntry中的value使用 **联合体**存储, 这样在存储数值型value的时候, 可以直接存在hahs表中, 不需要额外创建一个指针
+
+### 哈希冲突
+
+从key到table中的索引的转换过程 : `hash(key) % size`
+如果两个不同的key在经过转换以后得到了相同的索引, 这个时候就发生了哈希冲突
+链式哈希就是将, **被分配到同一个哈希桶上的多个节点用单向链表链接起来**
+
+链式哈希有个明显的缺点, 就是**hash表的查找性能会向O(n)退化**
+在这个时候, 就要进行**rehash**, 重新建立hash表
+
+### rehash
+
+> Redis是怎么进行的rehash
+
+```c
+typedef struct dict {
+    …
+    //两个 Hash 表，交替使用，用于 rehash 操作
+    dictht ht[2]; 
+    …
+} dict;
+```
+
+Redis为一个hash表数据类型会建立两个哈希表(dickht)
+![两个哈希](https://img-blog.csdnimg.cn/img_convert/2fedbc9cd4cb7236c302d695686dd478.png)
+
+执行的过程
+
+1. 为第二个hash表分配内存, 一般是原来的两倍
+2. 将表1的数据拷贝到表二中
+3. 拷贝完成以后, 将表1释放, 将表2设置为表1, 重新创建一个空的表2
+
+> 渐进式rehash
+
+如果像上面一样进行rehash, 一次性将所有节点都重新拷贝到新的hash表中, 那么在hash表的节点数量很多的时候, 拷贝的开销很大, 这个时候就会造成redis主线程的阻塞
+
+所以在Redis中, rehash采用了 **渐进式rehash**, 不再一次性完成, 而是在需要rehash的时候, 进入到rehash时期, 在这个时期内
+
+- 不再对原hash表1进行插入操作, 所有的新增项, 将所有的项插入到表2
+- 不是一次性迁移, 而是在执行插入, 更新, 查询, 删除的时候, 将整个hash桶上的key-value迁移到表2上
+- 在执行查询操作的时候, 会优先从表1中查询, 如果没有查询到, 会从表2中查询
+
+> 什么时候进行rehash呢?
+
+根据负载因子来看 : 负载因子 = 哈希表中保存的节点数量 / 哈希表的大小
+
+- 如果负载因子 >= 1, 并且没有进行bgsave与bgwriteaof的时候, 进行rehash操作
+- 如果负载因子 > 5, 不管是不是在执行AOF重写或者RDB快照, 都会执行rehash操作
+
+## 整数集合
+
+整数集合是Set数据类型在存储的数据类型是整数, 并且元素数量不多的时候, 采用的底层实现, 之所以采用这个实际查询性能是O(n)的数据结构, 是因为其紧凑连续的内存布局, 能减少内存的占用, 同时能有效利用CPU的缓存局部性, 实际的性能并不差
+
+### 数据结构
+
+```c
+typedef struct intset {
+    //编码方式
+    uint32_t encoding;
+    //集合包含的元素数量
+    uint32_t length;
+    //保存元素的数组
+    int8_t contents[];
+} intset;
+```
+
+虽然contents数组的类型是int8_t, 但是实际上contents的类型由encoding来决定
+
+- encoding的值为INT_SET_ENC_INT16的时候contents的类型为int16_t
+- encoding的值为INT_SET_ENC_INT32的时候contents的类型为int32_t
+- encoding的值为INT_SET_ENC_INT64的时候contents的类型为int64_t
+
+### 升级操作
+
+当存入了数据长度大于encoding中的编码的时候, 会进行升级操作, **修改encoding, 并将数组中所有元素的类型都进行升级**
+
+1. 计算需要的额外的内存空间并进行扩容操作
+2. 数据迁移
+3. 将新的数据存入
+
+![升级操作](https://img-blog.csdnimg.cn/img_convert/e84b052381e240eeb8cc97d6b729968b.png)
+
+升级操作能有效地节省内存, 同时又能适应存储大数据的需求
+**一旦升级, 没有降级操作, 删除了大数据也不会降级**
+
+## 跳表
+
+### 数据结构
+
+zset由 **跳表 + 哈希表**实现, 其中跳表能有效支持范围查询, 而哈希表能提升单点查询的性能, 也是ZSCORE能在O(1)的时间复杂度下查找到一个filed对应的score
+
+```c
+typedef struct zset {
+    dict *dict;
+    zskiplist *zsl;
+} zset;
+```
+
+```c
+typedef struct zskiplistNode {
+    //Zset 对象的元素值
+    sds ele;
+    //元素权重值
+    double score;
+    //后向指针
+    struct zskiplistNode *backward;
+  
+    //节点的 level 数组，保存每层上的前向指针和跨度
+    struct zskiplistLevel {
+        struct zskiplistNode *forward;
+        unsigned long span;
+    } level[];
+} zskiplistNode;
+```
+
+跳表能在O(logN)的时间复杂度的时间复杂度下进行查询操作, 这里的查询是指基于范围的查找, 比如说我要查找到分数是12-12的节点(基于filed的查找由哈希表实现)
+跳表之所以能在logN的时间复杂度下查询主要就是因为跳表中的level层高的设计, 让便利链表不再是需要逐个访问, 而是能够跳跃访问
+
+### 跳表执行查询的过程
+
+跳表执行查询的时候, 会从头节点的最高层开始, 会根据以下两个标准来判断是访问当前层的下一个节点还是访问下一层
+
+- 如果当前层的下一个节点的权重小于需要查询的权重的时候, 跳表会访问当前层的下一个几点
+- 如果当前层的下一个节点的权重等于需要查询的权重的时候, 如果下一个节点的SDS值小于需要查询的数据的时候, 会访问下一层的节点
+
+如果都不满足或者当前层指向null, 则访问当前节点的下一层
+
+![](https://cdn.xiaolincoding.com/gh/xiaolincoder/redis/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/3%E5%B1%82%E8%B7%B3%E8%A1%A8-%E8%B7%A8%E5%BA%A6.drawio.png)
+
+我们现在要访问abcd 4
+
+1. 从头节点的最高层L2出发, 因为当前层的下一个节点的score = 3 \< 4, 访问下一个节点
+2. 从该节点的最高层level[2]触发, 访问到null, 访问下一层
+3. 下一层的权重等于4, 但是sds元素的大小 > abcd, 不符合, 访问下一层
+4. level[0]的下一个节点的权重 == 4, 同时元素值 == abcd, 找到了符合要求的节点
+
+### 跳表的层高设置以及是如何实现的logN的查询
+
+在最开始的时候, 看小林coding的图示, 以为跳表只有三层, 那么最快的情况, 需要查询的节点都在最高层, 那么查询时间复杂度也不过是n/3, 并没有做到logN
+
+> 那么怎么设置层高能实现logN的时间复杂度呢?
+
+假设元素的数量是n, 层高为L, 我们从执行查询的时候查询路径分析
+一个节点的期望层高 = $\sum_{i=1 $
