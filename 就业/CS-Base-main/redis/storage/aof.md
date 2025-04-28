@@ -1,8 +1,4 @@
-
-
 # AOF 持久化是怎么实现的？
-
-
 
 ![](https://img-blog.csdnimg.cn/img_convert/40ddab878c91fb6bb0f92789196bfc67.png)
 
