@@ -383,3 +383,54 @@ MSL与TTL的区别 : **MSL的单位是时间, TTL是经过路由跳数**
 TIME_WAIT等待2倍的MSL, 比较合理的解释是 : 网络中可能存在发送方发送过来的数据包(也就是第三次挥手的FIN包), 接收到这个包的最长可能时间是一个MSL, 然后接收到以后又会给对方响应, 这个最大可接受时间又是一个MSL
 
 相当于至少允许报文丢失一次, 如果ACK在一个MSL内丢失, 这样被动方重发的FIN会在第2个MSL内到达
+
+### 为什么需要TIME_WAIT状态
+
+TIME_WAIT是只有主动方才有的状态
+
+- 防止历史连接中的数据, 被后面相同的四元组连接错误接收
+  - 2MSL的时长能保证历史数据包都已经自然消失在网络中了
+- 确保被动关闭连接的一方能正确关闭
+  - 等待足够的时间,  保证自己的ACK是能被对方收到的, 从而帮助其自然关闭
+
+### TIME_WAIT过多有什么危害
+
+- 占用系统资源, 比如文件描述符, 内存资源, CPU资源, 线程资源等, 简单来说就是在TIME_WAIT过多会导致资源得不到快速的释放
+- 占用端口资源, 端口资源是有限的, 一般范围是`32768 ~ 61000`, 可以通过修改net.ipv4.ip_local_port_range
+  - 如果客户端(主动发起关闭连接方)TIME_WAIT状态过多, 就没办法再向[目的IP, 目的PORT]一样的服务建立连接了, 因为四元组相同
+
+### 如何优化TIME_WAIT
+
+优化的点在于TIME_WAIT会延缓资源释放的时间, 解决最短等待时间是`2MSL`的问题
+
+*方式一 : net.ipv4.tcp_tw_reuse和tcp_timestamps*
+
+开启`net.ipv4.tcp_te_reuse = 1`以后, 可以复用处于TIME_WAIT的socket为新的连接所用
+
+**tcp_twreuse功能只能是客户端(连接发起方), 因为开启了这个功能,  在调用connect()函数的时候, 内核会随机找出来一个time_wait状态超过1s的连接给新的连接复用**
+
+开启这个功能的一个前提是, 需要打开TCP对时间戳的支持
+
+`net.ipv4.tcp_timestamps = 1(默认为1)`
+引入了时间戳, 就不需要通过等待2MSL来确保历史数据已经消失在网络中, 因为时间戳过期的数据包自然会被丢弃
+
+*方式二: net.ipv4.tcp_max_tw_buckets*
+
+这个值默认是18000. **当系统中处于TIME_WAIT的连接一旦超过这个值, 系统无法为这些新关闭的连接分配TIME_WAIT状态的资源, 会直接关闭资源, 也就是向这些连接发送RST包而不是FIN包**
+
+*方式三: 程序中使用SO_LINGER*
+
+通过设置socket的选项, 来设置调用close关闭连接行为
+
+```c
+struct linger so_linger;
+so_linger.l_onoff = 1;
+so_linger.l_linger = 0;
+setsockopt(s, SOL_SOCKET, SO_LINGER, &so_linger, sizeof(so_linger));
+```
+
+如果`l_onoff`为非0, 且`l_linger`的值为0, 调用`close`以后, 就会立刻发送一个`RST`报文给对端, 该TCP连接将跳过第四次挥手
+
+上面的三种方法其实都是在想办法跳过TIME_WAIT状态, 会发生乱七八糟的事情的, 毕竟它设计出来就是为了给下一个TCP连接一个纯净的环境
+
+**如果服务端要避免过多的TIME_WAIT状态的连接, 就永远不要主动断开连接, 让客户端去断开, 由分布在各处的用户端来承受TIME_WAIT**
