@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "就业/CS-Base-main/redis/data_struct/data_struct.md",
+                "file": "就业/document/JavaGuide/docs/system-design/framework/spring/spring-knowledge-and-questions-summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data_struct"
+              "title": "spring-knowledge-and-questions-summary"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "@Bean",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +61,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -74,12 +74,12 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ce28f712db3770b7",
@@ -95,8 +95,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
-                "collapseAll": false,
+                "file": "就业/document/JavaGuide/docs/system-design/framework/spring/spring-knowledge-and-questions-summary.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "22. 括号生成 的反向链接列表"
+              "title": "spring-knowledge-and-questions-summary 的反向链接列表"
             }
           },
           {
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer_Science/Algorithm/Learning/Algorithms/回溯/组合型/22. 括号生成.md",
+                "file": "就业/document/JavaGuide/docs/system-design/framework/spring/spring-knowledge-and-questions-summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "22. 括号生成 的出链列表"
+              "title": "spring-knowledge-and-questions-summary 的出链列表"
             }
           },
           {
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "就业/CS-Base-main/redis/data_struct/data_struct.md",
+                "file": "就业/document/JavaGuide/docs/system-design/framework/spring/spring-knowledge-and-questions-summary.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "data_struct 的大纲"
+              "title": "spring-knowledge-and-questions-summary 的大纲"
             }
           }
         ],
@@ -174,6 +174,19 @@
   },
   "active": "ef07c99b8db05a06",
   "lastOpenFiles": [
+    "就业/设计模式/创建者模式.md",
+    "就业/设计模式/新建 文本文档.txt",
+    "就业/设计模式",
+    "就业/新建文件夹",
+    "就业/简历/简历-v1.md",
+    "就业/简历/新建 文本文档.txt",
+    "就业/简历/简历该怎么.md",
+    "就业/简历",
+    "就业/document/JavaGuide/docs/high-performance/message-queue/kafka-questions-01.md",
+    "Java/Spring/SpringMVC/官方文档/document-md文件请安装typora工具打开/第13章 全注解开发.md",
+    "Java/Spring/SpringMVC/官方文档/document-md文件请安装typora工具打开/第14章 SSM整合.md",
+    "README.md",
+    "interview.md",
     "就业/CS-Base-main/redis/data_struct/command.md",
     "就业/CS-Base-main/redis/base/redis_interview.md",
     "redis/data_struct/data_struct.md",
@@ -194,7 +207,6 @@
     "Computer_Science/Linux/tmux/manaul.md",
     "Project/Big-Market/4. 基础层持久化数据.md",
     "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
-    "Computer_Science/Database/MySQL/MySQLbase/SQL.md",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/tpye.png",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/JOINS.png",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/date.png",
@@ -202,18 +214,6 @@
     "Document/深入理解Linux网络： 修炼底层内功，掌握高性能原理.pdf",
     "Document/OS-textbook/27-threads-api.pdf",
     "Document/OS-textbook/26-threads-intro.pdf",
-    "Document/OS-textbook/25-dialogue-concurrency.pdf",
-    "就业/CS-Base-main/os/6_file_system/file_system.md",
-    "就业/CS-Base-main/os/5_schedule/schedule.md",
-    "就业/OS/总结.md",
-    "就业/OS/新建 文本文档.txt",
-    "就业/CS-Base-main/os/4_process/thread_crash.md",
-    "就业/CS-Base-main/os/4_process/create_thread_max.md",
-    "就业/CS-Base-main/os/4_process/deadlock.md",
-    "就业/CS-Base-main/os/4_process/pessim_and_optimi_lock.md",
-    "就业/Java/JVM",
-    "就业/未命名",
-    "就业/Java/Untitled",
     "就业/MySQL/Pasted image 20250322180948.png",
     "Untitled.canvas",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
