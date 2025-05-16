@@ -1,6 +1,4 @@
-# Stack & Queue
-
-## Queue
+# ArrayDeque
 
 Queue是个接口,  继承自Collection, 除了Collection的接口方法外, 额外提供了
 
@@ -12,7 +10,9 @@ Queue是个接口,  继承自Collection, 除了Collection的接口方法外, 额
 
 ## Deque
 
-和Queue的接口基本一样, 只不过提供了两头的方法, 也就是能操作两端, 原本add只是在队尾插入元素, 在Deque中就有addFirst和addLast两套方法, 其他的方法也是一样, 提供了两套方法
+和Queue的接口基本一样, 只不过提供了两头的方法, 也就是能操作两端, 原本add只是在队尾插入元素, 在Deque中就有addFirst和addLast两套方法, 其他的方法也是一样, 提供了两套方法, **使用栈的时候首选ArrayDeque, 因为Stack是个很粗糙的线程安全类, 效率不高**
+
+**ArrayDeque 又实现了 Deque 接口（Deque 又实现了 Queue 接口）**
 
 ## 方法剖析
 
