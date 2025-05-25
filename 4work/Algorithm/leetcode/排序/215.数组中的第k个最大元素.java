@@ -1,5 +1,12 @@
 import java.util.Random;
 
+/**
+ * 快速排序的变式 : 快速选择
+ * 我们其实只需要确定在排序以后位置是k-1的元素是什么, 并不需要将整个数组都排序
+ * 这个需求在快速排序里面, 就是要找到某个基准值, 它在分区了以后位置是在k-1
+ * 具体快速排序的实现参照sort中的quickSort
+ */
+
 /*
  * @lc app=leetcode.cn id=215 lang=java
  *
@@ -40,10 +47,10 @@ class Solution {
         int pivot = nums[pivotIndex];
 
         int lt = l; // [l, lt-1] < pivot
-        int i = l; // [lt, i] == pivot
-        int gt = r + 1; // [i, gt-1] > pivot
+        int i = l; // [lt, i] == pivot 
+        int gt = r + 1; // [i, gt-1] > pivot 
 
-        while (i < gt) {
+        while (i < gt) { 
             if (nums[i] > pivot) {
                 swap(nums, i++, lt++);
             } else if (nums[i] < pivot) {

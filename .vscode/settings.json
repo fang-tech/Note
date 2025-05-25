@@ -65,5 +65,6 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xtree": "cpp"
-    }
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }
