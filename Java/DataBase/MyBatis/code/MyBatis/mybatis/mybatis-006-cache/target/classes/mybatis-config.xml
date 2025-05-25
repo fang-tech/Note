@@ -12,7 +12,6 @@
 
     <typeAliases>
         <package name="com.func.mybatis.cache.pojo"/>
-
     </typeAliases>
 
     <environments default="dev">
