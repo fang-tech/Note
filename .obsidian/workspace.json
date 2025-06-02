@@ -11,10 +11,14 @@
             "id": "ef07c99b8db05a06",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "4work/Algorithm/leetcode/周赛/452.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "452"
             }
           }
         ]
@@ -70,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "4work/Algorithm/leetcode/周赛/452.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "452 的大纲"
             }
           }
         ],
@@ -169,6 +173,7 @@
   },
   "active": "ef07c99b8db05a06",
   "lastOpenFiles": [
+    "4work/Algorithm/leetcode/周赛/452.md",
     "就业/设计模式/创建者模式.md",
     "就业/设计模式/新建 文本文档.txt",
     "就业/设计模式",
@@ -201,7 +206,6 @@
     "就业/Redis/Redis中的数据结构.md",
     "Computer_Science/Linux/tmux/manaul.md",
     "Project/Big-Market/4. 基础层持久化数据.md",
-    "Project/Big-Market/1. 使用脚手架创建工程和push代码.md",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/tpye.png",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/JOINS.png",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/date.png",

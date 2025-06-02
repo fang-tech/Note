@@ -1,6 +1,4 @@
 
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
-
 /*
  * @lc app=leetcode.cn id=206 lang=java
  *

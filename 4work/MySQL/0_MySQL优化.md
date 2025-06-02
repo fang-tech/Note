@@ -16,11 +16,13 @@ select * from t_user order by id limit size
 
 第二种查询语句, 其实相当于offset == 0的情况
 
-每次执行分页查询的时候, **server层的执行器会调用引擎层的接口, 将前offset + size条数据取出来, 当这些数据符合要求, 就会将数据存放到结果集中, 最后将需要的size条数据返回给MySQL的客户端**
+每次执行分页查询的时候, **引擎层首先根据where条件筛选出来符合条件的所有记录, 然后对这些已经筛选的记录order by, 最后应用LIMIT, 从已经筛选出来和排序的结果中取出来指定的offset到offset + size范围的记录**
 
 > 性能问题出在哪里
 
 这里的问题就是, 我们不管size是多少, 我们都需要额外取出来offset条冗余的数据, 这就造成了当offset越来越来的时候, 执行分页查询的开销就越大, 也造成了 limit 1000, 10的开销比limit 100, 10的开销更大
+
+从where筛选 -> order by 排序 -> limit分页, 其中需要做对前面的offset条数据大量的行扫描和排序再跳过offset条数据
 
 ### 怎么优化
 
@@ -56,7 +58,7 @@ select * from page where id >= (select id from page order by id limit 60000, 1) 
 
 但是在offset非常大的时候, 因为server层的**优化器**在看到非主键索引的600w次回表以后, 发现还不如**全表扫描**, 这是**真性能杀手**
 
-这里优化的关键在于回表操作会导致变成全表扫描, 我们规避掉回表操作就行
+这里优化的关键在于**回表操作会导致变成全表扫描, 我们规避掉回表操作就行**
 
 ```mysql
 select * from page t1, (select id from page order by user_name limit 600000, 100) t2 where t1.id = t2.id;

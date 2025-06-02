@@ -519,8 +519,8 @@ quicklist并不是解决了压缩列表中的连锁更新的问题, 只是控制
 
 
 ```txt
-					  当前位置
-                         ↓
+                                  当前位置
+                                     ↓
 [Header][E1-type][E1-data][E1-backlen][E2-type][E2-data][E2-backlen][EOF]
 ```
 
