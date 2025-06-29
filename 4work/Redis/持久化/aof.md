@@ -105,7 +105,7 @@ Redis的重写AOF过程是由**后台子进程 bgrewriteaof (backround rewrite a
 
 Redis设置了一个AOF重写缓冲区
 
-在重写AOF器件, 当Redis执行完一个写命令以后, 会同时将这个写命令写入到**AOF缓冲区**和**AOF重写缓冲区**
+在重写AOF启动以后, 当Redis执行完一个写命令以后, 会同时将这个写命令写入到**AOF缓冲区**和**AOF重写缓冲区**
 
 当子进程完成了AOF重写工作, 会向主进程发送一条信号
 

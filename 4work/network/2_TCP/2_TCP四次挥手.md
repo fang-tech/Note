@@ -160,7 +160,7 @@ Web服务上一般会有个参数来定义一条HTTP长连接上最大能处理�
 2. 将服务端socket注册到epoll
 3. epoll_wait等待连接到来, 连接到来的时候, 调用accept 从accept队列中获取已连接的socket
 4. 将已连接的socket注册到epoll
-5. epoll_wait等待时间发生
+5. epoll_wait等待事件发生
 6. 对方连接关闭的时候, 调用close
 
 **原因一** : 第二步没有做, 没有将socket注册到epoll, 这样有新连接到来的时候, 服务端就没有办法感知这个事件, 也就无法获取到已经连接的socket, 那么也就没有办法对这个socket调用close了

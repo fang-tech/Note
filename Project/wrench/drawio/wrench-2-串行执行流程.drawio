@@ -1,0 +1,285 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="第 1 页" id="FZNKR2oYq036Vr1_eRQ3">
+    <mxGraphModel dx="5290" dy="2597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-54" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="930" y="120" width="990" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-52" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry width="990" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-2" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;责任链: 流程控制和业务执行没有区分开来的版本&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="210" y="13" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;LLogicChainArmory&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ILogicLink&amp;lt;T, D, R&amp;gt; next()&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回下一个节点&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ILogicLink&amp;lt;T, D, R&amp;gt; appendNext(ILogicLink&amp;lt;T, D, R&amp;gt; next)&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;为这个节点添加下一个节点&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="30" y="115.5" width="240" height="134.5" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-54" source="D5MyXovwJd0xaM1CcT8X-5" target="D5MyXovwJd0xaM1CcT8X-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ILogicLink&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;R apply(T requestParameter, D dynamicContext)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;执行这个节点的业务流程&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="350" y="127.75" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-54" source="D5MyXovwJd0xaM1CcT8X-8" target="D5MyXovwJd0xaM1CcT8X-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-8" value="AbstractLogicLink&amp;lt;T, D, R&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="630" y="117.75" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-9" value="+&amp;nbsp;ILogicLink&amp;lt;T, D, R&amp;gt; next&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;下一个节点" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-8">
+          <mxGeometry y="26" width="280" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-8">
+          <mxGeometry y="60" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-11" value="+&amp;nbsp;R next(T requestParameter, D dynamicContext)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;从当前节点链式执行当前责任链" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-8">
+          <mxGeometry y="68" width="280" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-13" value="&lt;b&gt;串行的执行流程&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="370" y="285" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-54" source="D5MyXovwJd0xaM1CcT8X-14" target="D5MyXovwJd0xaM1CcT8X-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-14" value="在Factory中组装责任链, 并提供方法返回责任链的初始节点" style="whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="258.75" y="370" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-54" source="D5MyXovwJd0xaM1CcT8X-17" target="D5MyXovwJd0xaM1CcT8X-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-17" value="Factory中还定义了上下文类" style="whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="516.25" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-54" source="D5MyXovwJd0xaM1CcT8X-19" target="D5MyXovwJd0xaM1CcT8X-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-19" value="重写具体的节点, 也就是ILogicLink的实现类中的apply方法, 这就是业务的执行流程" style="whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="381.25" y="500" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-22" value="获取Factory中暴露出来的头节点, 并执行该节点能next, 链式完成责任链的执行" style="whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-54">
+          <mxGeometry x="391.25" y="600" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-55" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="895" y="914" width="1060" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-53" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry width="1060" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-24" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;责任链: 业务和分支控制分开的版本&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="230" y="13" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-25" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ILogicHandler&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ default R next(T requestParameter, D dynamicContext)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;根据传入的参数, 决定下一个节点应该是哪个, 这里用于返回null, 说明要顺着链继续向下执行&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ R apply(T requestParameter, D dynamicContext)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;执行业务&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="40" y="115.5" width="470" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-55" source="D5MyXovwJd0xaM1CcT8X-26" target="D5MyXovwJd0xaM1CcT8X-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-55" source="D5MyXovwJd0xaM1CcT8X-26" target="D5MyXovwJd0xaM1CcT8X-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-26" value="BusinessLinkedList" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="130" y="300" width="290" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-29" value="+&amp;nbsp;R apply(T requestParameter, D dynamicContext)&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;执行这整条责任链, 顺着链表中的顺序执行, 当某个节点的返回不是null的时候, 说明在这个节点需要返回了&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-26">
+          <mxGeometry y="26" width="290" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-31" value="LinkedList&amp;lt;ILogicHandler&amp;lt;T, D, R&amp;gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="480" y="332" width="240" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-39" value="+ name&lt;br&gt;责任链的名称" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-31">
+          <mxGeometry y="26" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-40" value="LinkArmory&amp;lt;T, D, R&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="660" y="110" width="350" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-41" value="+ logicLink:&amp;nbsp;BusinessLinkedList&amp;lt;T, D, R&amp;gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;一个LinkArmory就代表着组装出来的一条责任链" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-40">
+          <mxGeometry y="26" width="350" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-40">
+          <mxGeometry y="70" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-43" value="+&amp;nbsp;BusinessLinkedList&amp;lt;T, D, R&amp;gt; getLogicLink()&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回组装好的责任链&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ &amp;nbsp;LinkArmory(String linkName, ILogicHandler&amp;lt;T, D, R&amp;gt;... logicHandlers)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;将责任链按照传入的顺序, 组装成到链表中&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-40">
+          <mxGeometry y="78" width="350" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-44" value="&lt;b&gt;串行的执行流程&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="320" y="500" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-55" source="D5MyXovwJd0xaM1CcT8X-45" target="D5MyXovwJd0xaM1CcT8X-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-45" value="在Factory中定义执行上下文, 并且在这里创建责任链bean对象" style="whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="270" y="575" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="D5MyXovwJd0xaM1CcT8X-55" source="D5MyXovwJd0xaM1CcT8X-46" target="D5MyXovwJd0xaM1CcT8X-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-46" value="获取责任链, 执行责任链的apply方法, 遍历整条链" style="whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="340" y="655" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-48" value="在某个节点有返回的时候, 责任链执行结束" style="whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-55">
+          <mxGeometry x="340" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-56" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-620" y="300" width="1450" height="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-51" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-56">
+          <mxGeometry width="1450" height="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="D5MyXovwJd0xaM1CcT8X-50" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;规则树&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="D5MyXovwJd0xaM1CcT8X-56">
+          <mxGeometry x="670" y="10" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-5" target="Z8HuH0qJEcCEuj9EcbGu-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-5" value="AbstractMultiThreadStrategyRouter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="90" y="62.5" width="370" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-6" value="+ defaultStrategyHandler:&amp;nbsp;&amp;nbsp;StrategyHandler&amp;lt;T, D, R&amp;gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;其实就是空节点, 标记着树走到叶子节点, 结束了, 是最后的节点的返回值&lt;br&gt;&lt;/div&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z8HuH0qJEcCEuj9EcbGu-5" vertex="1">
+          <mxGeometry y="26" width="370" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-7" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z8HuH0qJEcCEuj9EcbGu-5" vertex="1">
+          <mxGeometry y="90" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-8" value="+ router(T requestParameter, D dynamicContext): R&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;获取下一个要执行的节点, 调用apply方法&lt;br&gt;&lt;/div&gt;&lt;div&gt;+&amp;nbsp;apply(T requestParameter, D dynamicContext): R&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;异步加载数据(multiThread方法), 并执行业务流程, 调用doApply方法&lt;/div&gt;&lt;div&gt;+ multiThread(T requestParameter, D dynamicContext): void&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;异步加载数据&lt;br&gt;+&amp;nbsp;&amp;nbsp;doApply(T requestParameter, D dynamicContext): R&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;执行业务流程&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z8HuH0qJEcCEuj9EcbGu-5" vertex="1">
+          <mxGeometry y="98" width="370" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;StrategyHandler&amp;lt;T, D, R&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ DEFAULT: StrategyHandler&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ R apply(T requestParameter, D dynamicContext)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;执行业务流程&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="995" y="62.5" width="420" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;StrategyMapper&amp;lt;T, D, R&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get(T requestParameter, D dynamicContext): StrategyHandler&amp;lt;T, D, R&amp;gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回下一个要执行的规则树节点&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="995" y="220" width="410" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-13" target="Z8HuH0qJEcCEuj9EcbGu-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-13" target="Z8HuH0qJEcCEuj9EcbGu-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AbstractStrategyRouter&amp;lt;T, D, R&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;defaultStrategyHandler:&amp;nbsp;StrategyHandler&amp;lt;T, D, R&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ router(T requestParameter, D dynamicContext): R&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;调用get方法获取下一个要执行的节点&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;执行业务流程, 返回下一个节点&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="570" y="120" width="330" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-17" value="&lt;b&gt;串行的执行流程&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=22;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="540" y="410" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-19" target="Z8HuH0qJEcCEuj9EcbGu-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-19" target="Z8HuH0qJEcCEuj9EcbGu-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-19" value="定义规则树的策略工厂, 一个工厂对应着一颗树" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="130" y="510" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-27" target="Z8HuH0qJEcCEuj9EcbGu-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-27" value="DefaultStrategyFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="300" y="485" width="410" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-28" value="+ RootNode rootNode: 这颗规则树对应的根节点" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z8HuH0qJEcCEuj9EcbGu-27" vertex="1">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-29" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z8HuH0qJEcCEuj9EcbGu-27" vertex="1">
+          <mxGeometry y="52" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-30" value="strategyHandler():&amp;nbsp;StrategyHandler&amp;lt;String, DynamicContext, String&amp;gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;返回树的根节点" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z8HuH0qJEcCEuj9EcbGu-27" vertex="1">
+          <mxGeometry y="60" width="410" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-32" value="DynamicContext" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="740" y="460" width="470" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-33" value="+ int level: 树的节点的深度&lt;br&gt;+ Map&amp;lt;String, Object&amp;gt; dataObjects: 树中的节点" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z8HuH0qJEcCEuj9EcbGu-32" vertex="1">
+          <mxGeometry y="26" width="470" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-34" value="" style="line;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Z8HuH0qJEcCEuj9EcbGu-32" vertex="1">
+          <mxGeometry y="70" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-35" value="void setValue(String key, T value)&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;将节点添加到树中&lt;br&gt;&lt;/div&gt;&lt;div&gt;T getValue(String key)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;获取key对应的树的节点&lt;br&gt;&lt;/div&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Z8HuH0qJEcCEuj9EcbGu-32" vertex="1">
+          <mxGeometry y="78" width="470" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-37" target="Z8HuH0qJEcCEuj9EcbGu-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-37" target="Z8HuH0qJEcCEuj9EcbGu-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-37" value="从工厂中获取根节点, 并处理根节点中的业务流程, 返回并执行下一个节点" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="122.5" y="640" width="145" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-39" target="Z8HuH0qJEcCEuj9EcbGu-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-39" target="Z8HuH0qJEcCEuj9EcbGu-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-39" value="RootNode.apply" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="349" y="645" width="122" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-41" value="multiThread" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="530" y="610" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-43" target="Z8HuH0qJEcCEuj9EcbGu-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-43" value="doapply: 返回下一个节点&lt;br&gt;也是在这个位置处理业务流程" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="530" y="690" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-45" target="Z8HuH0qJEcCEuj9EcbGu-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-45" target="Z8HuH0qJEcCEuj9EcbGu-57" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-45" value="router: 返回下一个节点&lt;br&gt;根据入参&lt;br&gt;路由到下一个节点" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="740" y="690" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-47" target="Z8HuH0qJEcCEuj9EcbGu-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-47" value="get(): 返回下一个节点&lt;br&gt;这里也是真的获取下一个节点的位置" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="950" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-49" value="switch节点" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="844" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-51" target="Z8HuH0qJEcCEuj9EcbGu-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-51" value="进入到switchNode节点" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="135" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-53" target="Z8HuH0qJEcCEuj9EcbGu-60" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-53" target="Z8HuH0qJEcCEuj9EcbGu-62" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-53" value="SwitchNode" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="322.5" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-57" target="Z8HuH0qJEcCEuj9EcbGu-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-57" value="执行下一个节点的apply" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="640" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-60" value="multiThread" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="496.5" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" source="Z8HuH0qJEcCEuj9EcbGu-62" target="Z8HuH0qJEcCEuj9EcbGu-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-62" value="doapply" style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="496.5" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z8HuH0qJEcCEuj9EcbGu-67" value="....." style="whiteSpace=wrap;html=1;" parent="D5MyXovwJd0xaM1CcT8X-56" vertex="1">
+          <mxGeometry x="696.5" y="970" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

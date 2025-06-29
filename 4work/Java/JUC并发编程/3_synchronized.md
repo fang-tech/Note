@@ -278,5 +278,16 @@ Thread-1结束
 */
 ````
 
-## Syncronized原理分析
+## Synchronized原理分析
 
+Synchronized锁在字节码层面本质上是通过monitor指令实现的
+
+- moniterenter: 在对象执行的时候, 使其锁计数器+1
+- moniterexit: 在对象执行的时候, 使其锁计数器-1
+- 在进入到synchronized代码块的时候, 会尝试获取这个synchronized绑定的对象的moniter
+  - 同一时间只能有一个线程持有一个特定对象的moniter, 也就是不存在同时有多个线程持有相同一个对象的moniter
+  - 每个对象都有一个自己的moniter
+  - 重入性: 同一个线程可以多次获取同一个moniter
+- happens-before: 监视器锁规则: 对同一个监视器的解锁 happens-before 对该监视器的加锁
+
+# 

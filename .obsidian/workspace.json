@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "25a76a4483b0b9d0",
+        "id": "39867030ee3ff31a",
         "type": "tabs",
         "children": [
           {
-            "id": "ef07c99b8db05a06",
+            "id": "dbe395bfb2341a90",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4work/Algorithm/leetcode/周赛/452.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "452"
+              "title": "新标签页"
             }
           }
         ]
@@ -53,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "@Bean",
+                "query": "BeanPostProcessor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4work/Algorithm/leetcode/周赛/452.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "452 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -171,17 +166,28 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "ef07c99b8db05a06",
+  "active": "3e119fb0ab39dbab",
   "lastOpenFiles": [
+    "Document/OS-textbook/OS-three-easy-pieces.pdf",
+    "Document/OS-textbook/OS-three-easy-pieces翻译.pdf",
+    "Document/OS-textbook/xv6翻译.pdf",
+    "Document/OS-textbook/xv6.pdf",
+    "Document/OS-textbook/book-riscv-rev4_dual.pdf",
+    "Document/OS-textbook/dokumen.pub_operating-systems-three-easy-pieces-110nbsped.pdf",
+    "Document/OS-textbook/dokumen.pub_operating-systems-three-easy-pieces-110nbsped_dual.pdf",
+    "Document/OS-textbook/book-riscv-rev4.pdf",
+    "Java/Spring/Spring_/Spring.md",
+    "作业.md",
+    "Project/wrench/1-DCC.md",
+    "Project/wrench/1-md",
+    "Project/wrench/新建 文本文档.txt",
+    "Project/wrench",
+    "4work/document/JavaGuide/docs/system-design/framework/spring/async.md",
+    "4work/OS/3.4  内存管理-如何避免预读失效和缓存污染的问题.md",
     "4work/Algorithm/leetcode/周赛/452.md",
     "就业/设计模式/创建者模式.md",
-    "就业/设计模式/新建 文本文档.txt",
-    "就业/设计模式",
-    "就业/新建文件夹",
     "就业/简历/简历-v1.md",
-    "就业/简历/新建 文本文档.txt",
     "就业/简历/简历该怎么.md",
-    "就业/简历",
     "就业/document/JavaGuide/docs/high-performance/message-queue/kafka-questions-01.md",
     "Java/Spring/SpringMVC/官方文档/document-md文件请安装typora工具打开/第13章 全注解开发.md",
     "Java/Spring/SpringMVC/官方文档/document-md文件请安装typora工具打开/第14章 SSM整合.md",
@@ -191,8 +197,6 @@
     "就业/CS-Base-main/redis/base/redis_interview.md",
     "redis/data_struct/data_struct.md",
     "就业/CS-Base-main/redis/README.md",
-    "redis/data_struct",
-    "redis",
     "就业/CS-Base-main/README.md",
     "就业/CS-Base-main/redis/storage/bigkey_aof_rdb.md",
     "就业/CS-Base-main/redis/module/strategy.md",
@@ -200,19 +204,10 @@
     "就业/CS-Base-main/redis/cluster/cluster.md",
     "就业/CS-Base-main/redis/cluster/master_slave_replication.md",
     "就业/CS-Base-main/redis/architecture/mysql_redis_consistency.md",
-    "就业/Redis/Redis数据库和缓存如何保持一致性.md",
-    "就业/Redis/Untitled.md",
-    "就业/Redis/redis面试题.md",
-    "就业/Redis/Redis中的数据结构.md",
-    "Computer_Science/Linux/tmux/manaul.md",
-    "Project/Big-Market/4. 基础层持久化数据.md",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/tpye.png",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/JOINS.png",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/date.png",
     "Computer_Science/Database/MySQL/MySQLbase/imgs/BLOB.png",
-    "Document/深入理解Linux网络： 修炼底层内功，掌握高性能原理.pdf",
-    "Document/OS-textbook/27-threads-api.pdf",
-    "Document/OS-textbook/26-threads-intro.pdf",
     "就业/MySQL/Pasted image 20250322180948.png",
     "Untitled.canvas",
     "Java/Dependency-Manager/Maven/image/image-20231021151627161.png",
